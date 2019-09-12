@@ -25,10 +25,13 @@ public class MenuController {
 	@FXML private void handleMenuAction(ActionEvent action) throws IOException {
 		Object source = action.getSource();
 		if(source == menuQuit) {
+			logger.info("Clicked on menu item Quit");
 			Platform.exit();
+			logger.info("Exiting program");
 		}
 		if(source == menuBookList) {
 			//get a collection of cars from the gateway
+			logger.info("Clicked on menu item Book List");
 			BookController.changeView(ViewType.BOOK_LIST, null);
 			return;
 		}

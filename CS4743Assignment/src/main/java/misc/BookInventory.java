@@ -40,8 +40,6 @@ public class BookInventory extends Application{
 	@Override
 	public void init() throws Exception {
 		super.init();
-				
-		//create car gateway
 		logger.info("Calling init");
 	}
 

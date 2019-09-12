@@ -1,9 +1,6 @@
 package misc;
 
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Optional;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -18,12 +15,9 @@ import javafx.scene.layout.BorderPane;
 
 public class BookController {
 	private static BorderPane root;
+	private static Logger logger = LogManager.getLogger();
 	
-	public BookController() {
-		/** TODO
-		 * Remove later and just pull list of Book objects from database
-		 * */
-		
+	public BookController() {	
 	}
 
 	public static boolean changeView(ViewType viewType, Object object) {
@@ -34,21 +28,21 @@ public class BookController {
 			 */
 			loader = new FXMLLoader(BookController.class.getResource("BookListView.fxml"));
 			loader.setController(new BookListController());
-			
+			logger.info("Changing to List View");
 		} else if(viewType == ViewType.BOOK_DETAIL) {
 			loader = new FXMLLoader(BookController.class.getResource("BookDetailView.fxml"));
-			loader.setController(new BookDetailController( (Book) object ) );
+			loader.setController(new BookDetailController((String) object));
+			logger.info("Changing to Detail View");
 		}
 		
 		Parent view = null;
 		try {
 			view = loader.load();
+			logger.info("View change succesfull");
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
+			logger.error(e.getMessage());
 		}
 		
-		//attach view to application center of border pane
 		root.setCenter(view);		
 		return true;
 	}

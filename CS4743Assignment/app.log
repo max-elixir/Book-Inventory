@@ -1,97 +1,27 @@
-18:08:53.644 ERROR misc.BookInventory : Calling init
-18:09:14.251 ERROR misc.BookInventory : Calling init
-18:18:10.374 INFO  misc.BookInventory : Calling init
-18:19:16.921 INFO  misc.BookInventory : Calling init
-18:35:40.205 INFO  misc.BookInventory : Calling init
-18:42:37.249 INFO  misc.BookInventory : Calling init
-18:46:59.522 INFO  misc.BookInventory : Calling init
-18:53:52.937 INFO  misc.BookInventory : Calling init
-18:56:12.295 INFO  misc.BookInventory : Calling init
-18:56:31.425 INFO  misc.BookInventory : Calling init
-18:56:44.453 INFO  misc.BookInventory : Calling init
-18:57:31.598 INFO  misc.BookInventory : Calling init
-18:57:31.967 ERROR misc.MenuController : Controller init called
-18:57:57.347 INFO  misc.BookInventory : Calling init
-18:57:57.591 ERROR misc.MenuController : Controller init called
-18:58:32.550 INFO  misc.BookInventory : Calling init
-18:58:32.731 ERROR misc.MenuController : Controller init called
-18:58:49.918 INFO  misc.BookInventory : Calling init
-18:58:50.176 ERROR misc.MenuController : Controller init called
-18:59:02.468 INFO  misc.BookInventory : Calling init
-18:59:02.674 ERROR misc.MenuController : Controller init called
-18:59:39.112 INFO  misc.BookInventory : Calling init
-18:59:39.403 ERROR misc.MenuController : Controller init called
-19:00:01.665 INFO  misc.BookInventory : Calling init
-19:00:01.976 ERROR misc.MenuController : Controller init called
-19:00:14.699 INFO  misc.BookInventory : Calling init
-19:00:14.891 ERROR misc.MenuController : Controller init called
-19:01:21.953 INFO  misc.BookInventory : Calling init
-19:01:22.178 ERROR misc.MenuController : Controller init called
-19:02:02.692 INFO  misc.BookInventory : Calling init
-19:02:02.901 ERROR misc.MenuController : Controller init called
-19:08:28.974 INFO  misc.BookInventory : Calling init
-19:08:29.716 INFO  misc.BookInventory : Starting Book  Inventory...
-19:11:42.953 INFO  misc.BookInventory : Starting Book Inventory...
-19:11:42.960 INFO  misc.BookInventory : Calling init
-20:54:26.838 INFO  misc.BookInventory : Starting Book Inventory...
-20:54:26.843 INFO  misc.BookInventory : Calling init
-20:54:51.797 INFO  misc.BookInventory : Starting Book Inventory...
-20:54:51.802 INFO  misc.BookInventory : Calling init
-21:22:37.013 INFO  misc.BookInventory : Starting Book Inventory...
-21:22:37.018 INFO  misc.BookInventory : Calling init
-21:22:48.735 INFO  misc.BookInventory : Starting Book Inventory...
-21:22:48.740 INFO  misc.BookInventory : Calling init
-21:24:17.130 INFO  misc.BookInventory : Starting Book Inventory...
-21:24:17.134 INFO  misc.BookInventory : Calling init
-21:41:20.650 INFO  misc.BookInventory : Starting Book Inventory...
-21:41:20.655 INFO  misc.BookInventory : Calling init
-21:42:28.731 INFO  misc.BookInventory : Starting Book Inventory...
-21:42:28.736 INFO  misc.BookInventory : Calling init
-21:43:50.638 INFO  misc.BookInventory : Starting Book Inventory...
-21:43:50.643 INFO  misc.BookInventory : Calling init
-21:44:25.221 INFO  misc.BookInventory : Starting Book Inventory...
-21:44:25.226 INFO  misc.BookInventory : Calling init
-21:45:33.643 INFO  misc.BookInventory : Starting Book Inventory...
-21:45:33.647 INFO  misc.BookInventory : Calling init
-21:46:04.876 INFO  misc.BookInventory : Starting Book Inventory...
-21:46:04.881 INFO  misc.BookInventory : Calling init
-22:03:47.367 INFO  misc.BookInventory : Starting Book Inventory...
-22:03:47.371 INFO  misc.BookInventory : Calling init
-22:05:49.902 INFO  misc.BookInventory : Starting Book Inventory...
-22:05:49.907 INFO  misc.BookInventory : Calling init
-22:06:53.991 INFO  misc.BookInventory : Starting Book Inventory...
-22:06:53.995 INFO  misc.BookInventory : Calling init
-22:07:20.790 INFO  misc.BookInventory : Starting Book Inventory...
-22:07:20.795 INFO  misc.BookInventory : Calling init
-22:07:41.494 INFO  misc.BookInventory : Starting Book Inventory...
-22:07:41.498 INFO  misc.BookInventory : Calling init
-22:08:20.685 INFO  misc.BookInventory : Starting Book Inventory...
-22:08:20.689 INFO  misc.BookInventory : Calling init
-22:10:05.784 INFO  misc.BookInventory : Starting Book Inventory...
-22:10:05.788 INFO  misc.BookInventory : Calling init
-22:11:17.886 INFO  misc.BookInventory : Starting Book Inventory...
-22:11:17.890 INFO  misc.BookInventory : Calling init
-22:20:01.288 INFO  misc.BookInventory : Starting Book Inventory...
-22:20:01.293 INFO  misc.BookInventory : Calling init
-22:20:05.092 INFO  misc.BookListController$1 : double-clicked Catcher in the Rye
-22:20:06.492 INFO  misc.BookListController$1 : double-clicked Java 9 for Programmers
-22:20:07.273 INFO  misc.BookListController$1 : double-clicked Duma Key
-22:20:07.860 INFO  misc.BookListController$1 : double-clicked Computer Networking: A Top Down Approach
-22:20:08.401 INFO  misc.BookListController$1 : double-clicked Where the Wild Things Are
-22:20:25.577 INFO  misc.BookInventory : Starting Book Inventory...
-22:20:25.582 INFO  misc.BookInventory : Calling init
-22:31:58.285 INFO  misc.BookInventory : Starting Book Inventory...
-22:31:58.290 INFO  misc.BookInventory : Calling init
-22:32:04.833 INFO  misc.BookListController$1 : double-clicked Computer Networking: A Top Down Approach
-22:32:09.801 INFO  misc.BookListController$1 : double-clicked Where the Wild Things Are
-22:32:11.342 INFO  misc.BookListController$1 : double-clicked Where the Wild Things Are
-22:32:57.143 INFO  misc.BookInventory : Starting Book Inventory...
-22:32:57.147 INFO  misc.BookInventory : Calling init
-22:33:00.662 INFO  misc.BookListController$1 : Double clicked on book "Catcher in the Rye"
-22:33:01.645 INFO  misc.BookListController$1 : Double clicked on book "Catcher in the Rye"
-22:33:02.472 INFO  misc.BookListController$1 : Double clicked on book "Catcher in the Rye"
-22:33:03.153 INFO  misc.BookListController$1 : Double clicked on book "Computer Networking: A Top Down Approach"
-22:33:04.012 INFO  misc.BookListController$1 : Double clicked on book "Duma Key"
-22:33:05.174 INFO  misc.BookListController$1 : Double clicked on book "Where the Wild Things Are"
-22:33:05.829 INFO  misc.BookListController$1 : Double clicked on book "Computer Networking: A Top Down Approach"
-22:33:07.014 INFO  misc.BookListController$1 : Double clicked on book "Catcher in the Rye"
+10:20:22.121 INFO  misc.BookInventory : Starting Book Inventory...
+10:20:22.134 INFO  misc.BookInventory : Calling init
+10:20:25.095 INFO  misc.MenuController : Clicked on menu item Book List
+10:20:25.100 INFO  misc.BookController : Changing to List View
+10:20:25.136 INFO  misc.BookController : View change succesfull
+10:20:26.008 INFO  misc.BookListController$1 : Double clicked on book "Java 9 for Programmers"
+10:20:26.011 INFO  misc.BookController : Changing to Detail View
+10:20:26.054 INFO  misc.BookController : View change succesfull
+10:20:27.545 INFO  misc.BookDetailController : Changes saved for "Java 9 for Programmers"
+10:20:30.828 INFO  misc.MenuController : Clicked on menu item Book List
+10:20:30.829 INFO  misc.BookController : Changing to List View
+10:20:30.836 INFO  misc.BookController : View change succesfull
+10:20:32.010 INFO  misc.BookListController$1 : Double clicked on book "Where the Wild Things Are"
+10:20:32.011 INFO  misc.BookController : Changing to Detail View
+10:20:32.020 INFO  misc.BookController : View change succesfull
+10:20:33.772 INFO  misc.BookDetailController : Changes saved for "Where the Wild Things Are"
+10:20:37.119 INFO  misc.MenuController : Clicked on menu item Book List
+10:20:37.120 INFO  misc.BookController : Changing to List View
+10:20:37.125 INFO  misc.BookController : View change succesfull
+10:20:38.535 INFO  misc.MenuController : Clicked on menu item Book List
+10:20:38.537 INFO  misc.BookController : Changing to List View
+10:20:38.541 INFO  misc.BookController : View change succesfull
+10:20:40.028 INFO  misc.MenuController : Clicked on menu item Book List
+10:20:40.030 INFO  misc.BookController : Changing to List View
+10:20:40.036 INFO  misc.BookController : View change succesfull
+10:20:41.736 INFO  misc.MenuController : Clicked on menu item Quit
+10:20:41.737 INFO  misc.MenuController : Exiting program

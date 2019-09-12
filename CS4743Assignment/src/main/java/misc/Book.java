@@ -12,4 +12,8 @@ public class Book {
 		yearPublished = year;
 		this.ISBN = ISBN;
 	}
+	
+	public String toString() {
+		return title + ", Published: " + yearPublished + " ISBN: "+ ISBN;	
+	}
 }
