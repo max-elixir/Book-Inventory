@@ -4,16 +4,16 @@ package misc;
  * */
 public class Book {
 	private String title, summary, ISBN;
-	private int yearPublished;
+	private int year;
 	
 	public Book(String title, String summary, int year, String ISBN) {
 		this.title = title;
 		this.summary = summary;
-		yearPublished = year;
+		this.year = year;
 		this.ISBN = ISBN;
 	}
 	
 	public String toString() {
-		return title + ", Published: " + yearPublished + " ISBN: "+ ISBN;	
+		return title + ", Published: " + year + " ISBN: "+ ISBN;	
 	}
 }

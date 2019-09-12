@@ -17,7 +17,6 @@ public class BookListController {
 	
 	@FXML private ListView<String> listBooks;
 	
-	//list collection of car data for the list view
 	private List<String> books;
 	
 	/** TODO

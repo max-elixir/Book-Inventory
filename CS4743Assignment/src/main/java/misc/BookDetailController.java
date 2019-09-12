@@ -52,7 +52,6 @@ public class BookDetailController {
 	@FXML public void handleButtonSave(ActionEvent action) throws IOException {
 		Object source = action.getSource();
 		if(source == buttonSave) {
-			//MasterController.getInstance().changeView(ViewType.CAR_DETAIL, new Car());
 			save();
 		}
 	}

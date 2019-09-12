@@ -25,3 +25,36 @@
 10:20:40.036 INFO  misc.BookController : View change succesfull
 10:20:41.736 INFO  misc.MenuController : Clicked on menu item Quit
 10:20:41.737 INFO  misc.MenuController : Exiting program
+10:29:42.683 INFO  misc.BookInventory : Starting Book Inventory...
+10:29:42.691 INFO  misc.BookInventory : Calling init
+10:29:45.618 INFO  misc.MenuController : Clicked on menu item Book List
+10:29:45.623 INFO  misc.BookController : Changing to List View
+10:29:45.660 INFO  misc.BookController : View change succesfull
+10:29:47.142 INFO  misc.BookListController$1 : Double clicked on book "Computer Networking: A Top Down Approach"
+10:29:47.145 INFO  misc.BookController : Changing to Detail View
+10:29:47.176 INFO  misc.BookController : View change succesfull
+10:29:49.042 INFO  misc.BookDetailController : Changes saved for "Computer Networking: A Top Down Approach"
+10:29:52.455 INFO  misc.MenuController : Clicked on menu item Book List
+10:29:52.456 INFO  misc.BookController : Changing to List View
+10:29:52.460 INFO  misc.BookController : View change succesfull
+10:29:53.808 INFO  misc.BookListController$1 : Double clicked on book "Catcher in the Rye"
+10:29:53.810 INFO  misc.BookController : Changing to Detail View
+10:29:53.836 INFO  misc.BookController : View change succesfull
+10:29:57.080 INFO  misc.MenuController : Clicked on menu item Book List
+10:29:57.081 INFO  misc.BookController : Changing to List View
+10:29:57.085 INFO  misc.BookController : View change succesfull
+10:29:58.777 INFO  misc.BookListController$1 : Double clicked on book "Where the Wild Things Are"
+10:29:58.778 INFO  misc.BookController : Changing to Detail View
+10:29:58.792 INFO  misc.BookController : View change succesfull
+10:30:00.706 INFO  misc.MenuController : Clicked on menu item Book List
+10:30:00.707 INFO  misc.BookController : Changing to List View
+10:30:00.713 INFO  misc.BookController : View change succesfull
+10:30:01.929 INFO  misc.BookListController$1 : Double clicked on book "Duma Key"
+10:30:01.929 INFO  misc.BookController : Changing to Detail View
+10:30:01.937 INFO  misc.BookController : View change succesfull
+10:30:03.127 INFO  misc.BookDetailController : Changes saved for "Duma Key"
+10:31:03.635 INFO  misc.BookInventory : Starting Book Inventory...
+10:31:03.647 INFO  misc.BookInventory : Calling init
+10:31:06.866 INFO  misc.MenuController : Clicked on menu item Book List
+10:31:06.870 INFO  misc.BookController : Changing to List View
+10:31:06.905 INFO  misc.BookController : View change succesfull
