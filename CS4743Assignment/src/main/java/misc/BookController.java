@@ -19,27 +19,25 @@ import javafx.scene.layout.BorderPane;
 public class BookController {
 	private static BorderPane root;
 	
-	public BookController() {}
-	
-	public static void setRootPane(BorderPane view) {
-		root = view;
+	public BookController() {
+		/** TODO
+		 * Remove later and just pull list of Book objects from database
+		 * */
+		
 	}
 
 	public static boolean changeView(ViewType viewType, Object object) {
 		FXMLLoader loader = null;
-		//load view appropriate to the give vType
 		if(viewType == ViewType.BOOK_LIST) {
-			List<Book> books = new ArrayList<Book>();
-			
+			/* TODO
+			 * Fill with a call to a database to get a list of books.
+			 */
 			loader = new FXMLLoader(BookController.class.getResource("BookListView.fxml"));
 			loader.setController(new BookListController());
 			
 		} else if(viewType == ViewType.BOOK_DETAIL) {
-			//logger.fatal("Car Detail clicked");
-			//load detail view 1 and plug into center part of App border pane
 			loader = new FXMLLoader(BookController.class.getResource("BookDetailView.fxml"));
-
-			loader.setController(new BookDetailController( (Book) object ));
+			loader.setController(new BookDetailController( (Book) object ) );
 		}
 		
 		Parent view = null;
@@ -55,4 +53,7 @@ public class BookController {
 		return true;
 	}
 
+	public static void setRootPane(BorderPane view) {
+		root = view;
+	}
 }

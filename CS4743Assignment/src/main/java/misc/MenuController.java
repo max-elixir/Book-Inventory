@@ -35,9 +35,5 @@ public class MenuController {
 		
 	}
 	
-	//create event handlers and load data from models into fields
-	public void initialize() {
-		logger.error("Controller init called");
-		
-	}
+
 }
