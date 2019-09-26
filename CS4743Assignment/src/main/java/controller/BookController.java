@@ -1,4 +1,6 @@
-package misc;
+package controller;
+
+import model.*;
 
 import java.io.IOException;
 

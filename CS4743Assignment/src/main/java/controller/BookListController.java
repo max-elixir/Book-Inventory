@@ -1,4 +1,4 @@
-package misc;
+package controller;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -11,6 +11,7 @@ import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.scene.control.ListView;
 import javafx.scene.input.MouseEvent;
+import model.ViewType;
 
 public class BookListController {
 	private static Logger logger = LogManager.getLogger();

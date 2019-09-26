@@ -79,3 +79,50 @@
 12:34:25.376 INFO  misc.BookController : View change succesfull
 12:34:30.731 INFO  misc.MenuController : Clicked on menu item Quit
 12:34:30.732 INFO  misc.MenuController : Exiting program
+13:04:19.657 INFO  misc.BookInventory : Starting Book Inventory...
+13:04:19.668 INFO  misc.BookInventory : Calling init
+13:04:23.363 INFO  misc.MenuController : Clicked on menu item Book List
+13:04:23.396 INFO  misc.BookController : Changing to List View
+13:04:23.458 INFO  misc.BookController : View change succesfull
+13:04:26.957 INFO  misc.BookListController$1 : Double clicked on book "Catcher in the Rye"
+13:04:26.981 INFO  misc.BookController : Changing to Detail View
+13:04:27.042 INFO  misc.BookController : View change succesfull
+13:04:29.743 INFO  misc.BookDetailController : Changes saved for "Catcher in the Rye"
+13:04:35.712 INFO  misc.MenuController : Clicked on menu item Book List
+13:04:35.713 INFO  misc.BookController : Changing to List View
+13:04:35.717 INFO  misc.BookController : View change succesfull
+13:04:37.415 INFO  misc.BookListController$1 : Double clicked on book "Computer Networking: A Top Down Approach"
+13:04:37.416 INFO  misc.BookController : Changing to Detail View
+13:04:37.430 INFO  misc.BookController : View change succesfull
+13:04:40.516 INFO  misc.BookDetailController : Changes saved for "Computer Networking: A Top Down Approach"
+13:04:43.730 INFO  misc.MenuController : Clicked on menu item Book List
+13:04:43.731 INFO  misc.BookController : Changing to List View
+13:04:43.737 INFO  misc.BookController : View change succesfull
+13:04:45.797 INFO  misc.MenuController : Clicked on menu item Book List
+13:04:45.798 INFO  misc.BookController : Changing to List View
+13:04:45.803 INFO  misc.BookController : View change succesfull
+13:05:04.652 INFO  misc.MenuController : Clicked on menu item Quit
+13:05:04.653 INFO  misc.MenuController : Exiting program
+13:16:25.213 INFO  misc.BookInventory : Starting Book Inventory...
+13:16:25.220 INFO  misc.BookInventory : Calling init
+13:16:28.109 INFO  controller.MenuController : Clicked on menu item Book List
+13:16:28.114 INFO  controller.BookController : Changing to List View
+13:17:05.110 INFO  misc.BookInventory : Starting Book Inventory...
+13:17:05.117 INFO  misc.BookInventory : Calling init
+13:18:10.399 INFO  misc.BookInventory : Starting Book Inventory...
+13:18:10.411 INFO  misc.BookInventory : Calling init
+13:21:27.208 INFO  misc.BookInventory : Starting Book Inventory...
+13:21:27.214 INFO  misc.BookInventory : Calling init
+13:21:35.692 INFO  misc.BookInventory : Starting Book Inventory...
+13:21:35.709 INFO  misc.BookInventory : Calling init
+13:22:21.544 INFO  misc.BookInventory : Starting Book Inventory...
+13:22:21.556 INFO  misc.BookInventory : Calling init
+13:22:36.244 INFO  misc.BookInventory : Starting Book Inventory...
+13:22:36.258 INFO  misc.BookInventory : Calling init
+13:22:39.123 INFO  controller.MenuController : Clicked on menu item Book List
+13:22:39.128 INFO  controller.BookController : Changing to List View
+13:22:39.163 INFO  controller.BookController : View change succesfull
+13:22:40.970 INFO  controller.BookListController$1 : Double clicked on book "Catcher in the Rye"
+13:22:40.972 INFO  controller.BookController : Changing to Detail View
+13:22:40.989 INFO  controller.BookController : View change succesfull
+13:22:42.609 INFO  controller.BookDetailController : Changes saved for "Catcher in the Rye"

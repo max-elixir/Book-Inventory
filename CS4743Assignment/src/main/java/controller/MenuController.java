@@ -1,4 +1,4 @@
-package misc;
+package controller;
 
 import java.io.IOException;
 import java.util.List;
@@ -12,6 +12,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.control.MenuItem;
+import model.ViewType;
 
 public class MenuController {
 	private static Logger logger = LogManager.getLogger();
