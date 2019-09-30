@@ -1,8 +1,10 @@
 package controller;
 
 import model.*;
+import misc.BookTableGateway;
 
 import java.io.IOException;
+import java.util.List;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -10,30 +12,28 @@ import org.apache.logging.log4j.Logger;
 import javafx.application.Platform;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
-import javafx.scene.control.Alert;
-import javafx.scene.control.ButtonType;
-import javafx.scene.control.Alert.AlertType;
 import javafx.scene.layout.BorderPane;
+
 
 public class BookController {
 	private static BorderPane root;
 	private static Logger logger = LogManager.getLogger();
+	private static BookTableGateway bookGate;
 	
 	public BookController() {	
 	}
 
 	public static boolean changeView(ViewType viewType, Object object) {
 		FXMLLoader loader = null;
+		
 		if(viewType == ViewType.BOOK_LIST) {
-			/* TODO
-			 * Fill with a call to a database to get a list of books.
-			 */
+			List<Book> dbBooks = bookGate.getBooks();
 			loader = new FXMLLoader(BookController.class.getResource("BookListView.fxml"));
-			loader.setController(new BookListController());
+			loader.setController(new BookListController(dbBooks));
 			logger.info("Changing to List View");
 		} else if(viewType == ViewType.BOOK_DETAIL) {
 			loader = new FXMLLoader(BookController.class.getResource("BookDetailView.fxml"));
-			loader.setController(new BookDetailController((String) object));
+			loader.setController(new BookDetailController((Book) object));
 			logger.info("Changing to Detail View");
 		}
 		
@@ -51,5 +51,20 @@ public class BookController {
 
 	public static void setRootPane(BorderPane view) {
 		root = view;
+	}
+
+	public static void initBookTableGateway() {
+		try {
+			bookGate = new BookTableGateway();
+			logger.info("Gateway initiated");
+			//carGateway = new CarTableGatewayRedis();
+		} catch (Exception e) {
+			e.printStackTrace();
+			Platform.exit();
+		}	
+	}
+	
+	public static void close() {
+		bookGate.close();
 	}
 }

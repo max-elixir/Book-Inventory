@@ -11,11 +11,14 @@ import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
+import model.Book;
+import model.BookException;
+import model.GatewayException;
 import javafx.scene.control.Alert.AlertType;
 
 public class BookDetailController {
 	private static Logger logger = LogManager.getLogger();
-	private String book;
+	private Book book;
 	
 	@FXML private TextField tfTitle, tfYear, tfIsbn;
 	@FXML private TextArea taSummary;
@@ -26,30 +29,20 @@ public class BookDetailController {
 	 * 
 	 * @param book
 	 */
-	public BookDetailController(String book) {
+	public BookDetailController(Book book) {
 		this.book = book;
 	}
 	
 	public void initialize() {
-		tfTitle.setText(book);
-		tfYear.setText("1900");
-		tfIsbn.setText("0123456789101112");
+		tfTitle.setText(book.getTitle());
+		tfYear.setText( Integer.toString( book.getYear()) );
+		tfIsbn.setText(book.getISBN());
 		taSummary.setWrapText(true);
-		taSummary.setText("Lorem ipsum dolor sit amet, "
-				+ "consectetur adipiscing elit. Praesent eu mauris quam. "
-				+ "Sed scelerisque leo et placerat hendrerit. "
-				+ "Nunc nec tellus eget tellus luctus congue non sit amet nisi. "
-				+ "Aliquam tempus quam ac lectus interdum cursus. "
-				+ "Vivamus vel ante egestas, dignissim lacus eu, pellentesque nisi. "
-				+ "Cras ut enim accumsan, convallis lacus sed, luctus elit. "
-				+ "Sed viverra vestibulum felis, quis lacinia tortor semper interdum. "
-				+ "In in convallis magna, vitae tristique ligula. "
-				+ "Proin consequat enim nec commodo eleifend. "
-				+ "Aliquam pellentesque nisl non pulvinar tempus.");
+		taSummary.setText(book.getSummary());
 	}
 	
-
-	@FXML public void handleButtonSave(ActionEvent action) throws IOException {
+		@FXML 
+		public void handleButtonSave(ActionEvent action) throws IOException, GatewayException {
 		Object source = action.getSource();
 		if(source == buttonSave) {
 			save();
@@ -58,28 +51,38 @@ public class BookDetailController {
 	
 	/**
 	 * @return true if save is successful, else false
+	 * @throws GatewayException 
 	 */
-	public boolean save() {
+	public boolean save() throws GatewayException {
+		Book original = book;
 		try {
-			//update the model data
-			/** TODO: 
-			 * - should restore original model if save fails
-			 * - Actually read the Book object and actually save it later
-			 */
+			book.setTitle(tfTitle.getText());
+			book.setYear(Integer.parseInt(tfYear.getText()));
+			book.setISBN(tfIsbn.getText());
+			book.setSummary(taSummary.getText());
 			
-			Alert alert = new Alert(AlertType.INFORMATION);
-			alert.setTitle("Changes Saved");
-			alert.setHeaderText(null);
-			alert.setContentText("Changes saved theoretically!");
-			logger.info("Changes saved for \""+ book+"\"");
-			
-			alert.showAndWait();
-		} catch(Exception e) {
+			book.save();
+			showMessage("Changes Saved","Changes to book saved!");
+			logger.info("Changes saved for \""+ book +"\"");
+		} catch(BookException e) {
+			showMessage("Changes Not Saved", e.getMessage());
 			logger.error("Could not save: " + e.getMessage());
-			
+			book.setTitle(original.getTitle());
+			book.setYear(original.getYear());
+			book.setISBN(original.getISBN());
+			book.setSummary(original.getSummary());
 			return false;
 		}
+		
 		return true;
+	}
+	
+	private void showMessage(String title, String message) {
+		Alert alert = new Alert(AlertType.INFORMATION);
+		alert.setTitle(title);
+		alert.setHeaderText(null);
+		alert.setContentText(message);
+		alert.showAndWait();
 	}
 	
 }

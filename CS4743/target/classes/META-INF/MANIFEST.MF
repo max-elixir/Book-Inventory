@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Built-By: maxim
+Build-Jdk: 12.0.2
+Class-Path: libs/log4j-core-2.11.0.jar libs/log4j-api-2.11.0.jar libs/my
+ sql-connector-java-8.0.17.jar libs/protobuf-java-3.6.1.jar libs/jedis-3
+ .1.0.jar libs/slf4j-api-1.7.25.jar libs/commons-pool2-2.6.2.jar
+Main-Class: javafx.Main
+Created-By: Maven Integration for Eclipse
+

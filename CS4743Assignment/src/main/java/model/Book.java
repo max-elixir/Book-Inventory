@@ -1,25 +1,89 @@
 package model;
 
+import misc.BookTableGateway;
+
 public class Book {
 	private String title, summary, ISBN;
-	private int year;
+	private int year, id;
+	private BookTableGateway gateway;
 	
-	public Book(String title, String summary, int year, String ISBN) {
+	public Book(String title, String summary, int year, String ISBN, int id) {
 		setTitle(title);
 		setSummary(summary);
 		setYear(year);
 		setISBN(ISBN);
+		setId(id);
 	}
 	
+	public Book() {
+		setTitle(null);
+		setSummary(null);
+		setYear(-1);
+		setISBN(null);
+		setId(-1);
+	}
+	
+	public void save() throws BookException, GatewayException {
+		if(!isValidTitle(getTitle())) 
+			throw new BookException("Title must be less than 255 characters");
+		
+		if(!isValisYear(getYear()))
+			throw new BookException("Book must be published between 1455 and 2019");
+
+		if(!isValidSummary(getSummary()))
+			throw new BookException("Summary has a maximum of 65536 characters");
+		
+		if(!isValidIsbn(getISBN()))
+			throw new BookException("ISBN must be formated to 13 characters or less");
+		
+		gateway.updateBook(this);
+	}
+	
+	private boolean isValidIsbn(String isbn) {
+		if (isbn.length() > 13) {
+			return false;
+		} else {
+			return true;
+		}
+	}
+
+	private boolean isValidSummary(String summary) {
+		if (summary.length() > 65536) {
+			return false;
+		} else {
+			return true;
+		}
+	}
+
+	private boolean isValisYear(int year) {
+		if (year > 2019 || year < 1455) {
+			return false;
+		} else {
+			return true;
+		}
+	}
+
+	private boolean isValidTitle(String title) {
+		if (title.length() > 255) {
+			return false;
+		} else {
+			return true;
+		}
+	}
+
 	public String toString() {
-		return title + ", Published: " + year + " ISBN: "+ ISBN;	
+		return getTitle();	
+	}
+	
+	public void setGateway(BookTableGateway gate) {
+		gateway = gate;
 	}
 
 	public String getTitle() {
 		return title;
 	}
 
-	private void setTitle(String title) {
+	public void setTitle(String title) {
 		this.title = title;
 	}
 
@@ -27,7 +91,7 @@ public class Book {
 		return summary;
 	}
 
-	private void setSummary(String summary) {
+	public void setSummary(String summary) {
 		this.summary = summary;
 	}
 
@@ -35,7 +99,7 @@ public class Book {
 		return ISBN;
 	}
 
-	private void setISBN(String iSBN) {
+	public void setISBN(String iSBN) {
 		ISBN = iSBN;
 	}
 
@@ -43,8 +107,16 @@ public class Book {
 		return year;
 	}
 
-	private void setYear(int year) {
+	public void setYear(int year) {
 		this.year = year;
+	}
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
 	}
 	
 }

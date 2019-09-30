@@ -1,5 +1,7 @@
 package controller;
 
+import model.*;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -16,33 +18,25 @@ import model.ViewType;
 public class BookListController {
 	private static Logger logger = LogManager.getLogger();
 	
-	@FXML private ListView<String> listBooks;
+	@FXML private ListView<Book> listBooks;
 	
-	private List<String> books;
+	private List<Book> books;
 	
-	/** TODO
-	 * Change to take in the list of book objects
-	 * */
-	public BookListController() {
+	public BookListController(List<Book> books) {
+		this.books = books;
 	}
 		
 	public void initialize() {
-		ObservableList<String> items = listBooks.getItems();
-		books = new ArrayList<String>();
-		books.add("Catcher in the Rye");
-		books.add("Java 9 for Programmers");
-		books.add("Duma Key");
-		books.add("Computer Networking: A Top Down Approach");
-		books.add("Where the Wild Things Are");
+		ObservableList<Book> items = listBooks.getItems();
 		
-		for(String book : books) {
+		for(Book book : books) {
 			items.add(book);
 		}
 		
 		listBooks.setOnMouseClicked(new EventHandler<MouseEvent>() {
             public void handle(MouseEvent click) {
                 if(click.getClickCount() == 2) {
-                	String selected = listBooks.getSelectionModel().getSelectedItem();
+                	Book selected = listBooks.getSelectionModel().getSelectedItem();
                    
                 	logger.info("Double clicked on book \"" + selected + "\"");
                 	

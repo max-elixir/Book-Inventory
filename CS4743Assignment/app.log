@@ -126,3 +126,209 @@
 13:22:40.972 INFO  controller.BookController : Changing to Detail View
 13:22:40.989 INFO  controller.BookController : View change succesfull
 13:22:42.609 INFO  controller.BookDetailController : Changes saved for "Catcher in the Rye"
+14:11:31.783 INFO  misc.BookInventory : Starting Book Inventory...
+14:11:31.791 INFO  misc.BookInventory : Calling init
+14:11:47.796 INFO  controller.MenuController : Clicked on menu item Book List
+14:11:47.801 INFO  controller.BookController : Changing to List View
+14:11:47.848 INFO  controller.BookController : View change succesfull
+17:41:47.070 INFO  misc.BookInventory : Starting Book Inventory...
+17:41:47.074 INFO  misc.BookInventory : Calling init
+17:41:47.077 INFO  controller.BookController : Gateway initiated
+17:41:48.906 INFO  controller.MenuController : Clicked on menu item Book List
+17:41:51.471 INFO  controller.MenuController : Clicked on menu item Book List
+09:47:40.241 INFO  misc.BookInventory : Starting Book Inventory...
+09:47:40.246 INFO  misc.BookInventory : Calling init
+09:47:40.833 INFO  controller.BookController : Gateway initiated
+09:47:43.537 INFO  controller.MenuController : Clicked on menu item Book List
+09:47:43.602 ERROR misc.BookTableGateway : Column 'year' not found.
+09:47:43.603 INFO  controller.BookController : Changing to List View
+09:47:43.612 INFO  controller.BookController : View change succesfull
+09:48:06.616 INFO  controller.MenuController : Clicked on menu item Book List
+09:48:06.654 ERROR misc.BookTableGateway : Column 'year' not found.
+09:48:06.654 INFO  controller.BookController : Changing to List View
+09:48:06.655 INFO  controller.BookController : View change succesfull
+09:49:17.042 INFO  misc.BookInventory : Starting Book Inventory...
+09:49:17.047 INFO  misc.BookInventory : Calling init
+09:49:17.542 INFO  controller.BookController : Gateway initiated
+09:49:19.449 INFO  controller.MenuController : Clicked on menu item Book List
+09:49:19.495 INFO  controller.BookController : Changing to List View
+09:49:19.503 INFO  controller.BookController : View change succesfull
+09:49:24.666 INFO  controller.BookListController$1 : Double clicked on book "Catcher in the Rye, Published: 1951 ISBN: 9788970120676"
+09:49:26.823 INFO  controller.BookListController$1 : Double clicked on book "Java 9 for Programmers, Published: 2017 ISBN: 9780134777641"
+09:49:27.526 INFO  controller.BookListController$1 : Double clicked on book "Duma key, Published: 2008 ISBN: 9783453265851"
+09:49:28.160 INFO  controller.BookListController$1 : Double clicked on book "Computer Networking: A Top Down Approach, Published: 2000 ISBN: 9788871921679"
+09:49:29.083 INFO  controller.BookListController$1 : Double clicked on book "Where the Wild Things Are, Published: 1963 ISBN: 9782211019651"
+09:51:30.535 INFO  misc.BookInventory : Starting Book Inventory...
+09:51:30.539 INFO  misc.BookInventory : Calling init
+09:51:31.128 INFO  controller.BookController : Gateway initiated
+09:51:32.959 INFO  controller.MenuController : Clicked on menu item Book List
+09:51:33.006 INFO  controller.BookController : Changing to List View
+09:51:33.015 INFO  controller.BookController : View change succesfull
+09:55:10.907 INFO  misc.BookInventory : Starting Book Inventory...
+09:55:10.911 INFO  misc.BookInventory : Calling init
+09:55:11.340 INFO  controller.BookController : Gateway initiated
+09:55:13.340 INFO  controller.MenuController : Clicked on menu item Book List
+09:55:13.431 INFO  controller.BookController : Changing to List View
+09:55:13.444 INFO  controller.BookController : View change succesfull
+09:55:15.601 INFO  controller.BookListController$1 : Double clicked on book "Catcher in the Rye"
+09:58:33.443 INFO  misc.BookInventory : Starting Book Inventory...
+09:58:33.447 INFO  misc.BookInventory : Calling init
+09:58:34.277 INFO  controller.BookController : Gateway initiated
+09:58:35.993 INFO  controller.MenuController : Clicked on menu item Book List
+09:58:36.118 INFO  controller.BookController : Changing to List View
+09:58:36.127 INFO  controller.BookController : View change succesfull
+09:58:37.033 INFO  controller.BookListController$1 : Double clicked on book "Where the Wild Things Are"
+09:58:37.034 INFO  controller.BookController : Changing to Detail View
+09:58:37.051 INFO  controller.BookController : View change succesfull
+09:58:49.882 INFO  controller.BookDetailController : Changes saved for "Where the Wild Things Are"
+09:58:53.549 INFO  controller.MenuController : Clicked on menu item Book List
+09:58:53.582 INFO  controller.BookController : Changing to List View
+09:58:53.584 INFO  controller.BookController : View change succesfull
+09:58:55.242 INFO  controller.BookListController$1 : Double clicked on book "Duma key"
+09:58:55.242 INFO  controller.BookController : Changing to Detail View
+09:58:55.246 INFO  controller.BookController : View change succesfull
+09:59:17.063 INFO  controller.BookDetailController : Changes saved for "Duma key"
+09:59:19.586 INFO  controller.MenuController : Clicked on menu item Book List
+09:59:19.618 INFO  controller.BookController : Changing to List View
+09:59:19.619 INFO  controller.BookController : View change succesfull
+09:59:20.736 INFO  controller.BookListController$1 : Double clicked on book "Duma key"
+09:59:20.736 INFO  controller.BookController : Changing to Detail View
+09:59:20.739 INFO  controller.BookController : View change succesfull
+09:59:22.138 INFO  controller.BookDetailController : Changes saved for "Duma key"
+09:59:24.782 INFO  controller.MenuController : Clicked on menu item Book List
+09:59:24.813 INFO  controller.BookController : Changing to List View
+09:59:24.815 INFO  controller.BookController : View change succesfull
+09:59:25.884 INFO  controller.BookListController$1 : Double clicked on book "Computer Networking: A Top Down Approach"
+09:59:25.884 INFO  controller.BookController : Changing to Detail View
+09:59:25.889 INFO  controller.BookController : View change succesfull
+11:28:21.663 INFO  misc.BookInventory : Starting Book Inventory...
+11:28:21.667 INFO  misc.BookInventory : Calling init
+11:28:22.092 INFO  controller.BookController : Gateway initiated
+11:28:23.928 INFO  controller.MenuController : Clicked on menu item Book List
+11:28:23.970 INFO  controller.BookController : Changing to List View
+11:28:23.979 INFO  controller.BookController : View change succesfull
+11:28:25.217 INFO  controller.BookListController$1 : Double clicked on book "Duma key"
+11:28:25.218 INFO  controller.BookController : Changing to Detail View
+11:28:25.228 INFO  controller.BookController : View change succesfull
+11:30:12.149 INFO  controller.MenuController : Clicked on menu item Book List
+11:30:12.184 INFO  controller.BookController : Changing to List View
+11:30:12.185 INFO  controller.BookController : View change succesfull
+11:30:13.325 INFO  controller.BookListController$1 : Double clicked on book "Where the Wild Things Are"
+11:30:13.326 INFO  controller.BookController : Changing to Detail View
+11:30:13.329 INFO  controller.BookController : View change succesfull
+11:30:14.762 INFO  controller.BookDetailController : Changes saved for "Where the Wild Things Are"
+11:30:22.842 INFO  controller.BookDetailController : Changes saved for "Where the Wild Things Are"
+11:30:26.561 INFO  controller.BookDetailController : Changes saved for "Where the Wild Things Are"
+11:30:28.294 INFO  controller.BookDetailController : Changes saved for "Where the Wild Things Are"
+11:30:32.146 INFO  controller.MenuController : Clicked on menu item Book List
+11:30:32.176 INFO  controller.BookController : Changing to List View
+11:30:32.178 INFO  controller.BookController : View change succesfull
+11:30:33.692 INFO  controller.BookListController$1 : Double clicked on book "Where the Wild Things Are"
+11:30:33.692 INFO  controller.BookController : Changing to Detail View
+11:30:33.695 INFO  controller.BookController : View change succesfull
+18:20:50.098 INFO  misc.BookInventory : Starting Book Inventory...
+18:20:50.107 INFO  misc.BookInventory : Calling init
+18:20:50.380 INFO  controller.BookController : Gateway initiated
+18:20:53.606 INFO  controller.MenuController : Clicked on menu item Book List
+18:20:53.696 INFO  controller.BookController : Changing to List View
+18:20:53.742 INFO  controller.BookController : View change succesfull
+18:20:55.291 INFO  controller.BookListController$1 : Double clicked on book "Duma key"
+18:20:55.294 INFO  controller.BookController : Changing to Detail View
+18:20:55.425 INFO  controller.BookController : View change succesfull
+18:21:00.008 INFO  controller.BookDetailController : Changes saved for "Duma key"
+18:21:03.063 INFO  controller.MenuController : Clicked on menu item Book List
+18:21:03.093 INFO  controller.BookController : Changing to List View
+18:21:03.098 INFO  controller.BookController : View change succesfull
+18:21:04.507 INFO  controller.BookListController$1 : Double clicked on book "Where the Wild Things Are"
+18:21:04.508 INFO  controller.BookController : Changing to Detail View
+18:21:04.517 INFO  controller.BookController : View change succesfull
+18:21:12.804 INFO  controller.BookDetailController : Changes saved for "Where the Wild Things Are"
+18:30:44.187 INFO  misc.BookInventory : Starting Book Inventory...
+18:30:44.203 INFO  misc.BookInventory : Calling init
+18:30:44.471 INFO  controller.BookController : Gateway initiated
+18:30:47.097 INFO  controller.MenuController : Clicked on menu item Book List
+18:30:47.178 INFO  controller.BookController : Changing to List View
+18:30:47.212 INFO  controller.BookController : View change succesfull
+18:30:48.232 INFO  controller.BookListController$1 : Double clicked on book "Where the Wild Things Are"
+18:30:48.236 INFO  controller.BookController : Changing to Detail View
+18:30:48.281 INFO  controller.BookController : View change succesfull
+18:31:14.335 INFO  misc.BookInventory : Starting Book Inventory...
+18:31:14.342 INFO  misc.BookInventory : Calling init
+18:31:14.569 INFO  controller.BookController : Gateway initiated
+18:31:17.264 INFO  controller.MenuController : Clicked on menu item Book List
+18:31:17.341 INFO  controller.BookController : Changing to List View
+18:31:17.373 INFO  controller.BookController : View change succesfull
+18:31:18.503 INFO  controller.BookListController$1 : Double clicked on book "Where the Wild Things Are"
+18:31:18.505 INFO  controller.BookController : Changing to Detail View
+18:31:18.547 INFO  controller.BookController : View change succesfull
+18:31:21.857 INFO  controller.BookDetailController : Changes saved for "Where the Wild Things Are"
+18:31:34.857 INFO  controller.BookDetailController : Changes saved for "Where the Wild Things Are"
+18:31:36.971 INFO  controller.MenuController : Clicked on menu item Book List
+18:31:36.981 INFO  controller.BookController : Changing to List View
+18:31:36.986 INFO  controller.BookController : View change succesfull
+18:31:38.244 INFO  controller.BookListController$1 : Double clicked on book "Where the Wild Things Are"
+18:31:38.245 INFO  controller.BookController : Changing to Detail View
+18:31:38.259 INFO  controller.BookController : View change succesfull
+18:31:41.503 INFO  controller.MenuController : Clicked on menu item Book List
+18:31:41.511 INFO  controller.BookController : Changing to List View
+18:31:41.514 INFO  controller.BookController : View change succesfull
+18:31:42.572 INFO  controller.BookListController$1 : Double clicked on book "Duma key"
+18:31:42.573 INFO  controller.BookController : Changing to Detail View
+18:31:42.585 INFO  controller.BookController : View change succesfull
+18:31:51.608 INFO  controller.BookDetailController : Changes saved for "Duma key"
+18:31:53.067 INFO  controller.MenuController : Clicked on menu item Book List
+18:31:53.081 INFO  controller.BookController : Changing to List View
+18:31:53.088 INFO  controller.BookController : View change succesfull
+18:31:54.005 INFO  controller.BookListController$1 : Double clicked on book "Java 9 for Programmers"
+18:31:54.007 INFO  controller.BookController : Changing to Detail View
+18:31:54.020 INFO  controller.BookController : View change succesfull
+18:31:55.837 INFO  controller.MenuController : Clicked on menu item Book List
+18:31:55.846 INFO  controller.BookController : Changing to List View
+18:31:55.850 INFO  controller.BookController : View change succesfull
+18:31:56.927 INFO  controller.BookListController$1 : Double clicked on book "Duma key"
+18:31:56.928 INFO  controller.BookController : Changing to Detail View
+18:31:56.938 INFO  controller.BookController : View change succesfull
+18:32:06.182 INFO  controller.BookDetailController : Changes saved for "Duma key"
+18:32:07.867 INFO  controller.MenuController : Clicked on menu item Book List
+18:32:07.876 INFO  controller.BookController : Changing to List View
+18:32:07.881 INFO  controller.BookController : View change succesfull
+18:32:08.706 INFO  controller.BookListController$1 : Double clicked on book "Computer Networking: A Top Down Approach"
+18:32:08.707 INFO  controller.BookController : Changing to Detail View
+18:32:08.718 INFO  controller.BookController : View change succesfull
+18:32:10.682 INFO  controller.MenuController : Clicked on menu item Book List
+18:32:10.691 INFO  controller.BookController : Changing to List View
+18:32:10.696 INFO  controller.BookController : View change succesfull
+18:32:12.148 INFO  controller.BookListController$1 : Double clicked on book "Duma key"
+18:32:12.149 INFO  controller.BookController : Changing to Detail View
+18:32:12.158 INFO  controller.BookController : View change succesfull
+18:32:21.498 INFO  controller.BookDetailController : Changes saved for "Duma key"
+18:32:26.250 INFO  controller.BookDetailController : Changes saved for "Duma key"
+18:32:28.113 INFO  controller.MenuController : Clicked on menu item Quit
+18:32:28.114 INFO  controller.MenuController : Exiting program
+18:32:31.669 INFO  misc.BookInventory : Starting Book Inventory...
+18:32:31.675 INFO  misc.BookInventory : Calling init
+18:32:31.971 INFO  controller.BookController : Gateway initiated
+18:32:34.195 INFO  controller.MenuController : Clicked on menu item Book List
+18:32:34.271 INFO  controller.BookController : Changing to List View
+18:32:34.302 INFO  controller.BookController : View change succesfull
+18:32:35.914 INFO  controller.BookListController$1 : Double clicked on book "Duma key"
+18:32:35.917 INFO  controller.BookController : Changing to Detail View
+18:32:35.957 INFO  controller.BookController : View change succesfull
+18:32:42.789 INFO  controller.BookDetailController : Changes saved for "Duma key"
+18:33:00.297 INFO  misc.BookInventory : Starting Book Inventory...
+18:33:00.309 INFO  misc.BookInventory : Calling init
+18:33:00.620 INFO  controller.BookController : Gateway initiated
+18:33:02.877 INFO  controller.MenuController : Clicked on menu item Book List
+18:33:02.941 INFO  controller.BookController : Changing to List View
+18:33:02.953 INFO  controller.BookController : View change succesfull
+18:33:04.307 INFO  controller.BookListController$1 : Double clicked on book "Duma key"
+18:33:04.310 INFO  controller.BookController : Changing to Detail View
+18:33:04.353 INFO  controller.BookController : View change succesfull
+18:33:13.666 ERROR model.BookException : ISBN must be formated to 13 characters or less
+18:33:20.182 ERROR controller.BookDetailController : Could not save: null
+18:33:26.364 INFO  controller.MenuController : Clicked on menu item Book List
+18:33:26.374 INFO  controller.BookController : Changing to List View
+18:33:26.379 INFO  controller.BookController : View change succesfull
+18:33:27.885 INFO  controller.BookListController$1 : Double clicked on book "Duma key"
+18:33:27.887 INFO  controller.BookController : Changing to Detail View
+18:33:27.900 INFO  controller.BookController : View change succesfull

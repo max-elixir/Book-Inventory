@@ -44,6 +44,7 @@ public class BookInventory extends Application{
 	public void init() throws Exception {
 		super.init();
 		logger.info("Calling init");
+		BookController.initBookTableGateway();
 	}
 
 }
