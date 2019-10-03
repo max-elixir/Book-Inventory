@@ -36,7 +36,19 @@ public class Book {
 		if(!isValidIsbn(getISBN()))
 			throw new BookException("ISBN must be formated to 13 characters or less");
 		
-		gateway.updateBook(this);
+		try {
+			if(getId() == -1) {
+				id = gateway.insertBook(this);
+			} else {
+				gateway.updateBook(this);
+			}
+		} catch (GatewayException e) {
+			throw new BookException("Unable to save valid book to database: " 
+					+ e.getMessage());
+		} catch (Exception e) {
+			System.out.println(e.getMessage());
+			e.printStackTrace();
+		}
 	}
 	
 	private boolean isValidIsbn(String isbn) {

@@ -8,8 +8,7 @@ public class BookException extends Exception {
 	protected static Logger logger = LogManager.getLogger();
 
 	public BookException(String string) {
-		// TODO Auto-generated constructor stub
-		super();
+		super(string);
 		logger.error(string);
 	}
 

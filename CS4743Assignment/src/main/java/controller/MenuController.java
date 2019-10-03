@@ -17,7 +17,7 @@ import model.ViewType;
 public class MenuController {
 	private static Logger logger = LogManager.getLogger();
 	
-	@FXML private MenuItem menuQuit, menuBookList;
+	@FXML private MenuItem menuQuit, menuBookList, menuBookAdd;
 	
 	public MenuController() {
 		
@@ -35,6 +35,12 @@ public class MenuController {
 			BookController.changeView(ViewType.BOOK_LIST, null);
 			return;
 		}
+		if (source == menuBookAdd) {
+			logger.info("Clicked on menu item Add Book");
+			BookController.changeView(ViewType.BOOK_DETAIL, null);
+			return;
+		}
+	
 		
 	}
 	

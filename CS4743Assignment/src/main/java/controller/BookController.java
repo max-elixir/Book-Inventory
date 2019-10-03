@@ -33,6 +33,11 @@ public class BookController {
 			logger.info("Changing to List View");
 		} else if(viewType == ViewType.BOOK_DETAIL) {
 			loader = new FXMLLoader(BookController.class.getResource("BookDetailView.fxml"));
+			if(object == null) {
+				Book newBookObject = new Book();
+				newBookObject.setGateway(bookGate);
+				object = newBookObject;
+			}
 			loader.setController(new BookDetailController((Book) object));
 			logger.info("Changing to Detail View");
 		}

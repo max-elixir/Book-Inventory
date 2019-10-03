@@ -88,14 +88,14 @@ public class BookTableGateway {
 					+ " , isbn = ? "
 					+ " , summary = ? "
 					+ " where id = ?");
-				st.setString(1, book.getTitle());
-				st.setInt(2, book.getYear());
-				st.setString(3, book.getISBN());
-				st.setString(4, book.getSummary());
-				st.setInt(5, book.getId());
-				st.executeUpdate();
+			st.setString(1, book.getTitle());
+			st.setInt(2, book.getYear());
+			st.setString(3, book.getISBN());
+			st.setString(4, book.getSummary());
+			st.setInt(5, book.getId());
+			st.executeUpdate();
 				
-				conn.commit();
+			conn.commit();
 		} catch(SQLException e){
 			try {
 				conn.rollback();
@@ -104,6 +104,72 @@ public class BookTableGateway {
 			}
 
 			throw new GatewayException(e);
+		} finally {
+			try {
+				if(st != null)
+					st.close();
+				
+				conn.setAutoCommit(true);
+				
+			} catch (SQLException e) {
+				throw new GatewayException("SQL Error: " + e.getMessage());
+			}
+		}
+	}
+	
+	public int insertBook(Book book) throws GatewayException, BookException {
+		logger.info("Inserting new book into database");
+		PreparedStatement st = null, st2 = null;
+		ResultSet rs = null;
+		int idReturn = 0;
+		
+		try {
+			conn.setAutoCommit(false);
+			st = conn.prepareStatement("insert into Books "
+					+ " (title, summary, year_published, isbn) "
+					+ "values"
+					+ "(?, ?, ?, ?)");
+			st.setString(1, book.getTitle());
+			st.setString(2, book.getSummary());
+			st.setInt(3, book.getYear());
+			st.setString(4, book.getISBN());
+			st.executeUpdate();
+			conn.commit();
+			
+			st2 = conn.prepareStatement("SELECT * FROM Books b WHERE b.title = ?");
+			st2.setString(1, book.getTitle());
+			rs = st2.executeQuery();
+			conn.commit();
+			
+			while(rs.next()) {
+				idReturn = rs.getInt("id");
+			} 
+		} catch(SQLException e){
+			try {
+				conn.rollback();
+			} catch (SQLException e1) {
+				e1.printStackTrace();
+			}
+
+			throw new GatewayException(e);
+		} finally {
+			try {
+				if(st != null) 
+					st.close();
+				
+				if(st2 != null) 
+					st2.close();
+				
+				conn.setAutoCommit(true);
+				
+			} catch (SQLException e) {
+				throw new GatewayException("SQL Error: " + e.getMessage());
+			}
+		}
+		if(idReturn > 0) {
+			return idReturn;
+		} else {
+			throw new BookException("Couldnt find ID by an SQL error");
 		}
 	}
 	
@@ -116,5 +182,7 @@ public class BookTableGateway {
 			}
 		}
 	}
+
+	
 
 }

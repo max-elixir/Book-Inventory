@@ -1,12 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.Button?>
 <?import javafx.scene.control.ListView?>
-<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
 
 
-<HBox prefHeight="500.0" prefWidth="400.0" 
-	xmlns="http://javafx.com/javafx/8.0.221" xmlns:fx="http://javafx.com/fxml/1">
+<VBox prefHeight="500.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8.0.221" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <ListView fx:id="listBooks" prefHeight="500.0" prefWidth="400.0" />
+      <ListView fx:id="listBooks" prefHeight="460.0" prefWidth="400.0" />
+      <SplitPane dividerPositions="0.4321608040201005" prefHeight="39.0" prefWidth="400.0">
+         <items>
+          <Button fx:id="buttonDelete" minHeight="18.0" mnemonicParsing="false" onAction="#handleButtonDelete" prefHeight="31.0" prefWidth="207.0" text="Delete" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Select an item to delete" wrappingWidth="167.60807418823242" />
+         </items>
+      </SplitPane>
    </children>
-</HBox>
+</VBox>

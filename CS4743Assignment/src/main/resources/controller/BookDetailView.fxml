@@ -12,8 +12,8 @@
       <Text layoutX="81.0" layoutY="123.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Summary" wrappingWidth="69.98307228088379" />
       <Text layoutX="81.0" layoutY="316.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Year Published" wrappingWidth="69.98307228088379" />
       <Text layoutX="81.0" layoutY="282.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ISBN" wrappingWidth="69.98307228088379" />
-      <TextArea fx:id="taSummary" layoutX="175.0" layoutY="117.0" prefHeight="125.0" prefWidth="177.0" text="Lorem ipsum" />
       <TextField fx:id="tfTitle" layoutX="175.0" layoutY="77.0" />
+      <TextArea fx:id="taSummary" layoutX="175.0" layoutY="117.0" prefHeight="125.0" prefWidth="177.0" text="Lorem ipsum" />
       <TextField fx:id="tfIsbn" layoutX="175.0" layoutY="264.0" />
       <TextField fx:id="tfYear" layoutX="175.0" layoutY="306.0" />
       <Button fx:id="buttonSave" layoutX="175.0" layoutY="343.0" mnemonicParsing="false" onAction="#handleButtonSave" text="Save" />

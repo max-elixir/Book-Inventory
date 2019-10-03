@@ -10,14 +10,14 @@
 <?import javafx.scene.text.Text?>
 
 <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="400.0" 
-	xmlns="http://javafx.com/javafx/8.0.221" 
-	xmlns:fx="http://javafx.com/fxml/1">
+xmlns="http://javafx.com/javafx/8.0.221" xmlns:fx="http://javafx.com/fxml/1">
    <top>
       <MenuBar BorderPane.alignment="CENTER">
         <menus>
           <Menu mnemonicParsing="false" text="File">
             <items>
               <MenuItem fx:id="menuBookList" mnemonicParsing="false" onAction="#handleMenuAction" text="Book List" />
+                  <MenuItem fx:id="menuBookAdd" mnemonicParsing="false" onAction="#handleMenuAction" text="Add Book" />
               <MenuItem fx:id="menuQuit" mnemonicParsing="false" onAction="#handleMenuAction" text="Quit" />
             </items>
           </Menu>

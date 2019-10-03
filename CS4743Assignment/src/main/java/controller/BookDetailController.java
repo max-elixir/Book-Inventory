@@ -41,8 +41,8 @@ public class BookDetailController {
 		taSummary.setText(book.getSummary());
 	}
 	
-		@FXML 
-		public void handleButtonSave(ActionEvent action) throws IOException, GatewayException {
+	@FXML 
+	public void handleButtonSave(ActionEvent action) throws IOException, GatewayException {
 		Object source = action.getSource();
 		if(source == buttonSave) {
 			save();
@@ -72,7 +72,7 @@ public class BookDetailController {
 			book.setISBN(original.getISBN());
 			book.setSummary(original.getSummary());
 			return false;
-		}
+		} 
 		
 		return true;
 	}
