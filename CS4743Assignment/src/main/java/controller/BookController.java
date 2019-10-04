@@ -14,7 +14,6 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.layout.BorderPane;
 
-
 public class BookController {
 	private static BorderPane root;
 	private static Logger logger = LogManager.getLogger();
@@ -28,8 +27,10 @@ public class BookController {
 		
 		if(viewType == ViewType.BOOK_LIST) {
 			List<Book> dbBooks = bookGate.getBooks();
+			
 			loader = new FXMLLoader(BookController.class.getResource("BookListView.fxml"));
 			loader.setController(new BookListController(dbBooks));
+			
 			logger.info("Changing to List View");
 		} else if(viewType == ViewType.BOOK_DETAIL) {
 			loader = new FXMLLoader(BookController.class.getResource("BookDetailView.fxml"));
@@ -39,15 +40,17 @@ public class BookController {
 				object = newBookObject;
 			}
 			loader.setController(new BookDetailController((Book) object));
+			
 			logger.info("Changing to Detail View");
 		}
 		
 		Parent view = null;
 		try {
 			view = loader.load();
-			logger.info("View change succesfull");
+			logger.info("View change successful");
 		} catch (IOException e) {
 			logger.error(e.getMessage());
+			return false;
 		}
 		
 		root.setCenter(view);		
@@ -64,6 +67,7 @@ public class BookController {
 			logger.info("Gateway initiated");
 			//carGateway = new CarTableGatewayRedis();
 		} catch (Exception e) {
+			logger.error(e.getMessage());
 			e.printStackTrace();
 			Platform.exit();
 		}	

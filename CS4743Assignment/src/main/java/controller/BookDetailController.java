@@ -11,6 +11,9 @@ import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
+import javafx.scene.image.Image;
+import javafx.stage.Stage;
+import misc.BookInventory;
 import model.Book;
 import model.BookException;
 import model.GatewayException;
@@ -45,36 +48,57 @@ public class BookDetailController {
 	public void handleButtonSave(ActionEvent action) throws IOException, GatewayException {
 		Object source = action.getSource();
 		if(source == buttonSave) {
-			save();
+			logger.info("Attempting to save.");
+			save();	
 		}
 	}
 	
 	/**
-	 * @return true if save is successful, else false
+	 * @return Ask book to try to save itself to database, determine if it was able to.
 	 * @throws GatewayException 
 	 */
-	public boolean save() throws GatewayException {
+	public void save() throws GatewayException {
 		Book original = book;
+		int originalId = book.getId();
 		try {
 			book.setTitle(tfTitle.getText());
-			book.setYear(Integer.parseInt(tfYear.getText()));
 			book.setISBN(tfIsbn.getText());
 			book.setSummary(taSummary.getText());
 			
+			try {
+				book.setYear(Integer.parseInt(tfYear.getText()));
+			} catch (NumberFormatException e) {
+				throw new BookException("Please enter a valid year between 1455 and 2019");
+			}
+			
 			book.save();
-			showMessage("Changes Saved","Changes to book saved!");
-			logger.info("Changes saved for \""+ book +"\"");
+			if (originalId != -1) {
+				showMessage("Changes Saved","Changes to book "+book+" saved!");
+				logger.info("Changes saved for \""+ book +"\"");
+			} else {
+				showMessage("Creation Saved","Creation of book \""+book+"\" saved!");			
+				logger.info("Creation saved for \""+ book +"\"");
+			}
 		} catch(BookException e) {
-			showMessage("Changes Not Saved", e.getMessage());
-			logger.error("Could not save: " + e.getMessage());
+			if (originalId != -1){
+				showMessage("Changes Not Saved","Changes to \""+book+"\" not saved: "
+						+ e.getMessage());
+				logger.error("Changes not saved for \""+ book +"\": "
+						+ e.getMessage());
+			} else {
+				showMessage("Creation Not Saved","Creation of \""+book+"\" not saved.: "
+						+ e.getMessage());
+				logger.error("Creation not saved for \""+ book +"\": "
+						+ e.getMessage());
+			}
+			
 			book.setTitle(original.getTitle());
 			book.setYear(original.getYear());
 			book.setISBN(original.getISBN());
 			book.setSummary(original.getSummary());
-			return false;
 		} 
 		
-		return true;
+		return;
 	}
 	
 	private void showMessage(String title, String message) {
@@ -82,6 +106,9 @@ public class BookDetailController {
 		alert.setTitle(title);
 		alert.setHeaderText(null);
 		alert.setContentText(message);
+		Stage stage = (Stage) alert.getDialogPane().getScene().getWindow();
+	    stage.getIcons().add(new Image(BookInventory.class.getResourceAsStream("../thebaby.jpg")));
+		
 		alert.showAndWait();
 	}
 	

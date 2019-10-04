@@ -87,6 +87,10 @@ public class Book {
 		return getTitle();	
 	}
 	
+	public BookTableGateway getGateway() {
+		return gateway;
+	}
+	
 	public void setGateway(BookTableGateway gate) {
 		gateway = gate;
 	}

@@ -1,7 +1,8 @@
 package controller;
 
+import model.ViewType;
+
 import java.io.IOException;
-import java.util.List;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -9,18 +10,14 @@ import org.apache.logging.log4j.Logger;
 import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Parent;
 import javafx.scene.control.MenuItem;
-import model.ViewType;
 
 public class MenuController {
 	private static Logger logger = LogManager.getLogger();
 	
-	@FXML private MenuItem menuQuit, menuBookList, menuBookAdd;
+	@FXML private MenuItem menuQuit, menuBookList, menuBookAdd, menuAbout;
 	
 	public MenuController() {
-		
 	}
 	
 	@FXML private void handleMenuAction(ActionEvent action) throws IOException {
@@ -40,9 +37,6 @@ public class MenuController {
 			BookController.changeView(ViewType.BOOK_DETAIL, null);
 			return;
 		}
-	
 		
 	}
-	
-
 }

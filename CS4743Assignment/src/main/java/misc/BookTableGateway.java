@@ -44,81 +44,8 @@ public class BookTableGateway {
 		}
 	}
 	
-	public List<Book> getBooks() {
-		List<Book> books = new ArrayList<Book>();
-		PreparedStatement st = null;
-		ResultSet rs = null;
-		
-		try {
-			st = conn.prepareStatement("select a.id, a.title, "
-					+ "a.year_published, a.summary, a.isbn "
-					+ "from Books a order by a.id ");
-			rs = st.executeQuery();
-			
-			while (rs.next()) {
-				Book dbBook = new Book(rs.getString("title"), 
-						rs.getString("summary"), rs.getInt("year_published"), 
-						rs.getString("isbn"), rs.getInt("id"));
-				dbBook.setGateway(this);
-				books.add(dbBook);
-			}
-		} catch (SQLException e) {
-			logger.error(e.getMessage());
-		} finally {
-			try {
-				if(rs != null)
-					rs.close();
-				if(st != null)
-					st.close();
-			} catch (SQLException e) {
-				logger.error(e.getMessage());
-			}
-		}
-		
-		return books;
-	}
-
-	public void updateBook(Book book) throws GatewayException {
-		PreparedStatement st = null;
-		try {
-			conn.setAutoCommit(false);
-			st = conn.prepareStatement("update Books "
-					+ " set title = ? "
-					+ " , year_published = ? "
-					+ " , isbn = ? "
-					+ " , summary = ? "
-					+ " where id = ?");
-			st.setString(1, book.getTitle());
-			st.setInt(2, book.getYear());
-			st.setString(3, book.getISBN());
-			st.setString(4, book.getSummary());
-			st.setInt(5, book.getId());
-			st.executeUpdate();
-				
-			conn.commit();
-		} catch(SQLException e){
-			try {
-				conn.rollback();
-			} catch (SQLException e1) {
-				e1.printStackTrace();
-			}
-
-			throw new GatewayException(e);
-		} finally {
-			try {
-				if(st != null)
-					st.close();
-				
-				conn.setAutoCommit(true);
-				
-			} catch (SQLException e) {
-				throw new GatewayException("SQL Error: " + e.getMessage());
-			}
-		}
-	}
-	
 	public int insertBook(Book book) throws GatewayException, BookException {
-		logger.info("Inserting new book into database");
+		logger.info("Inserting new book "+book+" into database");
 		PreparedStatement st = null, st2 = null;
 		ResultSet rs = null;
 		int idReturn = 0;
@@ -161,7 +88,6 @@ public class BookTableGateway {
 					st2.close();
 				
 				conn.setAutoCommit(true);
-				
 			} catch (SQLException e) {
 				throw new GatewayException("SQL Error: " + e.getMessage());
 			}
@@ -173,7 +99,112 @@ public class BookTableGateway {
 		}
 	}
 	
+	public List<Book> getBooks() {
+		logger.info("Getting books from database");
+		List<Book> books = new ArrayList<Book>();
+		PreparedStatement st = null;
+		ResultSet rs = null;
+		
+		try {
+			st = conn.prepareStatement("select a.id, a.title, "
+					+ "a.year_published, a.summary, a.isbn "
+					+ "from Books a order by a.id ");
+			rs = st.executeQuery();
+			
+			while (rs.next()) {
+				Book dbBook = new Book(rs.getString("title"), 
+						rs.getString("summary"), rs.getInt("year_published"), 
+						rs.getString("isbn"), rs.getInt("id"));
+				dbBook.setGateway(this);
+				books.add(dbBook);
+			}
+		} catch (SQLException e) {
+			logger.error(e.getMessage());
+		} finally {
+			try {
+				if(rs != null)
+					rs.close();
+				if(st != null)
+					st.close();
+			} catch (SQLException e) {
+				logger.error(e.getMessage());
+			}
+		}
+		
+		return books;
+	}
+
+	public void updateBook(Book book) throws GatewayException {
+		logger.info("Updating book "+ book +" in database");
+		PreparedStatement st = null;
+		try {
+			conn.setAutoCommit(false);
+			st = conn.prepareStatement("update Books "
+					+ " set title = ? "
+					+ " , year_published = ? "
+					+ " , isbn = ? "
+					+ " , summary = ? "
+					+ " where id = ?");
+			st.setString(1, book.getTitle());
+			st.setInt(2, book.getYear());
+			st.setString(3, book.getISBN());
+			st.setString(4, book.getSummary());
+			st.setInt(5, book.getId());
+			st.executeUpdate();
+				
+			conn.commit();
+		} catch(SQLException e){
+			try {
+				conn.rollback();
+			} catch (SQLException e1) {
+				logger.error(e1.getMessage());
+				e1.printStackTrace();
+			}
+
+			throw new GatewayException(e);
+		} finally {
+			try {
+				if(st != null)
+					st.close();
+				
+				conn.setAutoCommit(true);
+				
+			} catch (SQLException e) {
+				throw new GatewayException("SQL Error: " + e.getMessage());
+			}
+		}
+	}
+	
+	public void deleteBook(Book book) throws GatewayException {
+		PreparedStatement st = null;
+		try {
+			conn.setAutoCommit(false);
+			st = conn.prepareStatement("Delete from Books where id = ?");
+			st.setInt(1, book.getId());
+			st.executeUpdate();
+				
+			conn.commit();
+		} catch(SQLException e){
+			try {
+				conn.rollback();
+			} catch (SQLException e1) {
+				logger.error(e1.getMessage());
+				e1.printStackTrace();
+			}
+			throw new GatewayException(e);
+		} finally {
+			try {
+				if(st != null)
+					st.close();
+				conn.setAutoCommit(true);
+			} catch (SQLException e) {
+				throw new GatewayException("SQL Error: " + e.getMessage());
+			}
+		}
+	}
+	
 	public void close() {
+		logger.info("Closing the gate");
 		if(conn != null) {
 			try {
 				conn.close();

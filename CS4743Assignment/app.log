@@ -1,1004 +1,159 @@
-10:20:22.121 INFO  misc.BookInventory : Starting Book Inventory...
-10:20:22.134 INFO  misc.BookInventory : Calling init
-10:20:25.095 INFO  misc.MenuController : Clicked on menu item Book List
-10:20:25.100 INFO  misc.BookController : Changing to List View
-10:20:25.136 INFO  misc.BookController : View change succesfull
-10:20:26.008 INFO  misc.BookListController$1 : Double clicked on book "Java 9 for Programmers"
-10:20:26.011 INFO  misc.BookController : Changing to Detail View
-10:20:26.054 INFO  misc.BookController : View change succesfull
-10:20:27.545 INFO  misc.BookDetailController : Changes saved for "Java 9 for Programmers"
-10:20:30.828 INFO  misc.MenuController : Clicked on menu item Book List
-10:20:30.829 INFO  misc.BookController : Changing to List View
-10:20:30.836 INFO  misc.BookController : View change succesfull
-10:20:32.010 INFO  misc.BookListController$1 : Double clicked on book "Where the Wild Things Are"
-10:20:32.011 INFO  misc.BookController : Changing to Detail View
-10:20:32.020 INFO  misc.BookController : View change succesfull
-10:20:33.772 INFO  misc.BookDetailController : Changes saved for "Where the Wild Things Are"
-10:20:37.119 INFO  misc.MenuController : Clicked on menu item Book List
-10:20:37.120 INFO  misc.BookController : Changing to List View
-10:20:37.125 INFO  misc.BookController : View change succesfull
-10:20:38.535 INFO  misc.MenuController : Clicked on menu item Book List
-10:20:38.537 INFO  misc.BookController : Changing to List View
-10:20:38.541 INFO  misc.BookController : View change succesfull
-10:20:40.028 INFO  misc.MenuController : Clicked on menu item Book List
-10:20:40.030 INFO  misc.BookController : Changing to List View
-10:20:40.036 INFO  misc.BookController : View change succesfull
-10:20:41.736 INFO  misc.MenuController : Clicked on menu item Quit
-10:20:41.737 INFO  misc.MenuController : Exiting program
-10:29:42.683 INFO  misc.BookInventory : Starting Book Inventory...
-10:29:42.691 INFO  misc.BookInventory : Calling init
-10:29:45.618 INFO  misc.MenuController : Clicked on menu item Book List
-10:29:45.623 INFO  misc.BookController : Changing to List View
-10:29:45.660 INFO  misc.BookController : View change succesfull
-10:29:47.142 INFO  misc.BookListController$1 : Double clicked on book "Computer Networking: A Top Down Approach"
-10:29:47.145 INFO  misc.BookController : Changing to Detail View
-10:29:47.176 INFO  misc.BookController : View change succesfull
-10:29:49.042 INFO  misc.BookDetailController : Changes saved for "Computer Networking: A Top Down Approach"
-10:29:52.455 INFO  misc.MenuController : Clicked on menu item Book List
-10:29:52.456 INFO  misc.BookController : Changing to List View
-10:29:52.460 INFO  misc.BookController : View change succesfull
-10:29:53.808 INFO  misc.BookListController$1 : Double clicked on book "Catcher in the Rye"
-10:29:53.810 INFO  misc.BookController : Changing to Detail View
-10:29:53.836 INFO  misc.BookController : View change succesfull
-10:29:57.080 INFO  misc.MenuController : Clicked on menu item Book List
-10:29:57.081 INFO  misc.BookController : Changing to List View
-10:29:57.085 INFO  misc.BookController : View change succesfull
-10:29:58.777 INFO  misc.BookListController$1 : Double clicked on book "Where the Wild Things Are"
-10:29:58.778 INFO  misc.BookController : Changing to Detail View
-10:29:58.792 INFO  misc.BookController : View change succesfull
-10:30:00.706 INFO  misc.MenuController : Clicked on menu item Book List
-10:30:00.707 INFO  misc.BookController : Changing to List View
-10:30:00.713 INFO  misc.BookController : View change succesfull
-10:30:01.929 INFO  misc.BookListController$1 : Double clicked on book "Duma Key"
-10:30:01.929 INFO  misc.BookController : Changing to Detail View
-10:30:01.937 INFO  misc.BookController : View change succesfull
-10:30:03.127 INFO  misc.BookDetailController : Changes saved for "Duma Key"
-10:31:03.635 INFO  misc.BookInventory : Starting Book Inventory...
-10:31:03.647 INFO  misc.BookInventory : Calling init
-10:31:06.866 INFO  misc.MenuController : Clicked on menu item Book List
-10:31:06.870 INFO  misc.BookController : Changing to List View
-10:31:06.905 INFO  misc.BookController : View change succesfull
-11:09:00.701 INFO  misc.BookInventory : Starting Book Inventory...
-11:09:00.708 INFO  misc.BookInventory : Calling init
-12:34:07.230 INFO  misc.BookInventory : Starting Book Inventory...
-12:34:07.239 INFO  misc.BookInventory : Calling init
-12:34:09.900 INFO  misc.MenuController : Clicked on menu item Book List
-12:34:09.905 INFO  misc.BookController : Changing to List View
-12:34:09.940 INFO  misc.BookController : View change succesfull
-12:34:10.886 INFO  misc.BookListController$1 : Double clicked on book "Computer Networking: A Top Down Approach"
-12:34:10.890 INFO  misc.BookController : Changing to Detail View
-12:34:10.932 INFO  misc.BookController : View change succesfull
-12:34:11.987 INFO  misc.BookDetailController : Changes saved for "Computer Networking: A Top Down Approach"
-12:34:15.316 INFO  misc.BookDetailController : Changes saved for "Computer Networking: A Top Down Approach"
-12:34:20.772 INFO  misc.BookDetailController : Changes saved for "Computer Networking: A Top Down Approach"
-12:34:24.070 INFO  misc.MenuController : Clicked on menu item Book List
-12:34:24.071 INFO  misc.BookController : Changing to List View
-12:34:24.076 INFO  misc.BookController : View change succesfull
-12:34:25.347 INFO  misc.BookListController$1 : Double clicked on book "Computer Networking: A Top Down Approach"
-12:34:25.349 INFO  misc.BookController : Changing to Detail View
-12:34:25.376 INFO  misc.BookController : View change succesfull
-12:34:30.731 INFO  misc.MenuController : Clicked on menu item Quit
-12:34:30.732 INFO  misc.MenuController : Exiting program
-13:04:19.657 INFO  misc.BookInventory : Starting Book Inventory...
-13:04:19.668 INFO  misc.BookInventory : Calling init
-13:04:23.363 INFO  misc.MenuController : Clicked on menu item Book List
-13:04:23.396 INFO  misc.BookController : Changing to List View
-13:04:23.458 INFO  misc.BookController : View change succesfull
-13:04:26.957 INFO  misc.BookListController$1 : Double clicked on book "Catcher in the Rye"
-13:04:26.981 INFO  misc.BookController : Changing to Detail View
-13:04:27.042 INFO  misc.BookController : View change succesfull
-13:04:29.743 INFO  misc.BookDetailController : Changes saved for "Catcher in the Rye"
-13:04:35.712 INFO  misc.MenuController : Clicked on menu item Book List
-13:04:35.713 INFO  misc.BookController : Changing to List View
-13:04:35.717 INFO  misc.BookController : View change succesfull
-13:04:37.415 INFO  misc.BookListController$1 : Double clicked on book "Computer Networking: A Top Down Approach"
-13:04:37.416 INFO  misc.BookController : Changing to Detail View
-13:04:37.430 INFO  misc.BookController : View change succesfull
-13:04:40.516 INFO  misc.BookDetailController : Changes saved for "Computer Networking: A Top Down Approach"
-13:04:43.730 INFO  misc.MenuController : Clicked on menu item Book List
-13:04:43.731 INFO  misc.BookController : Changing to List View
-13:04:43.737 INFO  misc.BookController : View change succesfull
-13:04:45.797 INFO  misc.MenuController : Clicked on menu item Book List
-13:04:45.798 INFO  misc.BookController : Changing to List View
-13:04:45.803 INFO  misc.BookController : View change succesfull
-13:05:04.652 INFO  misc.MenuController : Clicked on menu item Quit
-13:05:04.653 INFO  misc.MenuController : Exiting program
-13:16:25.213 INFO  misc.BookInventory : Starting Book Inventory...
-13:16:25.220 INFO  misc.BookInventory : Calling init
-13:16:28.109 INFO  controller.MenuController : Clicked on menu item Book List
-13:16:28.114 INFO  controller.BookController : Changing to List View
-13:17:05.110 INFO  misc.BookInventory : Starting Book Inventory...
-13:17:05.117 INFO  misc.BookInventory : Calling init
-13:18:10.399 INFO  misc.BookInventory : Starting Book Inventory...
-13:18:10.411 INFO  misc.BookInventory : Calling init
-13:21:27.208 INFO  misc.BookInventory : Starting Book Inventory...
-13:21:27.214 INFO  misc.BookInventory : Calling init
-13:21:35.692 INFO  misc.BookInventory : Starting Book Inventory...
-13:21:35.709 INFO  misc.BookInventory : Calling init
-13:22:21.544 INFO  misc.BookInventory : Starting Book Inventory...
-13:22:21.556 INFO  misc.BookInventory : Calling init
-13:22:36.244 INFO  misc.BookInventory : Starting Book Inventory...
-13:22:36.258 INFO  misc.BookInventory : Calling init
-13:22:39.123 INFO  controller.MenuController : Clicked on menu item Book List
-13:22:39.128 INFO  controller.BookController : Changing to List View
-13:22:39.163 INFO  controller.BookController : View change succesfull
-13:22:40.970 INFO  controller.BookListController$1 : Double clicked on book "Catcher in the Rye"
-13:22:40.972 INFO  controller.BookController : Changing to Detail View
-13:22:40.989 INFO  controller.BookController : View change succesfull
-13:22:42.609 INFO  controller.BookDetailController : Changes saved for "Catcher in the Rye"
-14:11:31.783 INFO  misc.BookInventory : Starting Book Inventory...
-14:11:31.791 INFO  misc.BookInventory : Calling init
-14:11:47.796 INFO  controller.MenuController : Clicked on menu item Book List
-14:11:47.801 INFO  controller.BookController : Changing to List View
-14:11:47.848 INFO  controller.BookController : View change succesfull
-17:41:47.070 INFO  misc.BookInventory : Starting Book Inventory...
-17:41:47.074 INFO  misc.BookInventory : Calling init
-17:41:47.077 INFO  controller.BookController : Gateway initiated
-17:41:48.906 INFO  controller.MenuController : Clicked on menu item Book List
-17:41:51.471 INFO  controller.MenuController : Clicked on menu item Book List
-09:47:40.241 INFO  misc.BookInventory : Starting Book Inventory...
-09:47:40.246 INFO  misc.BookInventory : Calling init
-09:47:40.833 INFO  controller.BookController : Gateway initiated
-09:47:43.537 INFO  controller.MenuController : Clicked on menu item Book List
-09:47:43.602 ERROR misc.BookTableGateway : Column 'year' not found.
-09:47:43.603 INFO  controller.BookController : Changing to List View
-09:47:43.612 INFO  controller.BookController : View change succesfull
-09:48:06.616 INFO  controller.MenuController : Clicked on menu item Book List
-09:48:06.654 ERROR misc.BookTableGateway : Column 'year' not found.
-09:48:06.654 INFO  controller.BookController : Changing to List View
-09:48:06.655 INFO  controller.BookController : View change succesfull
-09:49:17.042 INFO  misc.BookInventory : Starting Book Inventory...
-09:49:17.047 INFO  misc.BookInventory : Calling init
-09:49:17.542 INFO  controller.BookController : Gateway initiated
-09:49:19.449 INFO  controller.MenuController : Clicked on menu item Book List
-09:49:19.495 INFO  controller.BookController : Changing to List View
-09:49:19.503 INFO  controller.BookController : View change succesfull
-09:49:24.666 INFO  controller.BookListController$1 : Double clicked on book "Catcher in the Rye, Published: 1951 ISBN: 9788970120676"
-09:49:26.823 INFO  controller.BookListController$1 : Double clicked on book "Java 9 for Programmers, Published: 2017 ISBN: 9780134777641"
-09:49:27.526 INFO  controller.BookListController$1 : Double clicked on book "Duma key, Published: 2008 ISBN: 9783453265851"
-09:49:28.160 INFO  controller.BookListController$1 : Double clicked on book "Computer Networking: A Top Down Approach, Published: 2000 ISBN: 9788871921679"
-09:49:29.083 INFO  controller.BookListController$1 : Double clicked on book "Where the Wild Things Are, Published: 1963 ISBN: 9782211019651"
-09:51:30.535 INFO  misc.BookInventory : Starting Book Inventory...
-09:51:30.539 INFO  misc.BookInventory : Calling init
-09:51:31.128 INFO  controller.BookController : Gateway initiated
-09:51:32.959 INFO  controller.MenuController : Clicked on menu item Book List
-09:51:33.006 INFO  controller.BookController : Changing to List View
-09:51:33.015 INFO  controller.BookController : View change succesfull
-09:55:10.907 INFO  misc.BookInventory : Starting Book Inventory...
-09:55:10.911 INFO  misc.BookInventory : Calling init
-09:55:11.340 INFO  controller.BookController : Gateway initiated
-09:55:13.340 INFO  controller.MenuController : Clicked on menu item Book List
-09:55:13.431 INFO  controller.BookController : Changing to List View
-09:55:13.444 INFO  controller.BookController : View change succesfull
-09:55:15.601 INFO  controller.BookListController$1 : Double clicked on book "Catcher in the Rye"
-09:58:33.443 INFO  misc.BookInventory : Starting Book Inventory...
-09:58:33.447 INFO  misc.BookInventory : Calling init
-09:58:34.277 INFO  controller.BookController : Gateway initiated
-09:58:35.993 INFO  controller.MenuController : Clicked on menu item Book List
-09:58:36.118 INFO  controller.BookController : Changing to List View
-09:58:36.127 INFO  controller.BookController : View change succesfull
-09:58:37.033 INFO  controller.BookListController$1 : Double clicked on book "Where the Wild Things Are"
-09:58:37.034 INFO  controller.BookController : Changing to Detail View
-09:58:37.051 INFO  controller.BookController : View change succesfull
-09:58:49.882 INFO  controller.BookDetailController : Changes saved for "Where the Wild Things Are"
-09:58:53.549 INFO  controller.MenuController : Clicked on menu item Book List
-09:58:53.582 INFO  controller.BookController : Changing to List View
-09:58:53.584 INFO  controller.BookController : View change succesfull
-09:58:55.242 INFO  controller.BookListController$1 : Double clicked on book "Duma key"
-09:58:55.242 INFO  controller.BookController : Changing to Detail View
-09:58:55.246 INFO  controller.BookController : View change succesfull
-09:59:17.063 INFO  controller.BookDetailController : Changes saved for "Duma key"
-09:59:19.586 INFO  controller.MenuController : Clicked on menu item Book List
-09:59:19.618 INFO  controller.BookController : Changing to List View
-09:59:19.619 INFO  controller.BookController : View change succesfull
-09:59:20.736 INFO  controller.BookListController$1 : Double clicked on book "Duma key"
-09:59:20.736 INFO  controller.BookController : Changing to Detail View
-09:59:20.739 INFO  controller.BookController : View change succesfull
-09:59:22.138 INFO  controller.BookDetailController : Changes saved for "Duma key"
-09:59:24.782 INFO  controller.MenuController : Clicked on menu item Book List
-09:59:24.813 INFO  controller.BookController : Changing to List View
-09:59:24.815 INFO  controller.BookController : View change succesfull
-09:59:25.884 INFO  controller.BookListController$1 : Double clicked on book "Computer Networking: A Top Down Approach"
-09:59:25.884 INFO  controller.BookController : Changing to Detail View
-09:59:25.889 INFO  controller.BookController : View change succesfull
-11:28:21.663 INFO  misc.BookInventory : Starting Book Inventory...
-11:28:21.667 INFO  misc.BookInventory : Calling init
-11:28:22.092 INFO  controller.BookController : Gateway initiated
-11:28:23.928 INFO  controller.MenuController : Clicked on menu item Book List
-11:28:23.970 INFO  controller.BookController : Changing to List View
-11:28:23.979 INFO  controller.BookController : View change succesfull
-11:28:25.217 INFO  controller.BookListController$1 : Double clicked on book "Duma key"
-11:28:25.218 INFO  controller.BookController : Changing to Detail View
-11:28:25.228 INFO  controller.BookController : View change succesfull
-11:30:12.149 INFO  controller.MenuController : Clicked on menu item Book List
-11:30:12.184 INFO  controller.BookController : Changing to List View
-11:30:12.185 INFO  controller.BookController : View change succesfull
-11:30:13.325 INFO  controller.BookListController$1 : Double clicked on book "Where the Wild Things Are"
-11:30:13.326 INFO  controller.BookController : Changing to Detail View
-11:30:13.329 INFO  controller.BookController : View change succesfull
-11:30:14.762 INFO  controller.BookDetailController : Changes saved for "Where the Wild Things Are"
-11:30:22.842 INFO  controller.BookDetailController : Changes saved for "Where the Wild Things Are"
-11:30:26.561 INFO  controller.BookDetailController : Changes saved for "Where the Wild Things Are"
-11:30:28.294 INFO  controller.BookDetailController : Changes saved for "Where the Wild Things Are"
-11:30:32.146 INFO  controller.MenuController : Clicked on menu item Book List
-11:30:32.176 INFO  controller.BookController : Changing to List View
-11:30:32.178 INFO  controller.BookController : View change succesfull
-11:30:33.692 INFO  controller.BookListController$1 : Double clicked on book "Where the Wild Things Are"
-11:30:33.692 INFO  controller.BookController : Changing to Detail View
-11:30:33.695 INFO  controller.BookController : View change succesfull
-18:20:50.098 INFO  misc.BookInventory : Starting Book Inventory...
-18:20:50.107 INFO  misc.BookInventory : Calling init
-18:20:50.380 INFO  controller.BookController : Gateway initiated
-18:20:53.606 INFO  controller.MenuController : Clicked on menu item Book List
-18:20:53.696 INFO  controller.BookController : Changing to List View
-18:20:53.742 INFO  controller.BookController : View change succesfull
-18:20:55.291 INFO  controller.BookListController$1 : Double clicked on book "Duma key"
-18:20:55.294 INFO  controller.BookController : Changing to Detail View
-18:20:55.425 INFO  controller.BookController : View change succesfull
-18:21:00.008 INFO  controller.BookDetailController : Changes saved for "Duma key"
-18:21:03.063 INFO  controller.MenuController : Clicked on menu item Book List
-18:21:03.093 INFO  controller.BookController : Changing to List View
-18:21:03.098 INFO  controller.BookController : View change succesfull
-18:21:04.507 INFO  controller.BookListController$1 : Double clicked on book "Where the Wild Things Are"
-18:21:04.508 INFO  controller.BookController : Changing to Detail View
-18:21:04.517 INFO  controller.BookController : View change succesfull
-18:21:12.804 INFO  controller.BookDetailController : Changes saved for "Where the Wild Things Are"
-18:30:44.187 INFO  misc.BookInventory : Starting Book Inventory...
-18:30:44.203 INFO  misc.BookInventory : Calling init
-18:30:44.471 INFO  controller.BookController : Gateway initiated
-18:30:47.097 INFO  controller.MenuController : Clicked on menu item Book List
-18:30:47.178 INFO  controller.BookController : Changing to List View
-18:30:47.212 INFO  controller.BookController : View change succesfull
-18:30:48.232 INFO  controller.BookListController$1 : Double clicked on book "Where the Wild Things Are"
-18:30:48.236 INFO  controller.BookController : Changing to Detail View
-18:30:48.281 INFO  controller.BookController : View change succesfull
-18:31:14.335 INFO  misc.BookInventory : Starting Book Inventory...
-18:31:14.342 INFO  misc.BookInventory : Calling init
-18:31:14.569 INFO  controller.BookController : Gateway initiated
-18:31:17.264 INFO  controller.MenuController : Clicked on menu item Book List
-18:31:17.341 INFO  controller.BookController : Changing to List View
-18:31:17.373 INFO  controller.BookController : View change succesfull
-18:31:18.503 INFO  controller.BookListController$1 : Double clicked on book "Where the Wild Things Are"
-18:31:18.505 INFO  controller.BookController : Changing to Detail View
-18:31:18.547 INFO  controller.BookController : View change succesfull
-18:31:21.857 INFO  controller.BookDetailController : Changes saved for "Where the Wild Things Are"
-18:31:34.857 INFO  controller.BookDetailController : Changes saved for "Where the Wild Things Are"
-18:31:36.971 INFO  controller.MenuController : Clicked on menu item Book List
-18:31:36.981 INFO  controller.BookController : Changing to List View
-18:31:36.986 INFO  controller.BookController : View change succesfull
-18:31:38.244 INFO  controller.BookListController$1 : Double clicked on book "Where the Wild Things Are"
-18:31:38.245 INFO  controller.BookController : Changing to Detail View
-18:31:38.259 INFO  controller.BookController : View change succesfull
-18:31:41.503 INFO  controller.MenuController : Clicked on menu item Book List
-18:31:41.511 INFO  controller.BookController : Changing to List View
-18:31:41.514 INFO  controller.BookController : View change succesfull
-18:31:42.572 INFO  controller.BookListController$1 : Double clicked on book "Duma key"
-18:31:42.573 INFO  controller.BookController : Changing to Detail View
-18:31:42.585 INFO  controller.BookController : View change succesfull
-18:31:51.608 INFO  controller.BookDetailController : Changes saved for "Duma key"
-18:31:53.067 INFO  controller.MenuController : Clicked on menu item Book List
-18:31:53.081 INFO  controller.BookController : Changing to List View
-18:31:53.088 INFO  controller.BookController : View change succesfull
-18:31:54.005 INFO  controller.BookListController$1 : Double clicked on book "Java 9 for Programmers"
-18:31:54.007 INFO  controller.BookController : Changing to Detail View
-18:31:54.020 INFO  controller.BookController : View change succesfull
-18:31:55.837 INFO  controller.MenuController : Clicked on menu item Book List
-18:31:55.846 INFO  controller.BookController : Changing to List View
-18:31:55.850 INFO  controller.BookController : View change succesfull
-18:31:56.927 INFO  controller.BookListController$1 : Double clicked on book "Duma key"
-18:31:56.928 INFO  controller.BookController : Changing to Detail View
-18:31:56.938 INFO  controller.BookController : View change succesfull
-18:32:06.182 INFO  controller.BookDetailController : Changes saved for "Duma key"
-18:32:07.867 INFO  controller.MenuController : Clicked on menu item Book List
-18:32:07.876 INFO  controller.BookController : Changing to List View
-18:32:07.881 INFO  controller.BookController : View change succesfull
-18:32:08.706 INFO  controller.BookListController$1 : Double clicked on book "Computer Networking: A Top Down Approach"
-18:32:08.707 INFO  controller.BookController : Changing to Detail View
-18:32:08.718 INFO  controller.BookController : View change succesfull
-18:32:10.682 INFO  controller.MenuController : Clicked on menu item Book List
-18:32:10.691 INFO  controller.BookController : Changing to List View
-18:32:10.696 INFO  controller.BookController : View change succesfull
-18:32:12.148 INFO  controller.BookListController$1 : Double clicked on book "Duma key"
-18:32:12.149 INFO  controller.BookController : Changing to Detail View
-18:32:12.158 INFO  controller.BookController : View change succesfull
-18:32:21.498 INFO  controller.BookDetailController : Changes saved for "Duma key"
-18:32:26.250 INFO  controller.BookDetailController : Changes saved for "Duma key"
-18:32:28.113 INFO  controller.MenuController : Clicked on menu item Quit
-18:32:28.114 INFO  controller.MenuController : Exiting program
-18:32:31.669 INFO  misc.BookInventory : Starting Book Inventory...
-18:32:31.675 INFO  misc.BookInventory : Calling init
-18:32:31.971 INFO  controller.BookController : Gateway initiated
-18:32:34.195 INFO  controller.MenuController : Clicked on menu item Book List
-18:32:34.271 INFO  controller.BookController : Changing to List View
-18:32:34.302 INFO  controller.BookController : View change succesfull
-18:32:35.914 INFO  controller.BookListController$1 : Double clicked on book "Duma key"
-18:32:35.917 INFO  controller.BookController : Changing to Detail View
-18:32:35.957 INFO  controller.BookController : View change succesfull
-18:32:42.789 INFO  controller.BookDetailController : Changes saved for "Duma key"
-18:33:00.297 INFO  misc.BookInventory : Starting Book Inventory...
-18:33:00.309 INFO  misc.BookInventory : Calling init
-18:33:00.620 INFO  controller.BookController : Gateway initiated
-18:33:02.877 INFO  controller.MenuController : Clicked on menu item Book List
-18:33:02.941 INFO  controller.BookController : Changing to List View
-18:33:02.953 INFO  controller.BookController : View change succesfull
-18:33:04.307 INFO  controller.BookListController$1 : Double clicked on book "Duma key"
-18:33:04.310 INFO  controller.BookController : Changing to Detail View
-18:33:04.353 INFO  controller.BookController : View change succesfull
-18:33:13.666 ERROR model.BookException : ISBN must be formated to 13 characters or less
-18:33:20.182 ERROR controller.BookDetailController : Could not save: null
-18:33:26.364 INFO  controller.MenuController : Clicked on menu item Book List
-18:33:26.374 INFO  controller.BookController : Changing to List View
-18:33:26.379 INFO  controller.BookController : View change succesfull
-18:33:27.885 INFO  controller.BookListController$1 : Double clicked on book "Duma key"
-18:33:27.887 INFO  controller.BookController : Changing to Detail View
-18:33:27.900 INFO  controller.BookController : View change succesfull
-16:07:41.259 INFO  misc.BookInventory : Starting Book Inventory...
-16:07:41.263 INFO  misc.BookInventory : Calling init
-16:07:41.425 INFO  controller.BookController : Gateway initiated
-16:07:44.240 INFO  controller.MenuController : Clicked on menu item Book List
-16:07:44.264 INFO  controller.BookController : Changing to List View
-16:07:44.272 INFO  controller.BookController : View change succesfull
-16:07:46.576 INFO  controller.BookListController$1 : Double clicked on book "Catcher in the Rye"
-16:07:46.577 INFO  controller.BookController : Changing to Detail View
-16:07:46.590 INFO  controller.BookController : View change succesfull
-16:07:48.848 INFO  controller.MenuController : Clicked on menu item Book List
-16:07:48.859 INFO  controller.BookController : Changing to List View
-16:07:48.862 INFO  controller.BookController : View change succesfull
-16:07:50.413 INFO  controller.BookListController$1 : Double clicked on book "Where the Wild Things Are"
-16:07:50.413 INFO  controller.BookController : Changing to Detail View
-16:07:50.417 INFO  controller.BookController : View change succesfull
-16:07:57.136 INFO  controller.MenuController : Clicked on menu item Book List
-16:07:57.141 INFO  controller.BookController : Changing to List View
-16:07:57.142 INFO  controller.BookController : View change succesfull
-16:07:58.367 INFO  controller.BookListController$1 : Double clicked on book "Computer Networking: A Top Down Approach"
-16:07:58.368 INFO  controller.BookController : Changing to Detail View
-16:07:58.373 INFO  controller.BookController : View change succesfull
-16:38:12.666 INFO  misc.BookInventory : Starting Book Inventory...
-16:38:12.670 INFO  misc.BookInventory : Calling init
-16:38:12.815 INFO  controller.BookController : Gateway initiated
-16:38:17.114 INFO  controller.MenuController : Clicked on menu item Book List
-16:38:17.154 INFO  controller.BookController : Changing to List View
-16:38:17.168 INFO  controller.BookController : View change succesfull
-16:38:18.413 INFO  controller.BookListController$1 : Double clicked on book "Duma key"
-16:38:18.415 INFO  controller.BookController : Changing to Detail View
-16:38:18.440 INFO  controller.BookController : View change succesfull
-16:38:36.783 ERROR model.BookException : Book must be published between 1455 and 2019
-16:38:39.141 ERROR controller.BookDetailController : Could not save: null
-16:38:40.842 ERROR model.BookException : Book must be published between 1455 and 2019
-16:38:42.131 ERROR controller.BookDetailController : Could not save: null
-16:38:43.813 ERROR model.BookException : Book must be published between 1455 and 2019
-16:38:45.641 ERROR controller.BookDetailController : Could not save: null
-16:38:54.419 INFO  controller.BookDetailController : Changes saved for "Duma key"
-16:38:57.059 ERROR model.BookException : ISBN must be formated to 13 characters or less
-16:38:58.534 ERROR controller.BookDetailController : Could not save: null
-16:44:43.496 INFO  misc.BookInventory : Starting Book Inventory...
-16:44:43.501 INFO  misc.BookInventory : Calling init
-16:44:43.640 INFO  controller.BookController : Gateway initiated
-16:44:48.474 INFO  controller.MenuController : Clicked on menu item Book List
-16:44:48.495 INFO  controller.BookController : Changing to List View
-16:44:48.503 INFO  controller.BookController : View change succesfull
-16:44:49.865 INFO  controller.BookListController$1 : Double clicked on book "Where the Wild Things Are"
-16:44:49.868 INFO  controller.BookController : Changing to Detail View
-16:44:49.879 INFO  controller.BookController : View change succesfull
-16:44:52.635 INFO  controller.BookDetailController : Changes saved for "Where the Wild Things Are"
-16:44:55.499 INFO  controller.MenuController : Clicked on menu item Book List
-16:44:55.504 INFO  controller.BookController : Changing to List View
-16:44:55.505 INFO  controller.BookController : View change succesfull
-16:44:57.401 INFO  controller.BookListController$1 : Double clicked on book "Duma key"
-16:44:57.402 INFO  controller.BookController : Changing to Detail View
-16:44:57.425 INFO  controller.BookController : View change succesfull
-16:45:02.529 ERROR model.BookException : Book must be published between 1455 and 2019
-16:45:04.209 ERROR controller.BookDetailController : Could not save: null
-16:45:06.912 INFO  controller.MenuController : Clicked on menu item Book List
-16:45:06.916 INFO  controller.BookController : Changing to List View
-16:45:06.919 INFO  controller.BookController : View change succesfull
-16:45:14.278 INFO  controller.MenuController : Clicked on menu item Add Book
-16:45:16.888 INFO  controller.MenuController : Clicked on menu item Book List
-16:45:16.894 INFO  controller.BookController : Changing to List View
-16:45:16.896 INFO  controller.BookController : View change succesfull
-16:45:19.222 INFO  controller.MenuController : Clicked on menu item Add Book
-16:48:04.884 INFO  misc.BookInventory : Starting Book Inventory...
-16:48:04.888 INFO  misc.BookInventory : Calling init
-16:48:05.058 INFO  controller.BookController : Gateway initiated
-16:48:08.734 INFO  controller.MenuController : Clicked on menu item Add Book
-16:48:08.735 INFO  controller.BookController : Changing to Detail View
-16:48:08.746 ERROR controller.BookController : 
-/C:/Users/maxim/eclipse-workspace/CS4743Assignment/target/classes/controller/BookDetailView.fxml
-
-16:48:14.162 INFO  controller.MenuController : Clicked on menu item Book List
-16:48:14.189 INFO  controller.BookController : Changing to List View
-16:48:14.196 INFO  controller.BookController : View change succesfull
-16:48:15.911 INFO  controller.MenuController : Clicked on menu item Add Book
-16:48:15.912 INFO  controller.BookController : Changing to Detail View
-16:48:15.915 ERROR controller.BookController : 
-/C:/Users/maxim/eclipse-workspace/CS4743Assignment/target/classes/controller/BookDetailView.fxml
-
-16:49:40.865 INFO  misc.BookInventory : Starting Book Inventory...
-16:49:40.870 INFO  misc.BookInventory : Calling init
-16:49:41.123 INFO  controller.BookController : Gateway initiated
-16:49:43.851 INFO  controller.MenuController : Clicked on menu item Book List
-16:49:43.880 INFO  controller.BookController : Changing to List View
-16:49:43.892 INFO  controller.BookController : View change succesfull
-16:49:45.596 INFO  controller.MenuController : Clicked on menu item Add Book
-16:49:45.598 INFO  controller.BookController : Changing to Detail View
-16:49:45.613 INFO  controller.BookController : View change succesfull
-16:59:15.997 INFO  misc.BookInventory : Starting Book Inventory...
-16:59:16.001 INFO  misc.BookInventory : Calling init
-16:59:16.141 INFO  controller.BookController : Gateway initiated
-16:59:18.457 INFO  controller.MenuController : Clicked on menu item Book List
-16:59:18.478 INFO  controller.BookController : Changing to List View
-16:59:18.486 INFO  controller.BookController : View change succesfull
-16:59:19.685 INFO  controller.BookListController$1 : Double clicked on book "Duma key"
-16:59:19.687 INFO  controller.BookController : Changing to Detail View
-16:59:19.699 INFO  controller.BookController : View change succesfull
-16:59:23.003 ERROR model.BookException : Book must be published between 1455 and 2019
-16:59:28.286 ERROR controller.BookDetailController : Could not save: null
-17:00:32.787 INFO  misc.BookInventory : Starting Book Inventory...
-17:00:32.791 INFO  misc.BookInventory : Calling init
-17:00:32.934 INFO  controller.BookController : Gateway initiated
-17:00:35.033 INFO  controller.MenuController : Clicked on menu item Book List
-17:00:35.071 INFO  controller.BookController : Changing to List View
-17:00:35.080 INFO  controller.BookController : View change succesfull
-17:00:36.138 INFO  controller.BookListController$1 : Double clicked on book "Computer Networking: A Top Down Approach"
-17:00:36.139 INFO  controller.BookController : Changing to Detail View
-17:00:36.152 INFO  controller.BookController : View change succesfull
-17:00:39.780 ERROR model.BookException : Book must be published between 1455 and 2019
-17:00:41.893 ERROR controller.BookDetailController : Could not save: null
-17:00:52.794 INFO  misc.BookInventory : Starting Book Inventory...
-17:00:52.799 INFO  misc.BookInventory : Calling init
-17:00:52.943 INFO  controller.BookController : Gateway initiated
-17:00:54.943 INFO  controller.MenuController : Clicked on menu item Book List
-17:00:54.965 INFO  controller.BookController : Changing to List View
-17:00:54.974 INFO  controller.BookController : View change succesfull
-17:00:55.999 INFO  controller.BookListController$1 : Double clicked on book "Where the Wild Things Are"
-17:00:56.000 INFO  controller.BookController : Changing to Detail View
-17:00:56.012 INFO  controller.BookController : View change succesfull
-17:00:59.000 ERROR model.BookException : Book must be published between 1455 and 2019
-17:01:05.878 ERROR controller.BookDetailController : Could not save: null
-17:03:38.817 INFO  misc.BookInventory : Starting Book Inventory...
-17:03:38.823 INFO  misc.BookInventory : Calling init
-17:03:39.072 INFO  controller.BookController : Gateway initiated
-17:03:42.047 INFO  controller.MenuController : Clicked on menu item Book List
-17:03:42.076 INFO  controller.BookController : Changing to List View
-17:03:42.088 INFO  controller.BookController : View change succesfull
-17:03:43.251 INFO  controller.BookListController$1 : Double clicked on book "Duma key"
-17:03:43.255 INFO  controller.BookController : Changing to Detail View
-17:03:43.287 INFO  controller.BookController : View change succesfull
-17:03:46.799 INFO  controller.BookDetailController : Changes saved for "Duma key"
-17:03:50.483 ERROR model.BookException : Book must be published between 1455 and 2019
-17:03:53.490 ERROR controller.BookDetailController : Could not save: null
-17:04:53.620 INFO  misc.BookInventory : Starting Book Inventory...
-17:04:53.626 INFO  misc.BookInventory : Calling init
-17:04:53.842 INFO  controller.BookController : Gateway initiated
-17:04:56.495 INFO  controller.MenuController : Clicked on menu item Book List
-17:04:56.534 INFO  controller.BookController : Changing to List View
-17:04:56.547 INFO  controller.BookController : View change succesfull
-17:04:57.537 INFO  controller.BookListController$1 : Double clicked on book "Where the Wild Things Are"
-17:04:57.538 INFO  controller.BookController : Changing to Detail View
-17:04:57.554 INFO  controller.BookController : View change succesfull
-17:05:00.378 ERROR model.BookException : Book must be published between 1455 and 2019
-17:05:02.489 ERROR controller.BookDetailController : Could not save: null
-17:06:53.023 INFO  misc.BookInventory : Starting Book Inventory...
-17:06:53.028 INFO  misc.BookInventory : Calling init
-17:06:53.169 INFO  controller.BookController : Gateway initiated
-17:06:55.799 INFO  controller.MenuController : Clicked on menu item Book List
-17:06:55.826 INFO  controller.BookController : Changing to List View
-17:06:55.835 INFO  controller.BookController : View change succesfull
-17:06:56.991 INFO  controller.BookListController$1 : Double clicked on book "Duma key"
-17:06:56.993 INFO  controller.BookController : Changing to Detail View
-17:06:57.014 INFO  controller.BookController : View change succesfull
-17:07:00.200 ERROR model.BookException : Book must be published between 1455 and 2019
-17:07:02.157 ERROR controller.BookDetailController : Could not save: Book must be published between 1455 and 2019
-17:12:10.742 INFO  misc.BookInventory : Starting Book Inventory...
-17:12:10.746 INFO  misc.BookInventory : Calling init
-17:12:10.907 INFO  controller.BookController : Gateway initiated
-17:12:13.278 INFO  controller.MenuController : Clicked on menu item Book List
-17:12:13.298 INFO  controller.BookController : Changing to List View
-17:12:13.307 INFO  controller.BookController : View change succesfull
-17:12:15.098 INFO  controller.MenuController : Clicked on menu item Add Book
-17:12:15.099 INFO  controller.BookController : Changing to Detail View
-17:12:15.112 INFO  controller.BookController : View change succesfull
-17:16:07.417 INFO  misc.BookInventory : Starting Book Inventory...
-17:16:07.421 INFO  misc.BookInventory : Calling init
-17:16:07.568 INFO  controller.BookController : Gateway initiated
-17:16:09.907 INFO  controller.MenuController : Clicked on menu item Book List
-17:16:09.939 INFO  controller.BookController : Changing to List View
-17:16:09.947 INFO  controller.BookController : View change succesfull
-17:16:11.209 INFO  controller.BookListController$1 : Double clicked on book "Catcher in the Rye"
-17:16:11.212 INFO  controller.BookController : Changing to Detail View
-17:16:11.227 INFO  controller.BookController : View change succesfull
-17:16:13.663 INFO  controller.MenuController : Clicked on menu item Add Book
-17:16:13.664 INFO  controller.BookController : Changing to Detail View
-17:16:13.675 INFO  controller.BookController : View change succesfull
-17:16:18.366 ERROR controller.BookDetailController : Invalid/NULL data entered, book not saved.
-17:16:23.283 ERROR controller.BookDetailController : Invalid/NULL data entered, book not saved.
-17:30:32.288 INFO  misc.BookInventory : Starting Book Inventory...
-17:30:32.293 INFO  misc.BookInventory : Calling init
-17:30:32.439 INFO  controller.BookController : Gateway initiated
-17:30:35.066 INFO  controller.MenuController : Clicked on menu item Book List
-17:30:35.087 INFO  controller.BookController : Changing to List View
-17:30:35.106 INFO  controller.BookController : View change succesfull
-17:30:40.955 INFO  controller.BookListController$1 : Double clicked on book "Go the Fuck to Sleep"
-17:30:40.956 INFO  controller.BookController : Changing to Detail View
-17:30:40.969 INFO  controller.BookController : View change succesfull
-18:15:36.246 INFO  misc.BookInventory : Starting Book Inventory...
-18:15:36.258 INFO  misc.BookInventory : Calling init
-18:15:36.607 INFO  controller.BookController : Gateway initiated
-18:15:40.842 INFO  controller.MenuController : Clicked on menu item Book List
-18:15:40.922 INFO  controller.BookController : Changing to List View
-18:15:40.957 INFO  controller.BookController : View change succesfull
-18:15:44.142 INFO  controller.MenuController : Clicked on menu item Add Book
-18:15:44.145 INFO  controller.BookController : Changing to Detail View
-18:15:44.188 INFO  controller.BookController : View change succesfull
-18:16:39.804 ERROR model.BookException : Book must be published between 1455 and 2019
-18:16:42.490 ERROR controller.BookDetailController : Could not save: Book must be published between 1455 and 2019
-18:17:00.619 ERROR controller.BookDetailController : Invalid/NULL data entered, book not saved.
-18:17:08.921 ERROR controller.BookDetailController : Invalid/NULL data entered, book not saved.
-18:18:26.275 INFO  misc.BookInventory : Starting Book Inventory...
-18:18:26.288 INFO  misc.BookInventory : Calling init
-18:18:26.663 INFO  controller.BookController : Gateway initiated
-18:18:29.301 INFO  controller.MenuController : Clicked on menu item Add Book
-18:18:29.308 INFO  controller.BookController : Changing to Detail View
-18:18:29.357 INFO  controller.BookController : View change succesfull
-18:18:49.641 ERROR controller.BookDetailController : Invalid/NULL data entered, book not saved.
-18:19:15.631 INFO  misc.BookInventory : Starting Book Inventory...
-18:19:15.637 INFO  misc.BookInventory : Calling init
-18:19:15.937 INFO  controller.BookController : Gateway initiated
-18:19:18.634 INFO  controller.MenuController : Clicked on menu item Add Book
-18:19:18.641 INFO  controller.BookController : Changing to Detail View
-18:19:18.689 INFO  controller.BookController : View change succesfull
-18:19:43.185 ERROR controller.BookDetailController : Invalid/NULL data entered, book not saved.
-18:22:31.687 INFO  misc.BookInventory : Starting Book Inventory...
-18:22:31.694 INFO  misc.BookInventory : Calling init
-18:22:32.048 INFO  controller.BookController : Gateway initiated
-18:22:38.020 INFO  controller.MenuController : Clicked on menu item Add Book
-18:22:38.028 INFO  controller.BookController : Changing to Detail View
-18:22:38.075 INFO  controller.BookController : View change succesfull
-18:23:05.172 ERROR controller.BookDetailController : Invalid/NULL data entered, book not saved.
-18:27:07.063 INFO  misc.BookInventory : Starting Book Inventory...
-18:27:07.074 INFO  misc.BookInventory : Calling init
-18:27:07.331 INFO  controller.BookController : Gateway initiated
-18:27:10.303 INFO  controller.MenuController : Clicked on menu item Add Book
-18:27:10.311 INFO  controller.BookController : Changing to Detail View
-18:27:10.359 INFO  controller.BookController : View change succesfull
-18:33:09.473 INFO  misc.BookInventory : Starting Book Inventory...
-18:33:09.489 INFO  misc.BookInventory : Calling init
-18:33:09.765 INFO  controller.BookController : Gateway initiated
-18:33:13.171 INFO  controller.MenuController : Clicked on menu item Add Book
-18:33:13.178 INFO  controller.BookController : Changing to Detail View
-18:33:13.226 INFO  controller.BookController : View change succesfull
-18:34:36.610 INFO  misc.BookInventory : Starting Book Inventory...
-18:34:36.622 INFO  misc.BookInventory : Calling init
-18:34:37.017 INFO  controller.BookController : Gateway initiated
-18:34:40.601 INFO  controller.MenuController : Clicked on menu item Add Book
-18:34:40.608 INFO  controller.BookController : Changing to Detail View
-18:34:40.658 INFO  controller.BookController : View change succesfull
-18:35:24.878 INFO  misc.BookInventory : Starting Book Inventory...
-18:35:24.885 INFO  misc.BookInventory : Calling init
-18:35:25.140 INFO  controller.BookController : Gateway initiated
-18:35:32.655 INFO  misc.BookInventory : Starting Book Inventory...
-18:35:32.662 INFO  misc.BookInventory : Calling init
-18:35:32.947 INFO  controller.BookController : Gateway initiated
-18:35:35.929 INFO  controller.MenuController : Clicked on menu item Add Book
-18:35:35.932 INFO  controller.BookController : Changing to Detail View
-18:35:35.961 INFO  controller.BookController : View change succesfull
-18:40:31.785 INFO  misc.BookInventory : Starting Book Inventory...
-18:40:31.794 INFO  misc.BookInventory : Calling init
-18:40:32.132 INFO  controller.BookController : Gateway initiated
-18:40:35.631 INFO  controller.MenuController : Clicked on menu item Add Book
-18:40:35.640 INFO  controller.BookController : Changing to Detail View
-18:40:35.709 INFO  controller.BookController : View change succesfull
-18:42:55.307 INFO  misc.BookInventory : Starting Book Inventory...
-18:42:55.317 INFO  misc.BookInventory : Calling init
-18:42:55.644 INFO  controller.BookController : Gateway initiated
-18:42:58.659 INFO  controller.MenuController : Clicked on menu item Add Book
-18:42:58.668 INFO  controller.BookController : Changing to Detail View
-18:42:58.711 INFO  controller.BookController : View change succesfull
-18:44:47.906 INFO  misc.BookInventory : Starting Book Inventory...
-18:44:47.916 INFO  misc.BookInventory : Calling init
-18:44:48.235 INFO  controller.BookController : Gateway initiated
-18:44:51.527 INFO  controller.MenuController : Clicked on menu item Add Book
-18:44:51.531 INFO  controller.BookController : Changing to Detail View
-18:44:51.559 INFO  controller.BookController : View change succesfull
-18:45:15.328 INFO  controller.BookDetailController : Changes saved for "harry potter"
-18:45:48.558 INFO  misc.BookInventory : Starting Book Inventory...
-18:45:48.563 INFO  misc.BookInventory : Calling init
-18:45:48.788 INFO  controller.BookController : Gateway initiated
-18:45:53.977 INFO  controller.MenuController : Clicked on menu item Add Book
-18:45:53.984 INFO  controller.BookController : Changing to Detail View
-18:45:54.032 INFO  controller.BookController : View change succesfull
-18:46:13.054 INFO  controller.BookDetailController : Changes saved for "harry potter is a guy"
-18:51:53.934 INFO  misc.BookInventory : Starting Book Inventory...
-18:51:53.942 INFO  misc.BookInventory : Calling init
-18:51:54.283 INFO  controller.BookController : Gateway initiated
-18:51:58.363 INFO  controller.MenuController : Clicked on menu item Add Book
-18:51:58.369 INFO  controller.BookController : Changing to Detail View
-18:51:58.419 INFO  controller.BookController : View change succesfull
-18:52:29.288 INFO  controller.BookDetailController : Changes saved for "harry potter"
-18:53:34.175 INFO  misc.BookInventory : Starting Book Inventory...
-18:53:34.186 INFO  misc.BookInventory : Calling init
-18:53:34.451 INFO  controller.BookController : Gateway initiated
-18:53:36.895 INFO  controller.MenuController : Clicked on menu item Add Book
-18:53:36.902 INFO  controller.BookController : Changing to Detail View
-18:53:36.951 INFO  controller.BookController : View change succesfull
-18:53:52.591 INFO  controller.BookDetailController : Changes saved for "harry potter"
-18:55:55.241 INFO  misc.BookInventory : Starting Book Inventory...
-18:55:55.252 INFO  misc.BookInventory : Calling init
-18:55:55.519 INFO  controller.BookController : Gateway initiated
-18:55:59.939 INFO  controller.MenuController : Clicked on menu item Add Book
-18:55:59.942 INFO  controller.BookController : Changing to Detail View
-18:55:59.959 INFO  controller.BookController : View change succesfull
-18:56:27.252 INFO  misc.BookTableGateway : Inserting new book into database
-18:56:27.354 ERROR model.BookException : Unable to save valid book to database: java.sql.SQLIntegrityConstraintViolationException: Column 'publisher_id' cannot be null
-18:56:33.052 ERROR controller.BookDetailController : Could not save: Unable to save valid book to database: java.sql.SQLIntegrityConstraintViolationException: Column 'publisher_id' cannot be null
-18:56:56.969 INFO  misc.BookInventory : Starting Book Inventory...
-18:56:56.981 INFO  misc.BookInventory : Calling init
-18:56:57.357 INFO  controller.BookController : Gateway initiated
-18:56:59.695 INFO  controller.MenuController : Clicked on menu item Add Book
-18:56:59.702 INFO  controller.BookController : Changing to Detail View
-18:56:59.753 INFO  controller.BookController : View change succesfull
-18:57:25.322 INFO  misc.BookTableGateway : Inserting new book into database
-18:57:30.189 INFO  controller.BookDetailController : Changes saved for "Harry Potter and the Sorcere's Stone"
-18:57:52.392 INFO  misc.BookTableGateway : Inserting new book into database
-18:57:56.387 INFO  controller.BookDetailController : Changes saved for "Harry Potter and the Sorcere's Stone"
-19:01:18.737 INFO  misc.BookInventory : Starting Book Inventory...
-19:01:18.747 INFO  misc.BookInventory : Calling init
-19:01:19.102 INFO  controller.BookController : Gateway initiated
-19:01:27.436 INFO  controller.MenuController : Clicked on menu item Add Book
-19:01:27.443 INFO  controller.BookController : Changing to Detail View
-19:01:27.493 INFO  controller.BookController : View change succesfull
-19:01:59.425 INFO  misc.BookTableGateway : Inserting new book into database
-19:01:59.536 ERROR model.BookException : Unable to save valid book to database: java.sql.SQLException: No value specified for parameter 1
-19:02:05.312 ERROR controller.BookDetailController : Could not save: Unable to save valid book to database: java.sql.SQLException: No value specified for parameter 1
-19:02:33.186 INFO  misc.BookTableGateway : Inserting new book into database
-19:02:33.242 ERROR model.BookException : Unable to save valid book to database: java.sql.SQLException: No value specified for parameter 1
-19:02:36.089 ERROR controller.BookDetailController : Could not save: Unable to save valid book to database: java.sql.SQLException: No value specified for parameter 1
-19:03:54.629 INFO  misc.BookInventory : Starting Book Inventory...
-19:03:54.644 INFO  misc.BookInventory : Calling init
-19:03:54.962 INFO  controller.BookController : Gateway initiated
-19:03:57.694 INFO  controller.MenuController : Clicked on menu item Add Book
-19:03:57.701 INFO  controller.BookController : Changing to Detail View
-19:03:57.751 INFO  controller.BookController : View change succesfull
-19:04:23.567 INFO  misc.BookTableGateway : Inserting new book into database
-19:04:23.688 ERROR model.BookException : Unable to save valid book to database: java.sql.SQLException: No value specified for parameter 1
-19:04:29.751 ERROR controller.BookDetailController : Could not save: Unable to save valid book to database: java.sql.SQLException: No value specified for parameter 1
-23:20:46.715 INFO  misc.BookInventory : Starting Book Inventory...
-23:20:46.721 INFO  misc.BookInventory : Calling init
-23:20:47.283 INFO  controller.BookController : Gateway initiated
-23:20:50.185 INFO  controller.MenuController : Clicked on menu item Add Book
-23:20:50.188 INFO  controller.BookController : Changing to Detail View
-23:20:50.204 INFO  controller.BookController : View change succesfull
-23:21:17.283 INFO  misc.BookTableGateway : Inserting new book into database
-23:21:17.424 ERROR model.BookException : Unable to save valid book to database: java.sql.SQLException: Column count doesn't match value count at row 1
-23:21:26.295 ERROR controller.BookDetailController : Could not save: Unable to save valid book to database: java.sql.SQLException: Column count doesn't match value count at row 1
-23:22:09.625 INFO  misc.BookInventory : Starting Book Inventory...
-23:22:09.633 INFO  misc.BookInventory : Calling init
-23:22:10.171 INFO  controller.BookController : Gateway initiated
-23:22:12.698 INFO  controller.MenuController : Clicked on menu item Add Book
-23:22:12.700 INFO  controller.BookController : Changing to Detail View
-23:22:12.719 INFO  controller.BookController : View change succesfull
-23:22:34.460 INFO  misc.BookTableGateway : Inserting new book into database
-23:22:34.734 ERROR model.BookException : Unable to save valid book to database: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where a.title ='Happy Potter and the Half Blood Prince', a.year_published = 2007' at line 1
-23:22:50.733 ERROR controller.BookDetailController : Could not save: Unable to save valid book to database: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where a.title ='Happy Potter and the Half Blood Prince', a.year_published = 2007' at line 1
-23:23:56.152 INFO  misc.BookInventory : Starting Book Inventory...
-23:23:56.158 INFO  misc.BookInventory : Calling init
-23:23:56.690 INFO  controller.BookController : Gateway initiated
-23:36:53.706 INFO  misc.BookInventory : Starting Book Inventory...
-23:36:53.715 INFO  misc.BookInventory : Calling init
-23:36:54.524 INFO  controller.BookController : Gateway initiated
-23:36:57.240 INFO  controller.MenuController : Clicked on menu item Book List
-23:36:57.307 INFO  controller.BookController : Changing to List View
-23:36:57.324 INFO  controller.BookController : View change succesfull
-23:36:59.968 INFO  controller.BookListController$1 : Double clicked on book "Happy Potter and the Half Blood Prince"
-23:36:59.969 INFO  controller.BookController : Changing to Detail View
-23:36:59.992 INFO  controller.BookController : View change succesfull
-23:37:06.642 INFO  controller.BookDetailController : Changes saved for "Happy Potter and the Half Blood Prince"
-23:37:10.039 INFO  controller.MenuController : Clicked on menu item Add Book
-23:37:10.040 INFO  controller.BookController : Changing to Detail View
-23:37:10.046 INFO  controller.BookController : View change succesfull
-23:37:45.914 INFO  misc.BookTableGateway : Inserting new book into database
-23:37:46.158 ERROR model.BookException : Unable to save valid book to database: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where a.title ='Java 9', a.year_published = 2017, a.summary = 'This is a textboo' at line 1
-23:38:04.961 ERROR controller.BookDetailController : Could not save: Unable to save valid book to database: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where a.title ='Java 9', a.year_published = 2017, a.summary = 'This is a textboo' at line 1
-23:39:10.670 INFO  misc.BookInventory : Starting Book Inventory...
-23:39:10.674 INFO  misc.BookInventory : Calling init
-23:39:11.154 INFO  controller.BookController : Gateway initiated
-23:39:14.454 INFO  controller.MenuController : Clicked on menu item Add Book
-23:39:14.456 INFO  controller.BookController : Changing to Detail View
-23:39:14.468 INFO  controller.BookController : View change succesfull
-23:40:07.023 INFO  misc.BookTableGateway : Inserting new book into database
-23:40:07.142 ERROR model.BookException : Unable to save valid book to database: java.sql.SQLException: Can not issue data manipulation statements with executeQuery().
-23:40:26.746 ERROR controller.BookDetailController : Could not save: Unable to save valid book to database: java.sql.SQLException: Can not issue data manipulation statements with executeQuery().
-23:42:44.013 INFO  misc.BookInventory : Starting Book Inventory...
-23:42:44.017 INFO  misc.BookInventory : Calling init
-23:42:44.461 INFO  controller.BookController : Gateway initiated
-23:42:54.229 INFO  controller.MenuController : Clicked on menu item Add Book
-23:42:54.232 INFO  controller.BookController : Changing to Detail View
-23:42:54.244 INFO  controller.BookController : View change succesfull
-23:43:12.587 INFO  misc.BookTableGateway : Inserting new book into database
-23:43:12.707 ERROR model.BookException : Unable to save valid book to database: java.sql.SQLException: Can not issue data manipulation statements with executeQuery().
-23:43:17.884 ERROR controller.BookDetailController : Could not save: Unable to save valid book to database: java.sql.SQLException: Can not issue data manipulation statements with executeQuery().
-10:04:00.702 INFO  misc.BookInventory : Starting Book Inventory...
-10:04:00.711 INFO  misc.BookInventory : Calling init
-10:04:01.070 INFO  controller.BookController : Gateway initiated
-10:04:05.805 INFO  controller.MenuController : Clicked on menu item Book List
-10:04:05.930 INFO  controller.BookController : Changing to List View
-10:04:06.006 INFO  controller.BookController : View change succesfull
-10:04:11.185 INFO  controller.MenuController : Clicked on menu item Add Book
-10:04:11.209 INFO  controller.BookController : Changing to Detail View
-10:04:11.288 INFO  controller.BookController : View change succesfull
-10:07:09.550 INFO  misc.BookTableGateway : Inserting new book into database
-10:07:09.577 ERROR model.BookException : Unable to save valid book to database: java.sql.SQLException: Can not issue data manipulation statements with executeQuery().
-10:07:15.313 ERROR controller.BookDetailController : Could not save: Unable to save valid book to database: java.sql.SQLException: Can not issue data manipulation statements with executeQuery().
-10:08:09.881 INFO  misc.BookInventory : Starting Book Inventory...
-10:08:09.890 INFO  misc.BookInventory : Calling init
-10:08:10.275 INFO  controller.BookController : Gateway initiated
-10:08:13.976 INFO  controller.MenuController : Clicked on menu item Add Book
-10:08:13.984 INFO  controller.BookController : Changing to Detail View
-10:08:14.055 INFO  controller.BookController : View change succesfull
-10:08:37.490 INFO  misc.BookTableGateway : Inserting new book into database
-10:08:37.607 ERROR model.BookException : Unable to save valid book to database: java.sql.SQLException: Parameter index out of range (2 > number of parameters, which is 1).
-10:08:51.049 ERROR controller.BookDetailController : Could not save: Unable to save valid book to database: java.sql.SQLException: Parameter index out of range (2 > number of parameters, which is 1).
-10:09:59.615 INFO  misc.BookInventory : Starting Book Inventory...
-10:09:59.627 INFO  misc.BookInventory : Calling init
-10:10:00.048 INFO  controller.BookController : Gateway initiated
-10:10:11.998 INFO  controller.MenuController : Clicked on menu item Add Book
-10:10:12.007 INFO  controller.BookController : Changing to Detail View
-10:10:12.060 INFO  controller.BookController : View change succesfull
-10:10:43.587 INFO  misc.BookTableGateway : Inserting new book into database
-10:10:43.731 ERROR model.BookException : Unable to save valid book to database: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'a where a.title ='The Last Unicorn' , year_published = 1985  , isbn = '46037683'' at line 1
-10:11:03.559 ERROR controller.BookDetailController : Could not save: Unable to save valid book to database: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'a where a.title ='The Last Unicorn' , year_published = 1985  , isbn = '46037683'' at line 1
-10:12:39.779 INFO  misc.BookInventory : Starting Book Inventory...
-10:12:39.791 INFO  misc.BookInventory : Calling init
-10:12:40.610 INFO  controller.BookController : Gateway initiated
-10:12:46.821 INFO  controller.MenuController : Clicked on menu item Add Book
-10:12:46.830 INFO  controller.BookController : Changing to Detail View
-10:12:46.865 INFO  controller.BookController : View change succesfull
-10:13:27.902 INFO  misc.BookTableGateway : Inserting new book into database
-10:13:28.059 ERROR model.BookException : Unable to save valid book to database: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'a where a.title ='The Last Unicorn' , a.year_published = 1985  , a.isbn = '76768' at line 1
-10:13:49.670 ERROR controller.BookDetailController : Could not save: Unable to save valid book to database: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'a where a.title ='The Last Unicorn' , a.year_published = 1985  , a.isbn = '76768' at line 1
-10:16:38.246 INFO  misc.BookInventory : Starting Book Inventory...
-10:16:38.257 INFO  misc.BookInventory : Calling init
-10:16:38.517 INFO  controller.BookController : Gateway initiated
-10:16:43.496 INFO  misc.BookInventory : Starting Book Inventory...
-10:16:43.505 INFO  misc.BookInventory : Calling init
-10:16:43.823 INFO  controller.BookController : Gateway initiated
-10:16:48.063 INFO  controller.MenuController : Clicked on menu item Add Book
-10:16:48.073 INFO  controller.BookController : Changing to Detail View
-10:16:48.144 INFO  controller.BookController : View change succesfull
-10:17:08.700 INFO  misc.BookTableGateway : Inserting new book into database
-10:17:08.864 ERROR model.BookException : Unable to save valid book to database: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where title = 'The Last Unicorn', year_published = 1985, isbn = '124241351', sum' at line 1
-10:17:24.784 ERROR controller.BookDetailController : Could not save: Unable to save valid book to database: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where title = 'The Last Unicorn', year_published = 1985, isbn = '124241351', sum' at line 1
-10:20:45.920 INFO  misc.BookInventory : Starting Book Inventory...
-10:20:45.928 INFO  misc.BookInventory : Calling init
-10:20:46.303 INFO  controller.BookController : Gateway initiated
-10:20:49.145 INFO  controller.MenuController : Clicked on menu item Book List
-10:20:49.226 INFO  controller.BookController : Changing to List View
-10:20:49.257 INFO  controller.BookController : View change succesfull
-10:20:50.972 INFO  controller.BookListController$1 : Double clicked on book "Go the Fuck to Sleep"
-10:20:50.976 INFO  controller.BookController : Changing to Detail View
-10:20:51.040 INFO  controller.BookController : View change succesfull
-10:20:53.049 INFO  controller.MenuController : Clicked on menu item Add Book
-10:20:53.050 INFO  controller.BookController : Changing to Detail View
-10:20:53.060 INFO  controller.BookController : View change succesfull
-10:21:21.401 INFO  misc.BookTableGateway : Inserting new book into database
-10:21:21.524 ERROR model.BookException : Unable to save valid book to database: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'b where b.title = 'The Last Unicorn', b.year_published = 1985, b.isbn = '1245427' at line 1
-10:21:33.956 ERROR controller.BookDetailController : Could not save: Unable to save valid book to database: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'b where b.title = 'The Last Unicorn', b.year_published = 1985, b.isbn = '1245427' at line 1
-10:23:45.751 INFO  misc.BookInventory : Starting Book Inventory...
-10:23:45.759 INFO  misc.BookInventory : Calling init
-10:23:46.133 INFO  controller.BookController : Gateway initiated
-10:23:50.015 INFO  controller.MenuController : Clicked on menu item Add Book
-10:23:50.024 INFO  controller.BookController : Changing to Detail View
-10:23:50.094 INFO  controller.BookController : View change succesfull
-10:24:14.402 INFO  misc.BookTableGateway : Inserting new book into database
-10:24:14.542 ERROR model.BookException : Unable to save valid book to database: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'b where b.title = 'The Last Unicorn', b.year_published = 1987, b.isbn = '0746307' at line 1
-10:24:31.708 ERROR controller.BookDetailController : Could not save: Unable to save valid book to database: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'b where b.title = 'The Last Unicorn', b.year_published = 1987, b.isbn = '0746307' at line 1
-10:36:32.266 INFO  misc.BookInventory : Starting Book Inventory...
-10:36:32.273 INFO  misc.BookInventory : Calling init
-10:36:32.583 INFO  controller.BookController : Gateway initiated
-10:36:35.459 INFO  controller.MenuController : Clicked on menu item Add Book
-10:36:35.468 INFO  controller.BookController : Changing to Detail View
-10:36:35.537 INFO  controller.BookController : View change succesfull
-10:37:08.601 INFO  misc.BookTableGateway : Inserting new book into database
-10:37:08.730 ERROR model.BookException : Unable to save valid book to database: Couldn't get the new ID
-10:37:12.503 ERROR controller.BookDetailController : Could not save: Unable to save valid book to database: Couldn't get the new ID
-10:38:50.974 INFO  misc.BookInventory : Starting Book Inventory...
-10:38:50.983 INFO  misc.BookInventory : Calling init
-10:38:51.292 INFO  controller.BookController : Gateway initiated
-10:38:54.206 INFO  controller.MenuController : Clicked on menu item Add Book
-10:38:54.215 INFO  controller.BookController : Changing to Detail View
-10:38:54.284 INFO  controller.BookController : View change succesfull
-10:39:31.453 INFO  misc.BookTableGateway : Inserting new book into database
-10:39:31.563 ERROR model.BookException : Unable to save valid book to database: java.sql.SQLException: Before start of result set
-10:39:40.735 ERROR controller.BookDetailController : Could not save: Unable to save valid book to database: java.sql.SQLException: Before start of result set
-10:46:15.213 INFO  misc.BookInventory : Starting Book Inventory...
-10:46:15.220 INFO  misc.BookInventory : Calling init
-10:46:15.578 INFO  controller.BookController : Gateway initiated
-10:46:19.190 INFO  controller.MenuController : Clicked on menu item Add Book
-10:46:19.198 INFO  controller.BookController : Changing to Detail View
-10:46:19.268 INFO  controller.BookController : View change succesfull
-10:46:39.783 INFO  misc.BookTableGateway : Inserting new book into database
-10:46:39.958 ERROR model.BookException : Unable to save valid book to database: java.sql.SQLException: Before start of result set
-10:46:45.331 ERROR controller.BookDetailController : Could not save: Unable to save valid book to database: java.sql.SQLException: Before start of result set
-10:47:34.550 INFO  misc.BookInventory : Starting Book Inventory...
-10:47:34.559 INFO  misc.BookInventory : Calling init
-10:47:34.879 INFO  controller.BookController : Gateway initiated
-10:47:38.003 INFO  controller.MenuController : Clicked on menu item Add Book
-10:47:38.012 INFO  controller.BookController : Changing to Detail View
-10:47:38.076 INFO  controller.BookController : View change succesfull
-10:47:53.546 INFO  misc.BookTableGateway : Inserting new book into database
-10:47:55.943 INFO  controller.BookDetailController : Changes saved for "A cool book"
-10:48:07.474 INFO  misc.BookTableGateway : Inserting new book into database
-10:48:11.215 INFO  controller.BookDetailController : Changes saved for "A cool book"
-10:51:02.672 INFO  misc.BookInventory : Starting Book Inventory...
-10:51:02.680 INFO  misc.BookInventory : Calling init
-10:51:02.993 INFO  controller.BookController : Gateway initiated
-10:51:05.914 INFO  controller.MenuController : Clicked on menu item Add Book
-10:51:05.922 INFO  controller.BookController : Changing to Detail View
-10:51:05.996 INFO  controller.BookController : View change succesfull
-10:51:59.362 INFO  misc.BookTableGateway : Inserting new book into database
-10:52:01.602 INFO  controller.BookDetailController : Changes saved for "War of the Spark"
-10:52:15.517 INFO  controller.BookDetailController : Changes saved for "War of the Spark"
-10:52:25.790 INFO  controller.BookDetailController : Changes saved for "War of the Spark"
-10:52:52.580 INFO  misc.BookInventory : Starting Book Inventory...
-10:52:52.589 INFO  misc.BookInventory : Calling init
-10:52:52.913 INFO  controller.BookController : Gateway initiated
-10:52:56.253 INFO  controller.MenuController : Clicked on menu item Book List
-10:52:56.389 INFO  controller.BookController : Changing to List View
-10:52:56.434 INFO  controller.BookController : View change succesfull
-11:00:22.425 INFO  controller.BookListController$1 : Double clicked on book "War of the Spark"
-11:00:22.429 INFO  controller.BookController : Changing to Detail View
-11:00:22.493 INFO  controller.BookController : View change succesfull
-11:00:30.118 INFO  controller.MenuController : Clicked on menu item Book List
-11:00:30.130 INFO  controller.BookController : Changing to List View
-11:00:30.135 INFO  controller.BookController : View change succesfull
-11:01:24.410 INFO  misc.BookInventory : Starting Book Inventory...
-11:01:24.417 INFO  misc.BookInventory : Calling init
-11:01:24.645 INFO  controller.BookController : Gateway initiated
-11:01:29.015 INFO  controller.MenuController : Clicked on menu item Add Book
-11:01:29.021 INFO  controller.BookController : Changing to Detail View
-11:01:29.072 INFO  controller.BookController : View change succesfull
-11:17:49.881 INFO  misc.BookInventory : Starting Book Inventory...
-11:17:49.891 INFO  misc.BookInventory : Calling init
-11:17:50.231 INFO  controller.BookController : Gateway initiated
-11:20:54.101 INFO  controller.MenuController : Clicked on menu item Book List
-11:20:54.187 INFO  controller.BookController : Changing to List View
-11:20:54.206 INFO  controller.BookController : View change succesfull
-11:24:27.490 INFO  misc.BookInventory : Starting Book Inventory...
-11:24:27.497 INFO  misc.BookInventory : Calling init
-11:24:27.726 INFO  controller.BookController : Gateway initiated
-11:27:23.599 INFO  misc.BookInventory : Starting Book Inventory...
-11:27:23.608 INFO  misc.BookInventory : Calling init
-11:27:23.941 INFO  controller.BookController : Gateway initiated
-11:27:27.033 INFO  controller.MenuController : Clicked on menu item Book List
-11:27:27.147 INFO  controller.BookController : Changing to List View
-11:27:27.169 INFO  controller.BookController : View change succesfull
-11:47:54.012 INFO  misc.BookInventory : Starting Book Inventory...
-11:47:54.015 INFO  misc.BookInventory : Calling init
-11:47:54.175 INFO  controller.BookController : Gateway initiated
-11:47:56.760 INFO  controller.MenuController : Clicked on menu item Book List
-11:47:56.799 INFO  controller.BookController : Changing to List View
-11:47:56.813 INFO  controller.BookController : View change succesfull
-11:53:09.634 INFO  misc.BookInventory : Starting Book Inventory...
-11:53:09.638 INFO  misc.BookInventory : Calling init
-11:53:09.788 INFO  controller.BookController : Gateway initiated
-11:53:12.801 INFO  controller.MenuController : Clicked on menu item Book List
-11:53:12.822 INFO  controller.BookController : Changing to List View
-11:53:12.835 INFO  controller.BookController : View change succesfull
-11:53:21.050 INFO  controller.BookListController$1 : Double clicked on book "Catcher in the Rye"
-11:53:21.051 INFO  controller.BookController : Changing to Detail View
-11:53:21.061 INFO  controller.BookController : View change succesfull
-11:53:23.045 INFO  controller.MenuController : Clicked on menu item Book List
-11:53:23.050 INFO  controller.BookController : Changing to List View
-11:53:23.053 INFO  controller.BookController : View change succesfull
-11:54:40.640 INFO  misc.BookInventory : Starting Book Inventory...
-11:54:40.644 INFO  misc.BookInventory : Calling init
-11:54:40.818 INFO  controller.BookController : Gateway initiated
-11:54:42.614 INFO  controller.MenuController : Clicked on menu item Book List
-11:54:42.640 INFO  controller.BookController : Changing to List View
-11:54:42.653 INFO  controller.BookController : View change succesfull
-11:57:20.197 INFO  misc.BookInventory : Starting Book Inventory...
-11:57:20.202 INFO  misc.BookInventory : Calling init
-11:57:20.361 INFO  controller.BookController : Gateway initiated
-11:57:22.920 INFO  controller.MenuController : Clicked on menu item Book List
-11:57:22.942 INFO  controller.BookController : Changing to List View
-11:57:22.954 INFO  controller.BookController : View change succesfull
-11:58:46.222 INFO  misc.BookInventory : Starting Book Inventory...
-11:58:46.227 INFO  misc.BookInventory : Calling init
-11:58:46.391 INFO  controller.BookController : Gateway initiated
-11:58:50.010 INFO  controller.MenuController : Clicked on menu item Book List
-11:58:50.034 INFO  controller.BookController : Changing to List View
-11:58:50.046 INFO  controller.BookController : View change succesfull
-11:59:16.720 INFO  misc.BookInventory : Starting Book Inventory...
-11:59:16.725 INFO  misc.BookInventory : Calling init
-11:59:16.890 INFO  controller.BookController : Gateway initiated
-11:59:18.953 INFO  controller.MenuController : Clicked on menu item Book List
-11:59:18.990 INFO  controller.BookController : Changing to List View
-11:59:19.002 INFO  controller.BookController : View change succesfull
-12:02:16.024 INFO  misc.BookInventory : Starting Book Inventory...
-12:02:16.028 INFO  misc.BookInventory : Calling init
-12:02:16.186 INFO  controller.BookController : Gateway initiated
-12:02:18.330 INFO  controller.MenuController : Clicked on menu item Book List
-12:02:18.352 INFO  controller.BookController : Changing to List View
-12:02:18.363 INFO  controller.BookController : View change succesfull
-12:03:43.734 INFO  misc.BookInventory : Starting Book Inventory...
-12:03:43.739 INFO  misc.BookInventory : Calling init
-12:03:43.886 INFO  controller.BookController : Gateway initiated
-12:03:46.375 INFO  controller.MenuController : Clicked on menu item Book List
-12:03:46.408 INFO  controller.BookController : Changing to List View
-12:03:46.420 INFO  controller.BookController : View change succesfull
-12:04:32.189 INFO  misc.BookInventory : Starting Book Inventory...
-12:04:32.193 INFO  misc.BookInventory : Calling init
-12:04:32.339 INFO  controller.BookController : Gateway initiated
-12:04:34.842 INFO  controller.MenuController : Clicked on menu item Book List
-12:04:34.865 INFO  controller.BookController : Changing to List View
-12:04:34.877 INFO  controller.BookController : View change succesfull
-12:06:10.225 INFO  misc.BookInventory : Starting Book Inventory...
-12:06:10.229 INFO  misc.BookInventory : Calling init
-12:06:10.382 INFO  controller.BookController : Gateway initiated
-12:06:12.709 INFO  controller.MenuController : Clicked on menu item Book List
-12:06:12.744 INFO  controller.BookController : Changing to List View
-12:06:12.755 INFO  controller.BookController : View change succesfull
-12:06:17.277 INFO  controller.MenuController : Clicked on menu item Add Book
-12:06:17.279 INFO  controller.BookController : Changing to Detail View
-12:06:17.292 INFO  controller.BookController : View change succesfull
-12:06:20.032 INFO  controller.MenuController : Clicked on menu item Book List
-12:06:20.042 INFO  controller.BookController : Changing to List View
-12:06:20.045 INFO  controller.BookController : View change succesfull
-12:06:51.987 INFO  misc.BookInventory : Starting Book Inventory...
-12:06:51.992 INFO  misc.BookInventory : Calling init
-12:06:52.141 INFO  controller.BookController : Gateway initiated
-12:06:54.519 INFO  controller.MenuController : Clicked on menu item Book List
-12:06:54.541 INFO  controller.BookController : Changing to List View
-12:06:54.554 INFO  controller.BookController : View change succesfull
-12:07:55.602 INFO  misc.BookInventory : Starting Book Inventory...
-12:07:55.606 INFO  misc.BookInventory : Calling init
-12:07:55.775 INFO  controller.BookController : Gateway initiated
-12:07:57.889 INFO  controller.MenuController : Clicked on menu item Book List
-12:07:57.911 INFO  controller.BookController : Changing to List View
-12:07:57.923 INFO  controller.BookController : View change succesfull
-12:11:43.580 INFO  misc.BookInventory : Starting Book Inventory...
-12:11:43.584 INFO  misc.BookInventory : Calling init
-12:11:43.744 INFO  controller.BookController : Gateway initiated
-12:11:45.533 INFO  controller.MenuController : Clicked on menu item Book List
-12:11:45.565 INFO  controller.BookController : Changing to List View
-12:11:45.578 INFO  controller.BookController : View change succesfull
-12:14:10.815 INFO  misc.BookInventory : Starting Book Inventory...
-12:14:10.819 INFO  misc.BookInventory : Calling init
-12:14:10.969 INFO  controller.BookController : Gateway initiated
-12:14:13.025 INFO  controller.MenuController : Clicked on menu item Book List
-12:14:13.048 INFO  controller.BookController : Changing to List View
-12:14:13.060 INFO  controller.BookController : View change succesfull
-12:15:09.473 INFO  misc.BookInventory : Starting Book Inventory...
-12:15:09.477 INFO  misc.BookInventory : Calling init
-12:15:09.631 INFO  controller.BookController : Gateway initiated
-12:15:12.840 INFO  controller.MenuController : Clicked on menu item Book List
-12:15:12.863 INFO  controller.BookController : Changing to List View
-12:15:12.876 INFO  controller.BookController : View change succesfull
-12:20:57.643 INFO  misc.BookInventory : Starting Book Inventory...
-12:20:57.647 INFO  misc.BookInventory : Calling init
-12:20:57.857 INFO  controller.BookController : Gateway initiated
-12:21:01.018 INFO  controller.MenuController : Clicked on menu item Book List
-12:21:01.048 INFO  controller.BookController : Changing to List View
-12:21:01.058 INFO  controller.BookController : View change succesfull
-12:22:35.871 INFO  misc.BookInventory : Starting Book Inventory...
-12:22:35.875 INFO  misc.BookInventory : Calling init
-12:22:36.035 INFO  controller.BookController : Gateway initiated
-12:22:38.351 INFO  controller.MenuController : Clicked on menu item Book List
-12:22:38.376 INFO  controller.BookController : Changing to List View
-12:22:38.388 INFO  controller.BookController : View change succesfull
-12:22:39.414 INFO  controller.BookListController : Attempting to delete null
-12:22:42.342 INFO  controller.BookListController : Attempting to delete War of the Spark
-12:56:23.916 INFO  misc.BookInventory : Starting Book Inventory...
-12:56:23.931 INFO  misc.BookInventory : Calling init
-12:56:24.441 INFO  controller.BookController : Gateway initiated
-12:56:27.119 INFO  controller.MenuController : Clicked on menu item Book List
-12:56:27.205 INFO  controller.BookController : Changing to List View
-12:56:27.243 INFO  controller.BookController : View change succesfull
-12:56:30.477 INFO  controller.BookListController : Attempting to delete Java 9
-12:56:34.948 INFO  controller.BookListController$1 : Double clicked on book "Java 9"
-12:56:34.951 INFO  controller.BookController : Changing to Detail View
-12:56:34.985 INFO  controller.BookController : View change succesfull
-12:56:38.133 INFO  controller.MenuController : Clicked on menu item Book List
-12:56:38.141 INFO  controller.BookController : Changing to List View
-12:56:38.149 INFO  controller.BookController : View change succesfull
-12:56:43.317 INFO  controller.BookListController : Attempting to delete Java 9
+10:45:01.495 INFO  misc.BookInventory : Starting Book Inventory...
+10:45:01.499 INFO  misc.BookInventory : Calling init
+10:45:01.943 INFO  controller.BookController : Gateway initiated
+10:45:01.956 INFO  misc.BookInventory : Calling start
+10:45:04.652 INFO  controller.MenuController : Clicked on menu item Book List
+10:45:04.653 INFO  misc.BookTableGateway : Getting books from database
+10:45:04.699 INFO  controller.BookController : Changing to List View
+10:45:04.710 INFO  controller.BookController : View change successful
+10:45:07.656 INFO  controller.BookListController$1 : Double clicked on book "Catcher in the Rye"
+10:45:07.657 INFO  controller.BookController : Changing to Detail View
+10:45:07.667 INFO  controller.BookController : View change successful
+10:45:14.203 INFO  controller.MenuController : Clicked on menu item Book List
+10:45:14.203 INFO  misc.BookTableGateway : Getting books from database
+10:45:14.233 INFO  controller.BookController : Changing to List View
+10:45:14.235 INFO  controller.BookController : View change successful
+10:45:16.044 INFO  controller.BookListController$1 : Double clicked on book "Duma key"
+10:45:16.045 INFO  controller.BookController : Changing to Detail View
+10:45:16.051 INFO  controller.BookController : View change successful
+10:45:20.999 INFO  controller.MenuController : Clicked on menu item Book List
+10:45:21.000 INFO  misc.BookTableGateway : Getting books from database
+10:45:21.035 INFO  controller.BookController : Changing to List View
+10:45:21.039 INFO  controller.BookController : View change successful
+10:45:25.010 INFO  controller.BookListController$1 : Double clicked on book "The Carnivorous Carnival"
+10:45:25.010 INFO  controller.BookController : Changing to Detail View
+10:45:25.014 INFO  controller.BookController : View change successful
+10:45:50.088 INFO  controller.BookDetailController : Attempting to save.
+10:45:50.088 INFO  misc.BookTableGateway : Updating book The Carnivorous Carnival in database
+10:45:51.407 INFO  controller.BookDetailController : Changes saved for "The Carnivorous Carnival"
+10:45:53.025 INFO  controller.MenuController : Clicked on menu item Book List
+10:45:53.025 INFO  misc.BookTableGateway : Getting books from database
+10:45:53.060 INFO  controller.BookController : Changing to List View
+10:45:53.063 INFO  controller.BookController : View change successful
+10:45:55.253 INFO  controller.MenuController : Clicked on menu item Add Book
+10:45:55.253 INFO  controller.BookController : Changing to Detail View
+10:45:55.257 INFO  controller.BookController : View change successful
+10:45:59.488 INFO  controller.BookDetailController : Attempting to save.
+10:45:59.488 ERROR model.BookException : Please enter a valid year between 1455 and 2019
+10:46:06.575 ERROR controller.BookDetailController : Creation not saved for "sa": Please enter a valid year between 1455 and 2019
+10:46:17.305 INFO  controller.BookDetailController : Attempting to save.
+10:46:17.306 ERROR model.BookException : Book must be published between 1455 and 2019
+10:46:20.220 ERROR controller.BookDetailController : Creation not saved for "sa": Book must be published between 1455 and 2019
+10:46:25.128 INFO  controller.BookDetailController : Attempting to save.
+10:46:25.128 ERROR model.BookException : Book must be published between 1455 and 2019
+10:46:27.904 ERROR controller.BookDetailController : Creation not saved for "sa": Book must be published between 1455 and 2019
+10:46:33.092 INFO  controller.BookDetailController : Attempting to save.
+10:46:33.092 ERROR model.BookException : ISBN must be formated to 13 characters or less
+10:46:37.381 ERROR controller.BookDetailController : Creation not saved for "sa": ISBN must be formated to 13 characters or less
+10:46:46.881 INFO  controller.BookDetailController : Attempting to save.
+10:46:46.881 INFO  misc.BookTableGateway : Inserting new book sa into database
+10:46:49.039 INFO  controller.BookDetailController : Creation saved for "sa"
+10:46:50.293 INFO  controller.MenuController : Clicked on menu item Book List
+10:46:50.293 INFO  misc.BookTableGateway : Getting books from database
+10:46:50.323 INFO  controller.BookController : Changing to List View
+10:46:50.325 INFO  controller.BookController : View change successful
+10:46:53.035 INFO  controller.BookListController$1 : Double clicked on book "sa"
+10:46:53.036 INFO  controller.BookController : Changing to Detail View
+10:46:53.039 INFO  controller.BookController : View change successful
+10:46:55.441 INFO  controller.MenuController : Clicked on menu item Book List
+10:46:55.442 INFO  misc.BookTableGateway : Getting books from database
+10:46:55.473 INFO  controller.BookController : Changing to List View
+10:46:55.475 INFO  controller.BookController : View change successful
+10:46:57.588 INFO  controller.BookListController : Selected sa to be deleted.
+10:47:03.965 INFO  controller.BookListController : Attempting to delete sa
+10:47:04.171 INFO  controller.BookListController : Book has been deleted.
+10:47:15.363 INFO  controller.MenuController : Clicked on menu item Add Book
+10:47:15.364 INFO  controller.BookController : Changing to Detail View
+10:47:15.367 INFO  controller.BookController : View change successful
+10:47:36.578 INFO  controller.BookDetailController : Attempting to save.
+10:47:36.578 INFO  misc.BookTableGateway : Inserting new book A Really Good Book into database
+10:47:37.861 INFO  controller.BookDetailController : Creation saved for "A Really Good Book"
+10:47:50.663 INFO  controller.BookDetailController : Attempting to save.
+10:47:50.663 INFO  misc.BookTableGateway : Updating book A Really Good Book in database
+10:47:55.695 INFO  controller.BookDetailController : Changes saved for "A Really Good Book"
+10:48:00.721 INFO  controller.MenuController : Clicked on menu item Book List
+10:48:00.721 INFO  misc.BookTableGateway : Getting books from database
+10:48:00.756 INFO  controller.BookController : Changing to List View
+10:48:00.759 INFO  controller.BookController : View change successful
+10:48:02.891 INFO  controller.BookListController$1 : Double clicked on book "A Really Good Book"
+10:48:02.891 INFO  controller.BookController : Changing to Detail View
+10:48:02.894 INFO  controller.BookController : View change successful
+10:48:09.370 INFO  controller.MenuController : Clicked on menu item Quit
+10:48:09.371 INFO  controller.MenuController : Exiting program
+10:48:09.375 INFO  misc.BookInventory : Calling stop
+10:48:09.375 INFO  misc.BookTableGateway : Closing the gate
+10:49:12.036 INFO  misc.BookInventory : Starting Book Inventory...
+10:49:12.041 INFO  misc.BookInventory : Calling init
+10:49:12.453 INFO  controller.BookController : Gateway initiated
+10:49:12.463 INFO  misc.BookInventory : Calling start
+10:49:17.116 INFO  controller.MenuController : Clicked on menu item Book List
+10:49:17.117 INFO  misc.BookTableGateway : Getting books from database
+10:49:17.165 INFO  controller.BookController : Changing to List View
+10:49:17.178 INFO  controller.BookController : View change successful
+10:49:19.270 INFO  controller.BookListController : Selected A Really Good Book to be deleted.
+10:49:32.381 INFO  controller.BookListController : Attempting to delete A Really Good Book
+10:49:32.539 INFO  controller.BookListController : Book has been deleted.
+10:49:41.032 INFO  misc.BookInventory : Calling stop
+10:49:41.032 INFO  misc.BookTableGateway : Closing the gate
+11:03:38.558 INFO  misc.BookInventory : Starting Book Inventory...
+11:03:38.562 INFO  misc.BookInventory : Calling init
+11:03:38.971 INFO  controller.BookController : Gateway initiated
+11:03:38.980 INFO  misc.BookInventory : Calling start
+11:03:41.531 INFO  controller.MenuController : Clicked on menu item About
+11:03:46.892 INFO  misc.BookInventory : Calling stop
+11:03:46.892 INFO  misc.BookTableGateway : Closing the gate
+11:03:53.086 INFO  misc.BookInventory : Starting Book Inventory...
+11:03:53.091 INFO  misc.BookInventory : Calling init
+11:03:53.790 INFO  controller.BookController : Gateway initiated
+11:03:53.800 INFO  misc.BookInventory : Calling start
+11:03:57.166 INFO  controller.MenuController : Clicked on menu item About
+11:03:59.569 INFO  misc.BookInventory : Calling stop
+11:03:59.569 INFO  misc.BookTableGateway : Closing the gate
+11:04:04.737 INFO  misc.BookInventory : Starting Book Inventory...
+11:04:04.742 INFO  misc.BookInventory : Calling init
+11:04:05.170 INFO  controller.BookController : Gateway initiated
+11:04:05.185 INFO  misc.BookInventory : Calling start
+11:04:07.128 INFO  controller.MenuController : Clicked on menu item About
+11:04:08.542 INFO  misc.BookInventory : Calling stop
+11:04:08.543 INFO  misc.BookTableGateway : Closing the gate
+11:04:13.656 INFO  misc.BookInventory : Starting Book Inventory...
+11:04:13.660 INFO  misc.BookInventory : Calling init
+11:04:14.101 INFO  controller.BookController : Gateway initiated
+11:04:14.112 INFO  misc.BookInventory : Calling start
+11:04:16.649 INFO  controller.MenuController : Clicked on menu item About
+11:04:17.593 INFO  misc.BookInventory : Calling stop
+11:04:17.593 INFO  misc.BookTableGateway : Closing the gate
+11:04:35.918 INFO  misc.BookInventory : Starting Book Inventory...
+11:04:35.922 INFO  misc.BookInventory : Calling init
+11:04:36.319 INFO  controller.BookController : Gateway initiated
+11:04:36.329 INFO  misc.BookInventory : Calling start
+11:04:38.078 INFO  controller.MenuController : Clicked on menu item About
+11:04:45.364 INFO  misc.BookInventory : Calling stop
+11:04:45.364 INFO  misc.BookTableGateway : Closing the gate
+11:08:03.244 INFO  misc.BookInventory : Starting Book Inventory...
+11:08:03.248 INFO  misc.BookInventory : Calling init
+11:08:03.705 INFO  controller.BookController : Gateway initiated
+11:08:03.721 INFO  misc.BookInventory : Calling start
+11:08:05.474 INFO  controller.MenuController : Clicked on menu item About
+11:08:07.034 INFO  misc.BookInventory : Calling stop
+11:08:07.034 INFO  misc.BookTableGateway : Closing the gate
+11:08:32.339 INFO  misc.BookInventory : Starting Book Inventory...
+11:08:32.344 INFO  misc.BookInventory : Calling init
+11:08:32.769 INFO  controller.BookController : Gateway initiated
+11:08:32.783 INFO  misc.BookInventory : Calling start
+11:08:34.665 INFO  controller.MenuController : Clicked on menu item About
+11:08:38.900 INFO  misc.BookInventory : Calling stop
+11:08:38.900 INFO  misc.BookTableGateway : Closing the gate
+11:11:17.353 INFO  misc.BookInventory : Starting Book Inventory...
+11:11:17.357 INFO  misc.BookInventory : Calling init
+11:11:17.834 INFO  controller.BookController : Gateway initiated
+11:11:17.853 INFO  misc.BookInventory : Calling start
+11:11:19.464 INFO  controller.MenuController : Clicked on menu item About
+11:11:20.350 INFO  misc.BookInventory : Calling stop
+11:11:20.350 INFO  misc.BookTableGateway : Closing the gate
+11:11:33.557 INFO  misc.BookInventory : Starting Book Inventory...
+11:11:33.561 INFO  misc.BookInventory : Calling init
+11:11:34.008 INFO  controller.BookController : Gateway initiated
+11:11:34.021 INFO  misc.BookInventory : Calling start
+11:11:38.676 INFO  misc.BookInventory : Calling stop
+11:11:38.676 INFO  misc.BookTableGateway : Closing the gate

@@ -5,7 +5,6 @@ import controller.*;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import controller.MenuController;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -17,24 +16,6 @@ import javafx.stage.Stage;
 public class BookInventory extends Application{
 	private static Logger logger = LogManager.getLogger();
 	
-	@Override
-	public void start(Stage stage) throws Exception {
-		FXMLLoader loader = new FXMLLoader(getClass().getResource("BookMenuView.fxml")); 
-		MenuController controller = new MenuController();
-		
-		loader.setController(controller);
-		Parent view = loader.load();
-	
-		BookController.setRootPane((BorderPane) view);
-		
-		Scene scene = new Scene(view, 400, 500);
-		stage.setScene(scene);
-		stage.setTitle("Book Inventory");
-		stage.getIcons().add(new Image(BookInventory.class.getResourceAsStream("thebaby.jpg")));
-		stage.show();
-		
-	}
-
 	public static void main(String[] args) {
 		logger.info("Starting Book Inventory...");
 		launch(args);
@@ -47,4 +28,33 @@ public class BookInventory extends Application{
 		BookController.initBookTableGateway();
 	}
 
+	
+	@Override
+	public void start(Stage stage) throws Exception {
+		logger.info("Calling start");
+		FXMLLoader loader = new FXMLLoader(getClass().getResource("BookMenuView.fxml")); 
+		MenuController controller = new MenuController();
+		
+		loader.setController(controller);
+		Parent view = loader.load();
+	
+		BookController.setRootPane((BorderPane) view);
+		
+		Scene scene = new Scene(view, 400, 500);
+		stage.setScene(scene);
+		stage.setTitle("Book Inventory");
+		stage.getIcons().add(new Image(BookInventory.class.getResourceAsStream("../thebaby.jpg")));
+		stage.show();
+	}
+	
+	@Override
+	public void stop() throws Exception {
+		super.stop();
+	
+		logger.info("Calling stop");
+		BookController.close();
+		
+		System.exit(0);
+	}
+	
 }
