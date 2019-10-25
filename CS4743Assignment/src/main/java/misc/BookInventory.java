@@ -44,16 +44,34 @@ public class BookInventory extends Application{
 		stage.setScene(scene);
 		stage.setTitle("Book Inventory");
 		stage.getIcons().add(new Image(BookInventory.class.getResourceAsStream("../thebaby.jpg")));
+		
+		/*
+		stage.setOnCloseRequest(new EventHandler<WindowEvent>() {
+	          public void handle(WindowEvent we) {
+	        	  System.out.println("hmmm");
+	        	  if (BookController.changeView(null, null)) {
+	        		  System.out.println("dont leave me");
+	        		  we.consume();
+	        	  } else {
+	        		  System.out.println("leave me");
+	        		  try {
+						stop();
+					} catch (Exception e) {
+						// TODO Auto-generated catch block
+						e.printStackTrace();
+					}
+	        	  }
+	          }
+	    }); */
+		
 		stage.show();
 	}
 	
 	@Override
-	public void stop() throws Exception {
+	public void stop() throws Exception  {
 		super.stop();
-	
 		logger.info("Calling stop");
 		BookController.close();
-		
 		System.exit(0);
 	}
 	

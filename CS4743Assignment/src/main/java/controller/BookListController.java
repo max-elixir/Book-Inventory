@@ -23,7 +23,7 @@ import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
 import misc.BookInventory;
 
-public class BookListController {
+public class BookListController implements Controller{
 	private static Logger logger = LogManager.getLogger();
 	
 	@FXML private ListView<Book> listBooks;
@@ -96,5 +96,11 @@ public class BookListController {
 		items.removeAll(books);
 		books.remove(selected);
 		items.addAll(books);
+	}
+
+	@Override
+	public boolean hasChanged() {
+		// TODO Auto-generated method stub
+		return false;
 	}
 }

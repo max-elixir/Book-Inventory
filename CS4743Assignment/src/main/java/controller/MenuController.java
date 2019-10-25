@@ -24,6 +24,11 @@ public class MenuController {
 		Object source = action.getSource();
 		if(source == menuQuit) {
 			logger.info("Clicked on menu item Quit");
+			/*
+			if (!BookController.changeView(null, null)) {
+				System.out.println("aight im NOT about to head out");
+				return;
+			}*/
 			Platform.exit();
 			logger.info("Exiting program");
 		}
@@ -35,6 +40,17 @@ public class MenuController {
 		if (source == menuBookAdd) {
 			logger.info("Clicked on menu item Add Book");
 			BookController.changeView(ViewType.BOOK_DETAIL, null);
+			return;
+		}
+		if (source == menuAbout) {
+			logger.info("Clicked on menu item About");
+			BookDetailController.showMessage("About Book Inventory",
+				"The assignment is a JavaFX Application that allows the user to\r\n" + 
+				"see a list of books and see details about each, adding and removing books\r\n" + 
+				"from its inventory on the database as desired. Users are also able to update\r\n" + 
+				"and details about each book. Meant to be a practice\r\n" + 
+				"on the proper creation of an enterprise-tier application.\r\n" + 
+				"");
 			return;
 		}
 		

@@ -19,7 +19,7 @@ import model.BookException;
 import model.GatewayException;
 import javafx.scene.control.Alert.AlertType;
 
-public class BookDetailController {
+public class BookDetailController implements Controller{
 	private static Logger logger = LogManager.getLogger();
 	private Book book;
 	
@@ -101,7 +101,7 @@ public class BookDetailController {
 		return;
 	}
 	
-	private void showMessage(String title, String message) {
+	public static void showMessage(String title, String message) {
 		Alert alert = new Alert(AlertType.INFORMATION);
 		alert.setTitle(title);
 		alert.setHeaderText(null);
@@ -110,6 +110,24 @@ public class BookDetailController {
 	    stage.getIcons().add(new Image(BookInventory.class.getResourceAsStream("../thebaby.jpg")));
 		
 		alert.showAndWait();
+	}
+
+	@Override
+	public boolean hasChanged() {
+		try {
+			if ( book.getTitle().compareTo( tfTitle.getText()) != 0 )
+				return true;
+			if ( book.getYear() != Integer.parseInt( tfYear.getText())) 
+				return true;
+			if ( book.getISBN().compareTo( tfIsbn.getText()) != 0)
+				return true;
+			if ( book.getSummary().compareTo( taSummary.getText()) != 0)
+				return true;
+		} catch (NullPointerException e) {
+			return true;
+		}
+		
+		return false;
 	}
 	
 }

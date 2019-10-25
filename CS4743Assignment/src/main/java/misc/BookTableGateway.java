@@ -214,6 +214,37 @@ public class BookTableGateway {
 		}
 	}
 
+	public void lockBook(Book book) throws GatewayException {
+		PreparedStatement st = null;
+		try {
+			logger.info("Attempting to lock " + book + " for updating.");
+			conn.setTransactionIsolation(Connection.TRANSACTION_REPEATABLE_READ);
+			conn.setAutoCommit(false);
+			st = conn.prepareStatement("Select * from Books where id = ? for update");
+			st.setInt(1, book.getId());
+			st.setQueryTimeout(10);
+			st.executeQuery();
+				
+		} catch(SQLException e){
+			try {
+				conn.rollback();
+			} catch (SQLException e1) {
+				logger.error(e1.getMessage());
+				e1.printStackTrace();
+			}
+
+			throw new GatewayException(e);
+		} finally {
+			try {
+				if(st != null)
+					st.close();
+			} catch (SQLException e) {
+				throw new GatewayException("SQL Error: " + e.getMessage());
+			}
+		}
+		
+	}
+
 	
 
 }
