@@ -1,6 +1,7 @@
 package controller;
 
 import java.io.IOException;
+import java.util.List;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -9,6 +10,7 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
+import javafx.scene.control.ComboBox;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 import javafx.scene.image.Image;
@@ -17,23 +19,27 @@ import misc.BookInventory;
 import model.Book;
 import model.BookException;
 import model.GatewayException;
+import model.Publisher;
 import javafx.scene.control.Alert.AlertType;
 
 public class BookDetailController implements Controller{
 	private static Logger logger = LogManager.getLogger();
 	private Book book;
+	private List<Publisher> publishers;
 	
 	@FXML private TextField tfTitle, tfYear, tfIsbn;
 	@FXML private TextArea taSummary;
 	@FXML private Button buttonSave;
+	@FXML private ComboBox<Publisher> cbPublisher;
 	
 	/**TODO
 	 * Change to take in a Book object from DB
 	 * 
 	 * @param book
 	 */
-	public BookDetailController(Book book) {
+	public BookDetailController(Book book, List<Publisher> publishers) {
 		this.book = book;
+		this.publishers = publishers;
 	}
 	
 	public void initialize() {
@@ -42,6 +48,8 @@ public class BookDetailController implements Controller{
 		tfIsbn.setText(book.getISBN());
 		taSummary.setWrapText(true);
 		taSummary.setText(book.getSummary());
+		cbPublisher.getItems().addAll(publishers);
+		cbPublisher.setValue(publishers.get(book.getPublisher()));
 	}
 	
 	@FXML 
@@ -71,6 +79,7 @@ public class BookDetailController implements Controller{
 			} catch (NumberFormatException e) {
 				throw new BookException("Please enter a valid year between 1455 and 2019");
 			}
+			book.setPublisher( cbPublisher.getValue().getId());
 			
 			book.save();
 			if (originalId != -1) {
@@ -80,7 +89,7 @@ public class BookDetailController implements Controller{
 				showMessage("Creation Saved","Creation of book \""+book+"\" saved!");			
 				logger.info("Creation saved for \""+ book +"\"");
 			}
-		} catch(BookException e) {
+		} catch(BookException | NullPointerException e) {
 			if (originalId != -1){
 				showMessage("Changes Not Saved","Changes to \""+book+"\" not saved: "
 						+ e.getMessage());
@@ -97,6 +106,7 @@ public class BookDetailController implements Controller{
 			book.setYear(original.getYear());
 			book.setISBN(original.getISBN());
 			book.setSummary(original.getSummary());
+			book.setPublisher(original.getPublisher());
 		} 
 		
 		return;
@@ -113,7 +123,6 @@ public class BookDetailController implements Controller{
 		alert.showAndWait();
 	}
 
-	@Override
 	public boolean hasChanged() {
 		try {
 			if ( book.getTitle().compareTo( tfTitle.getText()) != 0 )
@@ -123,6 +132,8 @@ public class BookDetailController implements Controller{
 			if ( book.getISBN().compareTo( tfIsbn.getText()) != 0)
 				return true;
 			if ( book.getSummary().compareTo( taSummary.getText()) != 0)
+				return true;
+			if ( book.getPublisher() != cbPublisher.getValue().getId()) 
 				return true;
 		} catch (NullPointerException e) {
 			return true;

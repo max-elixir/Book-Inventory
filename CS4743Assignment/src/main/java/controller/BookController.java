@@ -2,6 +2,7 @@ package controller;
 
 import model.*;
 import misc.BookTableGateway;
+import misc.PublisherTableGateway;
 
 import java.io.IOException;
 import java.util.List;
@@ -86,7 +87,15 @@ public class BookController {
 			}
 			
 			loader = new FXMLLoader(BookController.class.getResource("BookDetailView.fxml"));
-			currentController = new BookDetailController((Book) object);
+			
+			List<Publisher> publishers = null;
+			try {
+				publishers = PublisherTableGateway.getPublishers();
+			} catch ( Exception e){
+				return false;
+			}
+			
+			currentController = new BookDetailController((Book) object, publishers);
 			loader.setController(currentController);
 			logger.info("Changing to Detail View");
 		}
@@ -99,10 +108,9 @@ public class BookController {
 			logger.error(e.getMessage());
 			return false;
 		} catch (NullPointerException e) {
-			/* Catch is meant for when menuQuit is called. 
-			 * Attempting to change to a null view and 
-			 * choosing yes/no on the dialogue should make the user close either way
-			 */
+			/* Catch is meant for when menuQuit is clicked. 
+			 * Attempting to change to a "null" view and 
+			 * choosing yes/no on the dialogue should make the user close either way */
 			return true; 
 		}
 		
@@ -125,6 +133,7 @@ public class BookController {
 			Platform.exit();
 		}	
 	}
+	
 	
 	/* handle telling the different controllers how to save before changing views*/
 	private static void controllerSave() throws GatewayException {

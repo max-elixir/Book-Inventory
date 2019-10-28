@@ -4,23 +4,26 @@ import misc.BookTableGateway;
 
 public class Book {
 	private String title, summary, ISBN;
-	private int year, id;
+	private int year, id, publisher_id;
 	private BookTableGateway gateway;
+
 	
-	public Book(String title, String summary, int year, String ISBN, int id) {
+	public Book(String title, String summary, int year, String ISBN, int id, int publisher_id) {
 		setTitle(title);
 		setSummary(summary);
 		setYear(year);
 		setISBN(ISBN);
 		setId(id);
+		setPublisher(publisher_id);
 	}
-	
+
 	public Book() {
 		setTitle(null);
 		setSummary(null);
 		setYear(-1);
 		setISBN(null);
 		setId(-1);
+		setPublisher(0);
 	}
 	
 	public void save() throws BookException, GatewayException {
@@ -133,6 +136,14 @@ public class Book {
 
 	public void setId(int id) {
 		this.id = id;
+	}
+
+	public int getPublisher() {
+		return publisher_id;
+	}
+	
+	public void setPublisher(int publisher_id) {
+		this.publisher_id = publisher_id;
 	}
 	
 }

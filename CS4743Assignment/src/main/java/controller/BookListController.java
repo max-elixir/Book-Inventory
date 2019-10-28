@@ -50,7 +50,12 @@ public class BookListController implements Controller{
                 	Book selected = listBooks.getSelectionModel().getSelectedItem();
                 	logger.info("Double clicked on book \"" + selected + "\"");
                 	
-        			BookController.changeView(ViewType.BOOK_DETAIL, selected);
+        			try {
+						BookController.changeView(ViewType.BOOK_DETAIL, selected);
+					} catch (Exception e) {
+						// TODO Auto-generated catch block
+						e.printStackTrace();
+					}
                 }
             }
         });
@@ -98,7 +103,6 @@ public class BookListController implements Controller{
 		items.addAll(books);
 	}
 
-	@Override
 	public boolean hasChanged() {
 		// TODO Auto-generated method stub
 		return false;

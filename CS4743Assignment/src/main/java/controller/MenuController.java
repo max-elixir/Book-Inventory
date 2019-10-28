@@ -2,8 +2,6 @@ package controller;
 
 import model.ViewType;
 
-import java.io.IOException;
-
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -20,7 +18,7 @@ public class MenuController {
 	public MenuController() {
 	}
 	
-	@FXML private void handleMenuAction(ActionEvent action) throws IOException {
+	@FXML private void handleMenuAction(ActionEvent action) throws Exception {
 		Object source = action.getSource();
 		if(source == menuQuit) {
 			logger.info("Clicked on menu item Quit");

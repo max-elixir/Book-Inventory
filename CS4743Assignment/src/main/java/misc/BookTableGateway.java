@@ -53,13 +53,14 @@ public class BookTableGateway {
 		try {
 			conn.setAutoCommit(false);
 			st = conn.prepareStatement("insert into Books "
-					+ " (title, summary, year_published, isbn) "
+					+ " (title, summary, year_published, isbn, publisher_id) "
 					+ "values"
-					+ "(?, ?, ?, ?)");
+					+ "(?, ?, ?, ?, ?)");
 			st.setString(1, book.getTitle());
 			st.setString(2, book.getSummary());
 			st.setInt(3, book.getYear());
 			st.setString(4, book.getISBN());
+			st.setInt(5, book.getPublisher());
 			st.executeUpdate();
 			conn.commit();
 			
@@ -107,14 +108,14 @@ public class BookTableGateway {
 		
 		try {
 			st = conn.prepareStatement("select a.id, a.title, "
-					+ "a.year_published, a.summary, a.isbn "
+					+ "a.year_published, a.summary, a.isbn, a.publisher_id "
 					+ "from Books a order by a.id ");
 			rs = st.executeQuery();
 			
 			while (rs.next()) {
 				Book dbBook = new Book(rs.getString("title"), 
 						rs.getString("summary"), rs.getInt("year_published"), 
-						rs.getString("isbn"), rs.getInt("id"));
+						rs.getString("isbn"), rs.getInt("id"), rs.getInt("publisher_id"));
 				dbBook.setGateway(this);
 				books.add(dbBook);
 			}
@@ -144,12 +145,14 @@ public class BookTableGateway {
 					+ " , year_published = ? "
 					+ " , isbn = ? "
 					+ " , summary = ? "
+					+ " , publisher_id = ? "
 					+ " where id = ?");
 			st.setString(1, book.getTitle());
 			st.setInt(2, book.getYear());
 			st.setString(3, book.getISBN());
 			st.setString(4, book.getSummary());
-			st.setInt(5, book.getId());
+			st.setInt(5, book.getPublisher());
+			st.setInt(6, book.getId());
 			st.executeUpdate();
 				
 			conn.commit();
