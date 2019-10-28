@@ -56,6 +56,7 @@ public class BookDetailController implements Controller{
 	/**
 	 * @return Ask book to try to save itself to database, determine if it was able to.
 	 * @throws GatewayException 
+	 * @throws BookException 
 	 */
 	public void save() throws GatewayException {
 		Book original = book;

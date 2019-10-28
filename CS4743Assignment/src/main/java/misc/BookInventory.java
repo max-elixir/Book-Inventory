@@ -6,12 +6,14 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import javafx.application.Application;
+import javafx.event.EventHandler;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.image.Image;
 import javafx.scene.layout.BorderPane;
 import javafx.stage.Stage;
+import javafx.stage.WindowEvent;
 
 public class BookInventory extends Application{
 	private static Logger logger = LogManager.getLogger();
@@ -44,25 +46,17 @@ public class BookInventory extends Application{
 		stage.setScene(scene);
 		stage.setTitle("Book Inventory");
 		stage.getIcons().add(new Image(BookInventory.class.getResourceAsStream("../thebaby.jpg")));
-		
-		/*
 		stage.setOnCloseRequest(new EventHandler<WindowEvent>() {
 	          public void handle(WindowEvent we) {
-	        	  System.out.println("hmmm");
-	        	  if (BookController.changeView(null, null)) {
-	        		  System.out.println("dont leave me");
+	        	  if (!BookController.changeView(null, null)) {
+	        		  logger.info("User aborted call to stop");
 	        		  we.consume();
 	        	  } else {
-	        		  System.out.println("leave me");
 	        		  try {
 						stop();
 					} catch (Exception e) {
-						// TODO Auto-generated catch block
 						e.printStackTrace();
-					}
-	        	  }
-	          }
-	    }); */
+		}}}}); 
 		
 		stage.show();
 	}

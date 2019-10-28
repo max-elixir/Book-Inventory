@@ -24,13 +24,13 @@ public class MenuController {
 		Object source = action.getSource();
 		if(source == menuQuit) {
 			logger.info("Clicked on menu item Quit");
-			/*
-			if (!BookController.changeView(null, null)) {
-				System.out.println("aight im NOT about to head out");
+			if (BookController.changeView(null, null)) {
+				Platform.exit();
+				logger.info("Exiting program");
+			} else {
+				logger.info("User aborted menu item Quit to continue working");
 				return;
-			}*/
-			Platform.exit();
-			logger.info("Exiting program");
+			}
 		}
 		if(source == menuBookList) {
 			logger.info("Clicked on menu item Book List");

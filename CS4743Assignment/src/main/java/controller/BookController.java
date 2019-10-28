@@ -28,6 +28,14 @@ public class BookController {
 	}
 
 	public static boolean changeView(ViewType viewType, Object object) {
+		/* If trying to change views and but there were changes made on the screen,
+		 * prompt the user if they want to save before changing views.
+		 * Yes or no will either save or not save then change the view,
+		 * cancel will make the user not change views.
+		 * 
+		 * Small issues putting alert message in its own method, 
+		 * copy-pasted here for now.
+		 */
 		if(currentController != null && currentController.hasChanged()) {
 			Alert alert = new Alert(AlertType.CONFIRMATION);
 			
@@ -43,12 +51,17 @@ public class BookController {
 			
 			Optional<ButtonType> result = alert.showAndWait();
 			if(result.get().getText().equalsIgnoreCase("Yes")) {
-				controllerSave();
+				try {
+					controllerSave();
+				} catch (GatewayException e) {
+					BookDetailController.showMessage("Unable to save", "An error has occured or the record was changed before you could save. Unable to save.");
+				}
 			} else if(result.get().getText().equalsIgnoreCase("Cancel") ) {
 				return false;
 			}
 		}
 		
+		/* Determine which view to change */
 		FXMLLoader loader = null;
 		
 		if(viewType == ViewType.BOOK_LIST) {
@@ -86,7 +99,11 @@ public class BookController {
 			logger.error(e.getMessage());
 			return false;
 		} catch (NullPointerException e) {
-			return false;
+			/* Catch is meant for when menuQuit is called. 
+			 * Attempting to change to a null view and 
+			 * choosing yes/no on the dialogue should make the user close either way
+			 */
+			return true; 
 		}
 		
 		root.setCenter(view);		
@@ -110,13 +127,9 @@ public class BookController {
 	}
 	
 	/* handle telling the different controllers how to save before changing views*/
-	private static void controllerSave() {
+	private static void controllerSave() throws GatewayException {
 		if (currentController instanceof BookDetailController) {
-			try {
-				((BookDetailController) currentController).save();
-			} catch (GatewayException e) {
-				e.printStackTrace();
-			} 
+			((BookDetailController) currentController).save();
 		}
 	}
 
