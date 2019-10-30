@@ -21,7 +21,7 @@ public class BookTableGateway {
 	private static Logger logger = LogManager.getLogger();
 	private Connection conn;
 	
-	public BookTableGateway() throws Exception {
+	public BookTableGateway() throws GatewayException {
 		conn = null;
 		
 		Properties props = new Properties();
@@ -38,9 +38,7 @@ public class BookTableGateway {
 			conn = ds.getConnection();
 
         } catch (IOException | SQLException e) {
-			// TODO Make Exception class
-			e.printStackTrace();
-			throw e;
+			throw new GatewayException(e);
 		}
 	}
 	
@@ -54,15 +52,12 @@ public class BookTableGateway {
 			st.setInt(1, book.getId());
 			st.setQueryTimeout(10);
 			st.executeQuery();
-				
 		} catch(SQLException e){
 			try {
 				conn.rollback();
 			} catch (SQLException e1) {
-				logger.error(e1.getMessage());
-				e1.printStackTrace();
+				logger.fatal(e1.getMessage());
 			}
-
 			throw new GatewayException(e);
 		} finally {
 			try {
@@ -71,13 +66,11 @@ public class BookTableGateway {
 			} catch (SQLException e) {
 				throw new GatewayException("SQL Error: " + e.getMessage());
 			}
-		}
-		
+		}	
 	}
 	
-	
 	public void unlockBook(Book book) throws GatewayException {
-		logger.info("Unlocking book "+ book +" in database");
+		logger.info("Unlocking book "+ book +" manually in database");
 		PreparedStatement st = null;
 		try {
 			conn.setAutoCommit(false);
@@ -92,18 +85,14 @@ public class BookTableGateway {
 			try {
 				conn.rollback();
 			} catch (SQLException e1) {
-				logger.error(e1.getMessage());
-				e1.printStackTrace();
+				logger.fatal(e1.getMessage());
 			}
-
 			throw new GatewayException(e);
 		} finally {
 			try {
 				if(st != null)
 					st.close();
-				
 				conn.setAutoCommit(true);
-				
 			} catch (SQLException e) {
 				throw new GatewayException("SQL Error: " + e.getMessage());
 			}
@@ -177,9 +166,8 @@ public class BookTableGateway {
 			try {
 				conn.rollback();
 			} catch (SQLException e1) {
-				e1.printStackTrace();
+				logger.fatal(e1.getMessage());
 			}
-
 			throw new GatewayException(e);
 		} finally {
 			try {
@@ -261,18 +249,14 @@ public class BookTableGateway {
 			try {
 				conn.rollback();
 			} catch (SQLException e1) {
-				logger.error(e1.getMessage());
-				e1.printStackTrace();
+				logger.fatal(e1.getMessage());
 			}
-
 			throw new GatewayException(e);
 		} finally {
 			try {
 				if(st != null)
 					st.close();
-				
 				conn.setAutoCommit(true);
-				
 			} catch (SQLException e) {
 				throw new GatewayException("SQL Error: " + e.getMessage());
 			}
@@ -292,8 +276,7 @@ public class BookTableGateway {
 			try {
 				conn.rollback();
 			} catch (SQLException e1) {
-				logger.error(e1.getMessage());
-				e1.printStackTrace();
+				logger.fatal(e1.getMessage());
 			}
 			throw new GatewayException(e);
 		} finally {

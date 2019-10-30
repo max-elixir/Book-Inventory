@@ -136,7 +136,6 @@ public class BookDetailController implements Controller{
 						+ e.getMessage());
 				logger.error("Creation not saved for \""+ book +"\": "
 						+ e.getMessage());
-				e.printStackTrace();
 			}
 			
 			book.setTitle(original.getTitle());
@@ -188,7 +187,6 @@ public class BookDetailController implements Controller{
 		} catch (NullPointerException e) {
 			return true;
 		}
-		
 		
 		try {
 			book.getGateway().unlockBook(book);

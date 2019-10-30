@@ -4457,3 +4457,488 @@
 21:38:13.018 INFO  controller.BookListController : Book has been deleted.
 21:38:17.773 INFO  misc.BookInventory : Calling stop
 21:38:17.773 INFO  misc.BookTableGateway : Closing the gate
+09:05:12.392 INFO  misc.BookInventory : Starting Book Inventory...
+09:05:12.403 INFO  misc.BookInventory : Calling init
+09:05:12.938 INFO  controller.BookController : Gateway initiated
+09:05:12.953 INFO  misc.BookInventory : Calling start
+09:06:14.516 INFO  controller.MenuController : Clicked on menu item Book List
+09:06:14.516 INFO  misc.BookTableGateway : Getting books from database
+09:06:14.574 INFO  controller.BookController : Changing to List View
+09:06:14.586 INFO  controller.BookController : View change successful
+09:06:34.802 INFO  controller.BookListController$1 : Double clicked on book "War of the Spark"
+09:06:34.803 INFO  misc.BookTableGateway : Attempting to lock War of the Spark for updating.
+09:06:35.184 INFO  misc.PublisherTableGateway : Getting publishers from database
+09:06:35.211 INFO  controller.BookController : Changing to Detail View
+09:06:35.231 INFO  controller.BookController : View change successful
+09:06:45.967 INFO  controller.BookDetailController : Attempting to save.
+09:06:45.968 INFO  misc.BookTableGateway : Updating book War of the Spark in database
+09:06:48.172 INFO  controller.BookDetailController : Changes saved for "War of the Spark"
+09:06:50.313 INFO  misc.BookTableGateway : Unlocking book War of the Spark manually in database
+09:06:50.433 INFO  controller.BookController : Changing to Audit Trail View
+09:06:50.454 INFO  misc.BookTableGateway : Getting audit trail for War of the Spark
+09:06:50.492 INFO  controller.BookController : View change successful
+09:06:57.330 INFO  controller.AuditTrailController : Attempting to go back to book detail view
+09:06:57.331 INFO  misc.BookTableGateway : Attempting to lock War of the Spark for updating.
+09:06:57.649 INFO  misc.PublisherTableGateway : Getting publishers from database
+09:06:57.675 INFO  controller.BookController : Changing to Detail View
+09:06:57.678 INFO  controller.BookController : View change successful
+09:06:59.136 INFO  controller.MenuController : Clicked on menu item Book List
+09:06:59.136 INFO  misc.BookTableGateway : Unlocking book War of the Spark manually in database
+09:06:59.255 INFO  misc.BookTableGateway : Getting books from database
+09:06:59.290 INFO  controller.BookController : Changing to List View
+09:06:59.292 INFO  controller.BookController : View change successful
+09:07:01.747 INFO  controller.BookListController$1 : Double clicked on book "The Bad Beginning"
+09:07:01.747 INFO  misc.BookTableGateway : Attempting to lock The Bad Beginning for updating.
+09:07:02.151 INFO  misc.PublisherTableGateway : Getting publishers from database
+09:07:02.180 INFO  controller.BookController : Changing to Detail View
+09:07:02.183 INFO  controller.BookController : View change successful
+09:07:03.218 INFO  misc.BookTableGateway : Unlocking book The Bad Beginning manually in database
+09:07:03.343 INFO  controller.BookController : Changing to Audit Trail View
+09:07:03.346 INFO  misc.BookTableGateway : Getting audit trail for The Bad Beginning
+09:07:03.379 INFO  controller.BookController : View change successful
+09:07:08.084 INFO  controller.MenuController : Clicked on menu item Book List
+09:07:08.084 INFO  misc.BookTableGateway : Getting books from database
+09:07:08.117 INFO  controller.BookController : Changing to List View
+09:07:08.119 INFO  controller.BookController : View change successful
+09:07:11.183 INFO  controller.MenuController : Clicked on menu item Add Book
+09:07:11.539 INFO  misc.PublisherTableGateway : Getting publishers from database
+09:07:11.569 INFO  controller.BookController : Changing to Detail View
+09:07:11.573 INFO  controller.BookController : View change successful
+09:07:33.958 INFO  controller.BookDetailController : Attempting to save.
+09:07:33.958 INFO  misc.BookTableGateway : Inserting new book fuck into database
+09:07:50.802 INFO  controller.BookDetailController : Creation saved for "fuck"
+09:07:53.479 INFO  controller.MenuController : Clicked on menu item Book List
+09:07:53.479 INFO  misc.BookTableGateway : Unlocking book fuck manually in database
+09:07:53.615 INFO  misc.BookTableGateway : Getting books from database
+09:07:53.649 INFO  controller.BookController : Changing to List View
+09:07:53.656 INFO  controller.BookController : View change successful
+09:07:58.109 INFO  controller.BookListController : Selected fuck to be deleted.
+09:07:59.214 INFO  controller.BookListController : Attempting to delete fuck
+09:07:59.374 INFO  controller.BookListController : Book has been deleted.
+09:08:03.894 INFO  controller.BookListController$1 : Double clicked on book "Cookie"
+09:08:03.895 INFO  misc.BookTableGateway : Attempting to lock Cookie for updating.
+09:08:04.244 INFO  misc.PublisherTableGateway : Getting publishers from database
+09:08:04.277 INFO  controller.BookController : Changing to Detail View
+09:08:04.280 INFO  controller.BookController : View change successful
+09:08:11.233 INFO  controller.MenuController : Clicked on menu item Book List
+09:08:20.419 INFO  controller.MenuController : Clicked on menu item Book List
+09:08:23.939 INFO  misc.BookTableGateway : Updating book Cookie in database
+09:08:25.235 INFO  controller.BookDetailController : Changes saved for "Cookie"
+09:08:25.661 INFO  misc.BookTableGateway : Getting books from database
+09:08:25.695 INFO  controller.BookController : Changing to List View
+09:08:25.697 INFO  controller.BookController : View change successful
+09:08:27.566 INFO  misc.BookInventory : Calling stop
+09:08:27.566 INFO  misc.BookTableGateway : Closing the gate
+11:47:47.233 INFO  misc.BookInventory : Starting Book Inventory...
+11:47:47.237 INFO  misc.BookInventory : Calling init
+11:47:47.643 INFO  controller.BookController : Gateway initiated
+11:47:47.655 INFO  misc.BookInventory : Calling start
+11:47:49.372 INFO  controller.MenuController : Clicked on menu item Book List
+11:47:49.372 INFO  misc.BookTableGateway : Getting books from database
+11:47:49.480 INFO  controller.BookController : Changing to List View
+11:47:49.496 INFO  controller.BookController : View change successful
+11:47:50.491 INFO  controller.BookListController$1 : Double clicked on book "The Bad Beginning"
+11:47:50.492 INFO  misc.BookTableGateway : Attempting to lock The Bad Beginning for updating.
+11:47:50.841 INFO  misc.PublisherTableGateway : Getting publishers from database
+11:47:50.885 INFO  controller.BookController : Changing to Detail View
+11:47:50.906 INFO  controller.BookController : View change successful
+11:47:51.568 INFO  misc.BookTableGateway : Unlocking book The Bad Beginning manually in database
+11:47:51.687 INFO  controller.BookController : Changing to Audit Trail View
+11:47:51.704 INFO  misc.BookTableGateway : Getting audit trail for The Bad Beginning
+11:47:51.733 INFO  controller.BookController : View change successful
+11:48:08.425 INFO  controller.AuditTrailController : Attempting to go back to book detail view
+11:48:08.425 INFO  misc.BookTableGateway : Attempting to lock The Bad Beginning for updating.
+11:48:08.742 INFO  misc.PublisherTableGateway : Getting publishers from database
+11:48:08.782 INFO  controller.BookController : Changing to Detail View
+11:48:08.791 INFO  controller.BookController : View change successful
+11:48:09.975 INFO  misc.BookTableGateway : Unlocking book The Bad Beginning manually in database
+11:48:10.102 INFO  misc.BookInventory : Calling stop
+11:48:10.103 INFO  misc.BookTableGateway : Closing the gate
+11:58:18.038 INFO  misc.BookInventory : Starting Book Inventory...
+11:58:18.046 INFO  misc.BookInventory : Calling init
+11:58:18.637 INFO  controller.BookController : Gateway initiated
+11:58:18.658 INFO  misc.BookInventory : Calling start
+11:58:20.455 INFO  controller.MenuController : Clicked on menu item Book List
+11:58:20.456 INFO  misc.BookTableGateway : Getting books from database
+11:58:20.511 INFO  controller.BookController : Changing to List View
+11:58:20.527 INFO  controller.BookController : View change successful
+11:58:22.186 INFO  controller.BookListController$1 : Double clicked on book "The Bad Beginning"
+11:58:22.186 INFO  misc.BookTableGateway : Attempting to lock The Bad Beginning for updating.
+11:58:22.567 INFO  misc.PublisherTableGateway : Getting publishers from database
+11:58:22.601 INFO  controller.BookController : Changing to Detail View
+11:58:22.630 INFO  controller.BookController : View change successful
+11:58:23.426 INFO  misc.BookTableGateway : Unlocking book The Bad Beginning manually in database
+11:58:23.534 INFO  controller.BookController : Changing to Audit Trail View
+11:58:23.559 INFO  misc.BookTableGateway : Getting audit trail for The Bad Beginning
+11:58:23.591 INFO  controller.BookController : View change successful
+11:58:57.422 INFO  misc.BookInventory : Calling stop
+11:58:57.422 INFO  misc.BookTableGateway : Closing the gate
+11:59:08.713 INFO  misc.BookInventory : Starting Book Inventory...
+11:59:08.719 INFO  misc.BookInventory : Calling init
+11:59:09.186 INFO  controller.BookController : Gateway initiated
+11:59:09.204 INFO  misc.BookInventory : Calling start
+11:59:10.799 INFO  controller.MenuController : Clicked on menu item Book List
+11:59:10.800 INFO  misc.BookTableGateway : Getting books from database
+11:59:10.860 INFO  controller.BookController : Changing to List View
+11:59:10.877 INFO  controller.BookController : View change successful
+11:59:14.629 INFO  controller.BookListController$1 : Double clicked on book "The Bad Beginning"
+11:59:14.629 INFO  misc.BookTableGateway : Attempting to lock The Bad Beginning for updating.
+11:59:14.982 INFO  misc.PublisherTableGateway : Getting publishers from database
+11:59:15.014 INFO  controller.BookController : Changing to Detail View
+11:59:15.033 INFO  controller.BookController : View change successful
+11:59:15.869 INFO  misc.BookTableGateway : Unlocking book The Bad Beginning manually in database
+11:59:15.992 INFO  controller.BookController : Changing to Audit Trail View
+11:59:16.017 INFO  misc.BookTableGateway : Getting audit trail for The Bad Beginning
+11:59:16.051 INFO  controller.BookController : View change successful
+11:59:21.137 INFO  controller.AuditTrailController : Attempting to go back to book detail view
+11:59:21.137 INFO  misc.BookTableGateway : Attempting to lock The Bad Beginning for updating.
+11:59:21.477 INFO  misc.PublisherTableGateway : Getting publishers from database
+11:59:21.507 INFO  controller.BookController : Changing to Detail View
+11:59:21.517 INFO  controller.BookController : View change successful
+11:59:29.556 INFO  controller.BookDetailController : Attempting to save.
+11:59:29.557 INFO  misc.BookTableGateway : Updating book The Bad Beginning in database
+11:59:30.902 INFO  controller.BookDetailController : Changes saved for "The Bad Beginning"
+11:59:33.286 INFO  misc.BookTableGateway : Unlocking book The Bad Beginning manually in database
+11:59:33.416 INFO  controller.BookController : Changing to Audit Trail View
+11:59:33.420 INFO  misc.BookTableGateway : Getting audit trail for The Bad Beginning
+11:59:33.453 INFO  controller.BookController : View change successful
+11:59:39.838 INFO  controller.AuditTrailController : Attempting to go back to book detail view
+11:59:39.838 INFO  misc.BookTableGateway : Attempting to lock The Bad Beginning for updating.
+11:59:40.256 INFO  misc.PublisherTableGateway : Getting publishers from database
+11:59:40.303 INFO  controller.BookController : Changing to Detail View
+11:59:40.308 INFO  controller.BookController : View change successful
+11:59:43.440 INFO  controller.BookDetailController : Attempting to save.
+11:59:43.440 INFO  misc.BookTableGateway : Updating book The Bad Beginning in database
+11:59:44.354 INFO  controller.BookDetailController : Changes saved for "The Bad Beginning"
+11:59:50.664 INFO  misc.BookTableGateway : Unlocking book The Bad Beginning manually in database
+11:59:50.782 INFO  misc.BookInventory : Calling stop
+11:59:50.783 INFO  misc.BookTableGateway : Closing the gate
+14:06:17.233 INFO  misc.BookInventory : Starting Book Inventory...
+14:06:17.239 INFO  misc.BookInventory : Calling init
+14:06:17.568 INFO  controller.BookController : Gateway initiated
+14:06:17.587 INFO  misc.BookInventory : Calling start
+14:06:20.611 INFO  controller.MenuController : Clicked on menu item Book List
+14:06:20.629 INFO  misc.BookTableGateway : Getting books from database
+14:06:20.757 INFO  controller.BookController : Changing to List View
+14:06:20.816 INFO  controller.BookController : View change successful
+14:06:22.113 INFO  controller.BookListController$1 : Double clicked on book "The Hatchling"
+14:06:22.114 INFO  misc.BookTableGateway : Attempting to lock The Hatchling for updating.
+14:06:22.181 INFO  misc.PublisherTableGateway : Getting publishers from database
+14:06:22.240 INFO  controller.BookController : Changing to Detail View
+14:06:22.298 INFO  controller.BookController : View change successful
+14:06:31.359 INFO  misc.BookTableGateway : Updating book The Hatchling in database
+14:06:33.230 INFO  controller.BookDetailController : Changes saved for "The Hatchling"
+14:06:33.400 INFO  controller.BookController : Changing to Audit Trail View
+14:06:33.486 INFO  misc.BookTableGateway : Getting audit trail for The Hatchling
+14:06:33.499 INFO  controller.BookController : View change successful
+14:06:55.584 INFO  controller.AuditTrailController : Attempting to go back to book detail view
+14:06:55.586 INFO  misc.BookTableGateway : Attempting to lock The Hatchling for updating.
+14:06:55.627 INFO  misc.PublisherTableGateway : Getting publishers from database
+14:06:55.634 INFO  controller.BookController : Changing to Detail View
+14:06:55.649 INFO  controller.BookController : View change successful
+14:06:59.744 INFO  controller.MenuController : Clicked on menu item Book List
+14:06:59.745 INFO  misc.BookTableGateway : Unlocking book The Hatchling manually in database
+14:06:59.758 INFO  misc.BookTableGateway : Getting books from database
+14:06:59.767 INFO  controller.BookController : Changing to List View
+14:06:59.778 INFO  controller.BookController : View change successful
+14:14:01.082 INFO  controller.BookListController$1 : Double clicked on book "The End"
+14:14:01.083 INFO  misc.BookTableGateway : Attempting to lock The End for updating.
+14:14:01.228 INFO  misc.PublisherTableGateway : Getting publishers from database
+14:14:01.235 INFO  controller.BookController : Changing to Detail View
+14:14:01.250 INFO  controller.BookController : View change successful
+14:14:11.790 INFO  controller.BookDetailController : Attempting to save.
+14:14:11.791 INFO  misc.BookTableGateway : Updating book The End in database
+14:14:13.957 INFO  controller.BookDetailController : Changes saved for "The End"
+14:14:16.726 INFO  misc.BookTableGateway : Unlocking book The End manually in database
+14:14:16.854 INFO  controller.BookController : Changing to Audit Trail View
+14:14:16.862 INFO  misc.BookTableGateway : Getting audit trail for The End
+14:14:16.867 INFO  controller.BookController : View change successful
+14:14:33.440 INFO  controller.AuditTrailController : Attempting to go back to book detail view
+14:14:33.441 INFO  misc.BookTableGateway : Attempting to lock The End for updating.
+14:14:33.499 INFO  misc.PublisherTableGateway : Getting publishers from database
+14:14:33.513 INFO  controller.BookController : Changing to Detail View
+14:14:33.526 INFO  controller.BookController : View change successful
+14:14:36.432 INFO  controller.MenuController : Clicked on menu item Book List
+14:14:36.433 INFO  misc.BookTableGateway : Unlocking book The End manually in database
+14:14:36.447 INFO  misc.BookTableGateway : Getting books from database
+14:14:36.457 INFO  controller.BookController : Changing to List View
+14:14:36.464 INFO  controller.BookController : View change successful
+14:14:39.288 INFO  controller.MenuController : Clicked on menu item Add Book
+14:14:39.443 INFO  misc.PublisherTableGateway : Getting publishers from database
+14:14:39.450 INFO  controller.BookController : Changing to Detail View
+14:14:39.461 INFO  controller.BookController : View change successful
+14:14:41.790 INFO  controller.BookDetailController : Attempting to save.
+14:14:41.791 ERROR model.BookException : Title must be less than 255 characters and not null
+14:14:43.531 ERROR controller.BookDetailController : Creation not saved for "null": Title must be less than 255 characters and not null
+14:15:07.399 INFO  controller.BookDetailController : Attempting to save.
+14:15:07.400 ERROR model.BookException : Book must be published between 1455 and 2019
+14:15:09.405 ERROR controller.BookDetailController : Creation not saved for "ada": Book must be published between 1455 and 2019
+14:15:50.715 INFO  controller.BookDetailController : Attempting to save.
+14:15:52.646 ERROR controller.BookDetailController : Creation not saved for "ada": null
+14:18:04.857 INFO  misc.BookInventory : Calling stop
+14:18:04.858 INFO  misc.BookTableGateway : Closing the gate
+14:18:11.089 INFO  misc.BookInventory : Starting Book Inventory...
+14:18:11.095 INFO  misc.BookInventory : Calling init
+14:18:11.316 INFO  controller.BookController : Gateway initiated
+14:18:11.331 INFO  misc.BookInventory : Calling start
+14:18:16.160 INFO  controller.MenuController : Clicked on menu item Add Book
+14:18:16.200 INFO  misc.PublisherTableGateway : Getting publishers from database
+14:18:16.277 INFO  controller.BookController : Changing to Detail View
+14:18:16.347 INFO  controller.BookController : View change successful
+14:18:18.872 INFO  controller.BookDetailController : Attempting to save.
+14:18:18.873 ERROR model.BookException : Title must be less than 255 characters and not null
+14:18:20.549 ERROR controller.BookDetailController : Creation not saved for "null": Title must be less than 255 characters and not null
+14:18:24.300 INFO  controller.BookDetailController : Attempting to save.
+14:18:24.300 ERROR model.BookException : Book must be published between 1455 and 2019
+14:18:25.656 ERROR controller.BookDetailController : Creation not saved for "adqdqw": Book must be published between 1455 and 2019
+14:18:32.402 INFO  controller.BookDetailController : Attempting to save.
+14:18:32.403 ERROR model.BookException : ISBN must be formated to 13 characters or less
+14:18:34.270 ERROR controller.BookDetailController : Creation not saved for "adqdqw": ISBN must be formated to 13 characters or less
+14:18:38.036 INFO  controller.BookDetailController : Attempting to save.
+14:18:38.037 INFO  misc.BookTableGateway : Inserting new book adqdqw into database
+14:18:41.958 INFO  controller.BookDetailController : Creation saved for "adqdqw"
+14:18:44.847 INFO  controller.MenuController : Clicked on menu item Book List
+14:18:48.599 ERROR controller.BookDetailController : Changes not saved for "adqdqw": null
+14:18:48.599 INFO  misc.BookTableGateway : Getting books from database
+14:18:48.607 INFO  controller.BookController : Changing to List View
+14:18:48.614 INFO  controller.BookController : View change successful
+14:18:52.065 INFO  controller.BookListController$1 : Double clicked on book "adqdqw"
+14:18:52.065 INFO  misc.BookTableGateway : Attempting to lock adqdqw for updating.
+14:18:52.149 INFO  misc.PublisherTableGateway : Getting publishers from database
+14:18:52.155 INFO  controller.BookController : Changing to Detail View
+14:18:52.171 INFO  controller.BookController : View change successful
+14:18:55.246 INFO  controller.MenuController : Clicked on menu item Book List
+14:18:57.996 ERROR controller.BookDetailController : Changes not saved for "adqdqw": null
+14:18:57.996 INFO  misc.BookTableGateway : Getting books from database
+14:18:58.004 INFO  controller.BookController : Changing to List View
+14:18:58.007 INFO  controller.BookController : View change successful
+14:19:03.551 INFO  controller.BookListController$1 : Double clicked on book "adqdqw"
+14:19:03.553 INFO  misc.BookTableGateway : Attempting to lock adqdqw for updating.
+14:19:03.593 INFO  misc.PublisherTableGateway : Getting publishers from database
+14:19:03.601 INFO  controller.BookController : Changing to Detail View
+14:19:03.619 INFO  controller.BookController : View change successful
+14:19:06.554 INFO  controller.BookController : Changing to Audit Trail View
+14:19:06.579 INFO  misc.BookTableGateway : Getting audit trail for adqdqw
+14:19:06.606 INFO  controller.BookController : View change successful
+14:19:08.478 INFO  controller.AuditTrailController : Attempting to go back to book detail view
+14:19:08.480 INFO  misc.BookTableGateway : Attempting to lock adqdqw for updating.
+14:19:08.571 INFO  misc.PublisherTableGateway : Getting publishers from database
+14:19:08.575 INFO  controller.BookController : Changing to Detail View
+14:19:08.578 INFO  controller.BookController : View change successful
+14:19:16.094 INFO  misc.BookInventory : Calling stop
+14:19:16.094 INFO  misc.BookTableGateway : Closing the gate
+14:19:41.058 INFO  misc.BookInventory : Starting Book Inventory...
+14:19:41.065 INFO  misc.BookInventory : Calling init
+14:19:41.370 INFO  controller.BookController : Gateway initiated
+14:19:41.397 INFO  misc.BookInventory : Calling start
+14:19:43.986 INFO  controller.MenuController : Clicked on menu item Book List
+14:19:43.988 INFO  misc.BookTableGateway : Getting books from database
+14:19:44.070 INFO  controller.BookController : Changing to List View
+14:19:44.119 INFO  controller.BookController : View change successful
+14:19:45.422 INFO  controller.BookListController$1 : Double clicked on book "The Hatchling"
+14:19:45.423 INFO  misc.BookTableGateway : Attempting to lock The Hatchling for updating.
+14:19:45.645 INFO  misc.PublisherTableGateway : Getting publishers from database
+14:19:45.707 INFO  controller.BookController : Changing to Detail View
+14:19:45.760 INFO  controller.BookController : View change successful
+14:19:47.632 INFO  controller.MenuController : Clicked on menu item Add Book
+14:19:47.633 INFO  misc.BookTableGateway : Unlocking book The Hatchling manually in database
+14:19:47.728 INFO  misc.PublisherTableGateway : Getting publishers from database
+14:19:47.735 INFO  controller.BookController : Changing to Detail View
+14:19:47.766 INFO  controller.BookController : View change successful
+14:19:56.857 INFO  controller.BookDetailController : Attempting to save.
+14:19:56.858 INFO  misc.BookTableGateway : Inserting new book A into database
+14:19:58.349 INFO  controller.BookDetailController : Creation saved for "A"
+14:20:00.067 INFO  controller.MenuController : Clicked on menu item Book List
+14:20:00.068 INFO  misc.BookTableGateway : Unlocking book A manually in database
+14:20:00.080 INFO  misc.BookTableGateway : Getting books from database
+14:20:00.086 INFO  controller.BookController : Changing to List View
+14:20:00.091 INFO  controller.BookController : View change successful
+14:20:02.212 INFO  controller.BookListController$1 : Double clicked on book "A"
+14:20:02.214 INFO  misc.BookTableGateway : Attempting to lock A for updating.
+14:20:02.374 INFO  misc.PublisherTableGateway : Getting publishers from database
+14:20:02.393 INFO  controller.BookController : Changing to Detail View
+14:20:02.412 INFO  controller.BookController : View change successful
+14:20:04.308 INFO  controller.MenuController : Clicked on menu item Book List
+14:20:04.309 INFO  misc.BookTableGateway : Unlocking book A manually in database
+14:20:04.323 INFO  misc.BookTableGateway : Getting books from database
+14:20:04.330 INFO  controller.BookController : Changing to List View
+14:20:04.337 INFO  controller.BookController : View change successful
+14:20:06.226 INFO  controller.BookListController$1 : Double clicked on book "adqdqw"
+14:20:06.226 INFO  misc.BookTableGateway : Attempting to lock adqdqw for updating.
+14:20:06.266 INFO  misc.PublisherTableGateway : Getting publishers from database
+14:20:06.272 INFO  controller.BookController : Changing to Detail View
+14:20:06.284 INFO  controller.BookController : View change successful
+14:20:07.925 INFO  controller.MenuController : Clicked on menu item Book List
+14:20:13.020 INFO  misc.BookTableGateway : Getting books from database
+14:20:13.027 INFO  controller.BookController : Changing to List View
+14:20:13.031 INFO  controller.BookController : View change successful
+14:20:14.904 INFO  controller.MenuController : Clicked on menu item Add Book
+14:20:14.937 INFO  misc.PublisherTableGateway : Getting publishers from database
+14:20:14.943 INFO  controller.BookController : Changing to Detail View
+14:20:14.953 INFO  controller.BookController : View change successful
+14:20:21.908 INFO  controller.BookDetailController : Attempting to save.
+14:20:21.909 INFO  misc.BookTableGateway : Inserting new book AAA into database
+14:20:23.293 INFO  controller.BookDetailController : Creation saved for "AAA"
+14:20:25.150 INFO  controller.MenuController : Clicked on menu item Book List
+14:20:27.814 ERROR controller.BookDetailController : Changes not saved for "AAA": null
+14:20:27.815 INFO  misc.BookTableGateway : Getting books from database
+14:20:27.823 INFO  controller.BookController : Changing to List View
+14:20:27.826 INFO  controller.BookController : View change successful
+14:20:45.562 INFO  misc.BookInventory : Calling stop
+14:20:45.563 INFO  misc.BookTableGateway : Closing the gate
+14:20:49.855 INFO  misc.BookInventory : Starting Book Inventory...
+14:20:49.862 INFO  misc.BookInventory : Calling init
+14:20:50.075 INFO  controller.BookController : Gateway initiated
+14:20:50.090 INFO  misc.BookInventory : Calling start
+14:20:52.657 INFO  controller.MenuController : Clicked on menu item Book List
+14:20:52.659 INFO  misc.BookTableGateway : Getting books from database
+14:20:52.730 INFO  controller.BookController : Changing to List View
+14:20:52.764 INFO  controller.BookController : View change successful
+14:20:53.547 INFO  controller.BookListController$1 : Double clicked on book "Where the Wild Things Are"
+14:20:53.547 INFO  misc.BookTableGateway : Attempting to lock Where the Wild Things Are for updating.
+14:20:53.594 INFO  misc.PublisherTableGateway : Getting publishers from database
+14:20:53.605 INFO  controller.BookController : Changing to Detail View
+14:20:53.661 INFO  controller.BookController : View change successful
+14:20:56.565 INFO  controller.MenuController : Clicked on menu item Add Book
+14:20:56.566 INFO  misc.BookTableGateway : Unlocking book Where the Wild Things Are manually in database
+14:20:56.608 INFO  misc.PublisherTableGateway : Getting publishers from database
+14:20:56.615 INFO  controller.BookController : Changing to Detail View
+14:20:56.647 INFO  controller.BookController : View change successful
+14:21:03.464 INFO  controller.BookDetailController : Attempting to save.
+14:21:03.465 ERROR model.BookException : Summary has a maximum of 65536 characters
+14:21:06.044 ERROR controller.BookDetailController : Creation not saved for "as": Summary has a maximum of 65536 characters
+14:21:08.854 INFO  misc.BookInventory : Calling stop
+14:21:08.854 INFO  misc.BookTableGateway : Closing the gate
+14:22:15.254 INFO  misc.BookInventory : Starting Book Inventory...
+14:22:15.262 INFO  misc.BookInventory : Calling init
+14:22:15.501 INFO  controller.BookController : Gateway initiated
+14:22:15.540 INFO  misc.BookInventory : Calling start
+14:22:18.911 INFO  controller.MenuController : Clicked on menu item Book List
+14:22:18.913 INFO  misc.BookTableGateway : Getting books from database
+14:22:18.989 INFO  controller.BookController : Changing to List View
+14:22:19.028 INFO  controller.BookController : View change successful
+14:22:20.210 INFO  controller.BookListController$1 : Double clicked on book "The Last Unicorn"
+14:22:20.211 INFO  misc.BookTableGateway : Attempting to lock The Last Unicorn for updating.
+14:22:20.259 INFO  misc.PublisherTableGateway : Getting publishers from database
+14:22:20.269 INFO  controller.BookController : Changing to Detail View
+14:22:20.320 INFO  controller.BookController : View change successful
+14:22:22.820 INFO  controller.MenuController : Clicked on menu item Add Book
+14:22:22.821 INFO  misc.BookTableGateway : Unlocking book The Last Unicorn manually in database
+14:22:22.872 INFO  misc.PublisherTableGateway : Getting publishers from database
+14:22:22.879 INFO  controller.BookController : Changing to Detail View
+14:22:22.898 INFO  controller.BookController : View change successful
+14:22:38.426 INFO  controller.BookDetailController : Attempting to save.
+14:22:38.428 ERROR model.BookException : Summary has a maximum of 65536 characters and can't be null
+14:22:40.775 ERROR controller.BookDetailController : Creation not saved for "rwer231": Summary has a maximum of 65536 characters and can't be null
+14:22:43.217 INFO  controller.BookDetailController : Attempting to save.
+14:22:43.218 INFO  misc.BookTableGateway : Inserting new book rwer231 into database
+14:22:44.518 INFO  controller.BookDetailController : Creation saved for "rwer231"
+14:22:46.185 INFO  controller.MenuController : Clicked on menu item Book List
+14:22:46.186 INFO  misc.BookTableGateway : Unlocking book rwer231 manually in database
+14:22:46.200 INFO  misc.BookTableGateway : Getting books from database
+14:22:46.209 INFO  controller.BookController : Changing to List View
+14:22:46.217 INFO  controller.BookController : View change successful
+14:22:48.407 INFO  controller.BookListController$1 : Double clicked on book "rwer231"
+14:22:48.408 INFO  misc.BookTableGateway : Attempting to lock rwer231 for updating.
+14:22:48.665 INFO  misc.PublisherTableGateway : Getting publishers from database
+14:22:48.670 INFO  controller.BookController : Changing to Detail View
+14:22:48.680 INFO  controller.BookController : View change successful
+14:22:49.996 INFO  misc.BookTableGateway : Unlocking book rwer231 manually in database
+14:22:50.083 INFO  controller.BookController : Changing to Audit Trail View
+14:22:50.154 INFO  misc.BookTableGateway : Getting audit trail for rwer231
+14:22:50.163 INFO  controller.BookController : View change successful
+14:22:51.599 INFO  controller.AuditTrailController : Attempting to go back to book detail view
+14:22:51.600 INFO  misc.BookTableGateway : Attempting to lock rwer231 for updating.
+14:22:51.639 INFO  misc.PublisherTableGateway : Getting publishers from database
+14:22:51.646 INFO  controller.BookController : Changing to Detail View
+14:22:51.658 INFO  controller.BookController : View change successful
+14:22:54.893 INFO  controller.MenuController : Clicked on menu item Book List
+14:22:54.894 INFO  misc.BookTableGateway : Unlocking book rwer231 manually in database
+14:22:54.908 INFO  misc.BookTableGateway : Getting books from database
+14:22:54.917 INFO  controller.BookController : Changing to List View
+14:22:54.924 INFO  controller.BookController : View change successful
+14:22:58.610 INFO  controller.BookListController : Selected adqdqw to be deleted.
+14:22:59.652 INFO  controller.BookListController : Attempting to delete adqdqw
+14:22:59.690 INFO  controller.BookListController : Book has been deleted.
+14:23:01.579 INFO  controller.BookListController : Selected Cookie to be deleted.
+14:23:02.498 INFO  controller.BookListController : Attempting to delete Cookie
+14:23:02.559 INFO  controller.BookListController : Book has been deleted.
+14:23:04.581 INFO  controller.BookListController : Selected Please work to be deleted.
+14:23:05.701 INFO  controller.BookListController : Attempting to delete Please work
+14:23:05.737 INFO  controller.BookListController : Book has been deleted.
+14:23:09.213 INFO  controller.BookListController : Selected A to be deleted.
+14:23:10.136 INFO  controller.BookListController : Attempting to delete A
+14:23:10.171 INFO  controller.BookListController : Book has been deleted.
+14:23:11.867 INFO  controller.BookListController : Selected AAA to be deleted.
+14:23:13.295 INFO  controller.BookListController : Attempting to delete AAA
+14:23:13.378 INFO  controller.BookListController : Book has been deleted.
+14:23:14.689 INFO  controller.BookListController : Selected rwer231 to be deleted.
+14:23:15.780 INFO  controller.BookListController : Attempting to delete rwer231
+14:23:15.841 INFO  controller.BookListController : Book has been deleted.
+14:23:17.224 INFO  misc.BookInventory : Calling stop
+14:23:17.225 INFO  misc.BookTableGateway : Closing the gate
+14:28:49.266 INFO  misc.BookInventory : Starting Book Inventory...
+14:28:49.278 INFO  misc.BookInventory : Calling init
+14:28:49.540 INFO  controller.BookController : Gateway initiated
+14:28:49.558 INFO  misc.BookInventory : Calling start
+14:28:54.416 INFO  controller.MenuController : Clicked on menu item Book List
+14:28:54.418 INFO  misc.BookTableGateway : Getting books from database
+14:28:54.510 INFO  controller.BookController : Changing to List View
+14:28:54.557 INFO  controller.BookController : View change successful
+14:28:56.243 INFO  controller.BookListController$1 : Double clicked on book "The Hatchling"
+14:28:56.244 INFO  misc.BookTableGateway : Attempting to lock The Hatchling for updating.
+14:28:56.290 INFO  misc.PublisherTableGateway : Getting publishers from database
+14:28:56.302 INFO  controller.BookController : Changing to Detail View
+14:28:56.354 INFO  controller.BookController : View change successful
+14:29:03.773 INFO  controller.BookDetailController : Attempting to save.
+14:29:03.775 INFO  misc.BookTableGateway : Updating book The Hatchling in database
+14:29:05.358 INFO  controller.BookDetailController : Changes saved for "The Hatchling"
+14:29:17.860 INFO  controller.BookDetailController : Attempting to save.
+14:29:17.861 INFO  misc.BookTableGateway : Updating book The Hatchling in database
+14:29:31.287 INFO  controller.BookDetailController : Changes saved for "The Hatchling"
+14:29:39.362 INFO  controller.BookDetailController : Attempting to save.
+14:29:39.363 INFO  misc.BookTableGateway : Updating book The Hatchling in database
+14:29:41.253 INFO  controller.BookDetailController : Changes saved for "The Hatchling"
+14:29:50.140 INFO  controller.BookDetailController : Attempting to save.
+14:29:50.141 INFO  misc.BookTableGateway : Updating book The Hatchling in database
+14:29:51.493 INFO  controller.BookDetailController : Changes saved for "The Hatchling"
+14:31:10.254 INFO  misc.BookTableGateway : Unlocking book The Hatchling manually in database
+14:31:10.332 INFO  controller.BookController : Changing to Audit Trail View
+14:31:10.404 INFO  misc.BookTableGateway : Getting audit trail for The Hatchling
+14:31:10.431 INFO  controller.BookController : View change successful
+14:31:16.568 INFO  controller.AuditTrailController : Attempting to go back to book detail view
+14:31:16.569 INFO  misc.BookTableGateway : Attempting to lock The Hatchling for updating.
+14:31:16.621 INFO  misc.PublisherTableGateway : Getting publishers from database
+14:31:16.627 INFO  controller.BookController : Changing to Detail View
+14:31:16.642 INFO  controller.BookController : View change successful
+14:35:03.334 INFO  misc.BookTableGateway : Unlocking book The Hatchling manually in database
+14:35:03.350 INFO  misc.BookInventory : Calling stop
+14:35:03.350 INFO  misc.BookTableGateway : Closing the gate
+14:28:45.869 INFO  misc.BookInventory : Starting Book Inventory...
+14:28:45.878 INFO  misc.BookInventory : Calling init
+14:28:46.386 INFO  controller.BookController : Gateway initiated
+14:28:46.429 INFO  misc.BookInventory : Calling start
+14:28:58.517 INFO  controller.MenuController : Clicked on menu item Book List
+14:28:58.520 INFO  misc.BookTableGateway : Getting books from database
+14:28:58.600 INFO  controller.BookController : Changing to List View
+14:28:58.648 INFO  controller.BookController : View change successful
+14:29:00.265 INFO  controller.BookListController$1 : Double clicked on book "The Hatchling"
+14:29:00.265 INFO  misc.BookTableGateway : Attempting to lock The Hatchling for updating.
+14:29:03.820 INFO  misc.PublisherTableGateway : Getting publishers from database
+14:29:03.830 INFO  controller.BookController : Changing to Detail View
+14:29:03.853 INFO  controller.BookController : View change successful
+14:29:27.280 INFO  controller.BookDetailController : Attempting to save.
+14:29:27.282 INFO  misc.BookTableGateway : Updating book The Hatchling in database
+14:29:28.727 INFO  controller.BookDetailController : Changes saved for "The Hatchling"
+14:29:34.668 INFO  controller.BookDetailController : Attempting to save.
+14:29:34.669 INFO  misc.BookTableGateway : Updating book The Hatchling in database
+14:29:36.330 INFO  controller.BookDetailController : Changes saved for "The Hatchling"
+14:29:53.037 INFO  controller.BookDetailController : Attempting to save.
+14:29:53.038 INFO  misc.BookTableGateway : Updating book The Hatchling in database
+14:29:54.177 INFO  controller.BookDetailController : Changes saved for "The Hatchling"
+14:31:14.093 INFO  controller.BookDetailController : Attempting to save.
+14:31:14.094 INFO  misc.BookTableGateway : Updating book The Hatchling in database
+14:31:15.494 INFO  controller.BookDetailController : Changes saved for "The Hatchling"
+14:35:05.064 INFO  misc.BookTableGateway : Unlocking book The Hatchling manually in database
+14:35:05.078 INFO  misc.BookInventory : Calling stop
+14:35:05.079 INFO  misc.BookTableGateway : Closing the gate

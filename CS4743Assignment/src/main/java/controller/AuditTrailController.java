@@ -3,7 +3,7 @@ package controller;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import java.io.IOException;
-import java.sql.Date;
+//import java.sql.Date;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
@@ -23,7 +23,7 @@ public class AuditTrailController implements Controller {
 	@FXML private Button buttonBack;
 	@FXML private Text bookName;
 	@FXML private TableView<AuditTrailEntry> tvAuditTrail;
-	@FXML private TableColumn<AuditTrailEntry, Date> tcTimestamp;
+	@FXML private TableColumn<AuditTrailEntry, String> tcTimestamp;
 	@FXML private TableColumn<AuditTrailEntry, String> tcMessage;
 	
 	public AuditTrailController(Book book) {
@@ -33,7 +33,7 @@ public class AuditTrailController implements Controller {
 	@Override
 	public void initialize() {
 		bookName.setText( book.getTitle());
-		tcTimestamp.setCellValueFactory( new PropertyValueFactory<AuditTrailEntry, Date>("dateAdded"));
+		tcTimestamp.setCellValueFactory( new PropertyValueFactory<AuditTrailEntry, String>("dateAdded"));
 		tcMessage.setCellValueFactory( new PropertyValueFactory<AuditTrailEntry, String>("message"));
 		tvAuditTrail.getItems().setAll( book.getAuditTrail());
 	}

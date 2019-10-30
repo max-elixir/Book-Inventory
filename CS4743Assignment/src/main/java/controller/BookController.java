@@ -64,7 +64,6 @@ public class BookController {
 		
 		/* Determine which view to change */
 		FXMLLoader loader = null;
-		
 		if(viewType == ViewType.BOOK_LIST) {
 			List<Book> dbBooks = bookGate.getBooks();
 			

@@ -36,10 +36,10 @@ public class Book {
 			throw new BookException("Book must be published between 1455 and 2019");
 
 		if(!isValidSummary(getSummary()))
-			throw new BookException("Summary has a maximum of 65536 characters");
+			throw new BookException("Summary has a maximum of 65536 characters and can't be null");
 		
 		if(!isValidIsbn(getISBN()))
-			throw new BookException("ISBN must be formated to 13 characters or less");
+			throw new BookException("ISBN must be formated to atleast 13 characters and can't be null");
 		
 		try {
 			if(getId() == -1) {
@@ -61,7 +61,9 @@ public class Book {
 	}
 	
 	private boolean isValidIsbn(String isbn) {
-		if (isbn.length() > 13) {
+		if (isbn == null) {
+			return false;
+		} else if (isbn.length() > 13) {
 			return false;
 		} else {
 			return true;
@@ -69,7 +71,9 @@ public class Book {
 	}
 
 	private boolean isValidSummary(String summary) {
-		if (summary.length() > 65536) {
+		if (summary == null) {
+			return false;
+		} else if (summary.length() > 65536) {
 			return false;
 		} else {
 			return true;
@@ -87,7 +91,7 @@ public class Book {
 	private boolean isValidTitle(String title) {
 		if (title == null) {
 			return false;
-		} if (title.length() > 255) {
+		} else if (title.length() > 255) {
 			return false;
 		} else {
 			return true;
