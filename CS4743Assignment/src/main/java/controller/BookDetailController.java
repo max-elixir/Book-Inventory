@@ -1,6 +1,7 @@
 package controller;
 
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.List;
 
 import org.apache.logging.log4j.LogManager;
@@ -15,11 +16,14 @@ import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 import javafx.scene.image.Image;
 import javafx.stage.Stage;
+import misc.AuditTableGateway;
 import misc.BookInventory;
+import model.AuditTrailEntry;
 import model.Book;
 import model.BookException;
 import model.GatewayException;
 import model.Publisher;
+import model.ViewType;
 import javafx.scene.control.Alert.AlertType;
 
 public class BookDetailController implements Controller{
@@ -29,14 +33,9 @@ public class BookDetailController implements Controller{
 	
 	@FXML private TextField tfTitle, tfYear, tfIsbn;
 	@FXML private TextArea taSummary;
-	@FXML private Button buttonSave;
+	@FXML private Button buttonSave, buttonAudit;
 	@FXML private ComboBox<Publisher> cbPublisher;
 	
-	/**TODO
-	 * Change to take in a Book object from DB
-	 * 
-	 * @param book
-	 */
 	public BookDetailController(Book book, List<Publisher> publishers) {
 		this.book = book;
 		this.publishers = publishers;
@@ -50,6 +49,8 @@ public class BookDetailController implements Controller{
 		taSummary.setText(book.getSummary());
 		cbPublisher.getItems().addAll(publishers);
 		cbPublisher.setValue(publishers.get(book.getPublisher()));
+		if (book.getYear() == -1)
+			buttonAudit.setDisable(true);
 	}
 	
 	@FXML 
@@ -58,28 +59,52 @@ public class BookDetailController implements Controller{
 		if(source == buttonSave) {
 			logger.info("Attempting to save.");
 			save();	
+		} else if (source == buttonAudit) {
+			BookController.changeView(ViewType.AUDIT_TRAIL, book);
 		}
 	}
 	
-	/**
-	 * @return Ask book to try to save itself to database, determine if it was able to.
-	 * @throws GatewayException 
-	 * @throws BookException 
-	 */
 	public void save() throws GatewayException {
 		Book original = book;
 		int originalId = book.getId();
+		ArrayList<AuditTrailEntry> audits = new ArrayList<AuditTrailEntry>();
+		String message = null;
+		
 		try {
-			book.setTitle(tfTitle.getText());
-			book.setISBN(tfIsbn.getText());
-			book.setSummary(taSummary.getText());
-			
-			try {
-				book.setYear(Integer.parseInt(tfYear.getText()));
-			} catch (NumberFormatException e) {
-				throw new BookException("Please enter a valid year between 1455 and 2019");
+			if (book.getId() == -1) {
+				newBookSave();
+				
+			} else {
+				if ( book.getTitle().compareTo( tfTitle.getText()) != 0 ) {
+					message = "Title changed from " + book.getTitle()  + " to " + tfTitle.getText();
+					audits.add( new AuditTrailEntry( book.getId(), message));
+					book.setTitle( tfTitle.getText());
+				}
+				if ( book.getYear() != Integer.parseInt( tfYear.getText()))  {
+					message = "Year changed from " + book.getYear()  + " to " + tfYear.getText();
+					audits.add( new AuditTrailEntry( book.getId(), message));
+					try {
+						book.setYear( Integer.parseInt(tfYear.getText()));
+					} catch (NumberFormatException e) {
+						throw new BookException("Please enter a valid year between 1455 and 2019");
+					}
+				}	
+				if ( book.getISBN().compareTo( tfIsbn.getText()) != 0) {
+					message = "Isbn changed from " + book.getISBN()  + " to " + tfIsbn.getText();
+					audits.add( new AuditTrailEntry( book.getId(), message));
+					book.setISBN( tfIsbn.getText());
+				}
+				if ( book.getSummary().compareTo( taSummary.getText()) != 0) {
+					message = "Summary changed for book.";
+					audits.add( new AuditTrailEntry( book.getId(), message));
+					book.setSummary( taSummary.getText());
+				}
+				if ( book.getPublisher() != cbPublisher.getValue().getId())  {
+					message = "Publisher changed from " + book.getPublisher()  + " to " + cbPublisher.getValue().getId();
+					audits.add( new AuditTrailEntry( book.getId(), message));
+					book.setPublisher( cbPublisher.getValue().getId());
+				}			
 			}
-			book.setPublisher( cbPublisher.getValue().getId());
 			
 			book.save();
 			if (originalId != -1) {
@@ -88,6 +113,17 @@ public class BookDetailController implements Controller{
 			} else {
 				showMessage("Creation Saved","Creation of book \""+book+"\" saved!");			
 				logger.info("Creation saved for \""+ book +"\"");
+				buttonAudit.setDisable(false);
+				audits = new ArrayList<AuditTrailEntry>();
+				audits.add( new AuditTrailEntry( book.getId(), "Book added"));
+			}
+			
+			for (AuditTrailEntry newEntry: audits) {
+				try {
+					AuditTableGateway.pushAudit(newEntry);
+				} catch (GatewayException e) {
+					throw new BookException(e.getMessage());
+				}
 			}
 		} catch(BookException | NullPointerException e) {
 			if (originalId != -1){
@@ -100,6 +136,7 @@ public class BookDetailController implements Controller{
 						+ e.getMessage());
 				logger.error("Creation not saved for \""+ book +"\": "
 						+ e.getMessage());
+				e.printStackTrace();
 			}
 			
 			book.setTitle(original.getTitle());
@@ -111,6 +148,19 @@ public class BookDetailController implements Controller{
 		
 		return;
 	}
+
+	private void newBookSave() throws BookException {
+		book.setTitle( tfTitle.getText());
+		book.setISBN( tfIsbn.getText());
+		book.setSummary( taSummary.getText());
+		book.setPublisher( cbPublisher.getValue().getId());
+		try {
+			book.setYear(Integer.parseInt(tfYear.getText()));
+		} catch (NumberFormatException e) {
+			throw new BookException("Please enter a valid year between 1455 and 2019");
+		}
+	}
+	
 	
 	public static void showMessage(String title, String message) {
 		Alert alert = new Alert(AlertType.INFORMATION);
@@ -139,6 +189,12 @@ public class BookDetailController implements Controller{
 			return true;
 		}
 		
+		
+		try {
+			book.getGateway().unlockBook(book);
+		} catch (GatewayException e) {
+			logger.error("unable to unlock book");
+		}
 		return false;
 	}
 	

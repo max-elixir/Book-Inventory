@@ -1,10 +1,9 @@
 package misc;
 
-import controller.*;
-
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-
+import controller.BookController;
+import controller.MenuController;
 import javafx.application.Application;
 import javafx.event.EventHandler;
 import javafx.fxml.FXMLLoader;
@@ -34,19 +33,19 @@ public class BookInventory extends Application{
 	@Override
 	public void start(Stage stage) throws Exception {
 		logger.info("Calling start");
+		
 		FXMLLoader loader = new FXMLLoader(getClass().getResource("BookMenuView.fxml")); 
 		MenuController controller = new MenuController();
-		
 		loader.setController(controller);
 		Parent view = loader.load();
-	
 		BookController.setRootPane((BorderPane) view);
 		
 		Scene scene = new Scene(view, 400, 500);
 		stage.setScene(scene);
 		stage.setTitle("Book Inventory");
 		stage.getIcons().add(new Image(BookInventory.class.getResourceAsStream("../thebaby.jpg")));
-		stage.setOnCloseRequest(new EventHandler<WindowEvent>() {
+		/* Remove ability to close program when there are unsaved edits on current view. */
+		stage.setOnCloseRequest(new EventHandler<WindowEvent>() { 
 	          public void handle(WindowEvent we) {
 	        	  if (!BookController.changeView(null, null)) {
 	        		  logger.info("User aborted call to stop");

@@ -1,23 +1,33 @@
 package model;
 
-import java.sql.Date;
+import java.sql.Timestamp;
 
 public class AuditTrailEntry {
-	private int id;
-	private Date dateAdded;
+	private int id, book_id;
+	private Timestamp dateAdded; //private Date dateAdded;
 	private String message;
 	
-	public AuditTrailEntry(int id, Date dateAdded, String message) {
-		this.id = id;
+	/* Constructor for filling a list with entries to use locally */
+	public AuditTrailEntry(Timestamp dateAdded, String message) {
 		this.dateAdded = dateAdded;
 		this.message = message;
 	}
 	
-	public Date getDateAdded() {
+	/* Constructor to build entry locally then send to dB */
+	public AuditTrailEntry(int book_id, String message) {
+		this.book_id = book_id;
+		this.message = message;
+	}
+	
+	public String toString() {
+		return message;
+	}
+
+	public Timestamp getDateAdded() {
 		return dateAdded;
 	}
 
-	public void setDateAdded(Date dateAdded) {
+	public void setDateAdded(Timestamp dateAdded) {
 		this.dateAdded = dateAdded;
 	}
 
@@ -31,6 +41,14 @@ public class AuditTrailEntry {
 
 	public int getId() {
 		return id;
+	}
+	
+	public int getBookId() {
+		return book_id;
+	}
+	
+	public void setBookId(int book_id) {
+		this.book_id = book_id;
 	}
 
 }

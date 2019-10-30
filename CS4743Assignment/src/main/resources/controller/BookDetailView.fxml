@@ -20,5 +20,6 @@
       <TextField fx:id="tfYear" layoutX="175.0" layoutY="304.0" />
       <ComboBox fx:id="cbPublisher" layoutX="176.0" layoutY="344.0" prefWidth="150.0" />
       <Button fx:id="buttonSave" layoutX="175.0" layoutY="409.0" mnemonicParsing="false" onAction="#handleButtonSave" text="Save" />
+      <Button fx:id="buttonAudit" layoutX="251.0" layoutY="409.0" mnemonicParsing="false" onAction="#handleButtonSave" text="Audit" />
    </children>
 </AnchorPane>

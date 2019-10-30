@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="500.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8.0.221" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Text layoutX="14.0" layoutY="24.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Audit Trail for:" wrappingWidth="106.98307228088379" />
+      <Text fx:id="bookName" layoutX="104.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="book title here" wrappingWidth="294.27734375" />
+      <TableView fx:id="tvAuditTrail" layoutX="3.0" layoutY="39.0" prefHeight="396.0" prefWidth="394.0">
+        <columns>
+          <TableColumn fx:id="tcTimestamp" prefWidth="134.0" text="Timestamp" />
+          <TableColumn fx:id="tcMessage" prefWidth="259.0" text="Message" />
+        </columns>
+      </TableView>
+      <Button fx:id="buttonBack" layoutX="251.0" layoutY="444.0" mnemonicParsing="false" onAction="#handleBackButton" text="Back" />
+   </children>
+</AnchorPane>

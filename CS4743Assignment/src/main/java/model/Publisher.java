@@ -2,13 +2,10 @@ package model;
 
 import java.sql.Timestamp;
 
-import misc.PublisherTableGateway;
-
 public class Publisher {
 	private int id;
 	private Timestamp timestamp;
 	private String pubName;
-	private PublisherTableGateway gateway;
 
 	public Publisher(String pubName, Timestamp timestamp, int id) {
 		setPublisherName(pubName);
@@ -45,14 +42,4 @@ public class Publisher {
 		this.pubName = pubName;
 		
 	}
-
-	public PublisherTableGateway getGateway() {
-		return gateway;
-	}
-	
-	public void setGateway(PublisherTableGateway publisherTableGateway) {
-		this.gateway = publisherTableGateway;
-		
-	}
-
 }

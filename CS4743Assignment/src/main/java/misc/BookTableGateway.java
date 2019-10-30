@@ -44,6 +44,107 @@ public class BookTableGateway {
 		}
 	}
 	
+	public void lockBook(Book book) throws GatewayException {
+		PreparedStatement st = null;
+		try {
+			logger.info("Attempting to lock " + book + " for updating.");
+			conn.setTransactionIsolation(Connection.TRANSACTION_REPEATABLE_READ);
+			conn.setAutoCommit(false);
+			st = conn.prepareStatement("Select * from Books where id = ? for update");
+			st.setInt(1, book.getId());
+			st.setQueryTimeout(10);
+			st.executeQuery();
+				
+		} catch(SQLException e){
+			try {
+				conn.rollback();
+			} catch (SQLException e1) {
+				logger.error(e1.getMessage());
+				e1.printStackTrace();
+			}
+
+			throw new GatewayException(e);
+		} finally {
+			try {
+				if(st != null)
+					st.close();
+			} catch (SQLException e) {
+				throw new GatewayException("SQL Error: " + e.getMessage());
+			}
+		}
+		
+	}
+	
+	
+	public void unlockBook(Book book) throws GatewayException {
+		logger.info("Unlocking book "+ book +" in database");
+		PreparedStatement st = null;
+		try {
+			conn.setAutoCommit(false);
+			st = conn.prepareStatement("update Books "
+					+ " set id=id "
+					+ " where id = ?");
+			st.setInt(1, book.getId());
+			st.executeUpdate();
+				
+			conn.commit();
+		} catch(SQLException e){
+			try {
+				conn.rollback();
+			} catch (SQLException e1) {
+				logger.error(e1.getMessage());
+				e1.printStackTrace();
+			}
+
+			throw new GatewayException(e);
+		} finally {
+			try {
+				if(st != null)
+					st.close();
+				
+				conn.setAutoCommit(true);
+				
+			} catch (SQLException e) {
+				throw new GatewayException("SQL Error: " + e.getMessage());
+			}
+		}
+	}
+	
+	public List<AuditTrailEntry> getAuditTrail(Book book) {
+		logger.info("Getting audit trail for " + book);
+		PreparedStatement st = null;
+		ResultSet rs = null;
+		List<AuditTrailEntry> audits = new ArrayList<AuditTrailEntry>();
+		AuditTrailEntry audit = null;
+		
+		try {
+			st = conn.prepareStatement("select a.date_added, a.entry_msg "
+					+ "from book_audit_trail a join Books b on a.book_id=b.id " 
+					+ " where b.id = ?"
+					+ " order by date_added ");
+			st.setInt(1, book.getId());
+			rs = st.executeQuery();
+			
+			while (rs.next()) {
+				audit = new AuditTrailEntry( rs.getTimestamp("date_added"), rs.getString("entry_msg"));
+				audits.add(audit);
+			}
+		} catch (SQLException e) {
+			logger.error(e.getMessage());
+		} finally {
+			try {
+				if(rs != null)
+					rs.close();
+				if(st != null)
+					st.close();
+			} catch (SQLException e) {
+				logger.error(e.getMessage());
+			}
+		}
+		
+		return audits;
+	}
+	
 	public int insertBook(Book book) throws GatewayException, BookException {
 		logger.info("Inserting new book "+book+" into database");
 		PreparedStatement st = null, st2 = null;
@@ -99,7 +200,7 @@ public class BookTableGateway {
 			throw new BookException("Couldnt find ID by an SQL error");
 		}
 	}
-	
+
 	public List<Book> getBooks() {
 		logger.info("Getting books from database");
 		List<Book> books = new ArrayList<Book>();
@@ -215,39 +316,6 @@ public class BookTableGateway {
 				logger.error(e.getMessage());
 			}
 		}
-	}
-
-	public void lockBook(Book book) throws GatewayException {
-		PreparedStatement st = null;
-		try {
-			logger.info("Attempting to lock " + book + " for updating.");
-			conn.setTransactionIsolation(Connection.TRANSACTION_REPEATABLE_READ);
-			conn.setAutoCommit(false);
-			st = conn.prepareStatement("Select * from Books where id = ? for update");
-			st.setInt(1, book.getId());
-			st.setQueryTimeout(10);
-			st.executeQuery();
-				
-		} catch(SQLException e){
-			try {
-				conn.rollback();
-			} catch (SQLException e1) {
-				logger.error(e1.getMessage());
-				e1.printStackTrace();
-			}
-
-			throw new GatewayException(e);
-		} finally {
-			try {
-				if(st != null)
-					st.close();
-			} catch (SQLException e) {
-				throw new GatewayException("SQL Error: " + e.getMessage());
-			}
-		}
-		
-	}
-
-	
+	}	
 
 }

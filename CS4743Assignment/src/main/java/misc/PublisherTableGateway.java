@@ -15,6 +15,7 @@ import org.apache.logging.log4j.Logger;
 
 import com.mysql.cj.jdbc.MysqlDataSource;
 
+import model.GatewayException;
 import model.Publisher;
 
 public class PublisherTableGateway {
@@ -42,9 +43,7 @@ public class PublisherTableGateway {
 			conn = ds.getConnection();
 
         } catch (IOException | SQLException e) {
-			// TODO Make Exception class
-			e.printStackTrace();
-			throw e;
+			throw new GatewayException(e);
 		}
 		
 		logger.info("Getting publishers from database");
@@ -60,7 +59,6 @@ public class PublisherTableGateway {
 			while (rs.next()) {
 				Publisher dbPublisher = new Publisher(rs.getString("publisher_name"),  
 						rs.getTimestamp("date_added"), rs.getInt("id"));
-				//dbPublisher.setGateway(this);
 				publishers.add(dbPublisher);
 			}
 		} catch (SQLException e) {

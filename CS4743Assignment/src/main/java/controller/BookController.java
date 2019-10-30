@@ -60,7 +60,7 @@ public class BookController {
 			} else if(result.get().getText().equalsIgnoreCase("Cancel") ) {
 				return false;
 			}
-		}
+		} 
 		
 		/* Determine which view to change */
 		FXMLLoader loader = null;
@@ -72,22 +72,20 @@ public class BookController {
 			currentController = new BookListController(dbBooks);
 			loader.setController(currentController);
 			logger.info("Changing to List View");
-		} else if(viewType == ViewType.BOOK_DETAIL) {
+		} else if (viewType == ViewType.BOOK_DETAIL) {
 			if(object == null) {
 				Book newBookObject = new Book();
 				newBookObject.setGateway(bookGate);
 				object = newBookObject;
 			}
-			
-			try {
-				bookGate.lockBook((Book) object);
-			} catch (GatewayException e) {
-				BookDetailController.showMessage("Unable to edit " + (Book) object, (Book) object + " is currently being updated.");
-				return false;
+			if (((Book) object).getId() != -1) {
+				try {
+					bookGate.lockBook((Book) object);
+				} catch (GatewayException e) {
+					BookDetailController.showMessage("Unable to edit " + (Book) object, (Book) object + " is currently being updated.");
+					return false;
+				}
 			}
-			
-			loader = new FXMLLoader(BookController.class.getResource("BookDetailView.fxml"));
-			
 			List<Publisher> publishers = null;
 			try {
 				publishers = PublisherTableGateway.getPublishers();
@@ -95,9 +93,15 @@ public class BookController {
 				return false;
 			}
 			
+			loader = new FXMLLoader(BookController.class.getResource("BookDetailView.fxml"));
 			currentController = new BookDetailController((Book) object, publishers);
 			loader.setController(currentController);
 			logger.info("Changing to Detail View");
+		} else if (viewType == ViewType.AUDIT_TRAIL) {
+			loader = new FXMLLoader(BookController.class.getResource("AuditTrailView.fxml"));
+			currentController = new AuditTrailController((Book) object);
+			loader.setController(currentController);
+			logger.info("Changing to Audit Trail View");
 		}
 		
 		Parent view = null;
@@ -126,14 +130,12 @@ public class BookController {
 		try {
 			bookGate = new BookTableGateway();
 			logger.info("Gateway initiated");
-			//carGateway = new CarTableGatewayRedis();
 		} catch (Exception e) {
 			logger.error(e.getMessage());
 			e.printStackTrace();
 			Platform.exit();
 		}	
 	}
-	
 	
 	/* handle telling the different controllers how to save before changing views*/
 	private static void controllerSave() throws GatewayException {

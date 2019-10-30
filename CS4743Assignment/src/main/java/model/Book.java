@@ -1,5 +1,7 @@
 package model;
 
+import java.util.List;
+
 import misc.BookTableGateway;
 
 public class Book {
@@ -28,7 +30,7 @@ public class Book {
 	
 	public void save() throws BookException, GatewayException {
 		if(!isValidTitle(getTitle())) 
-			throw new BookException("Title must be less than 255 characters");
+			throw new BookException("Title must be less than 255 characters and not null");
 		
 		if(!isValisYear(getYear()))
 			throw new BookException("Book must be published between 1455 and 2019");
@@ -52,6 +54,10 @@ public class Book {
 			System.out.println(e.getMessage());
 			e.printStackTrace();
 		}
+	}
+	
+	public List<AuditTrailEntry> getAuditTrail() {
+		return gateway.getAuditTrail(this);
 	}
 	
 	private boolean isValidIsbn(String isbn) {
@@ -79,7 +85,9 @@ public class Book {
 	}
 
 	private boolean isValidTitle(String title) {
-		if (title.length() > 255) {
+		if (title == null) {
+			return false;
+		} if (title.length() > 255) {
 			return false;
 		} else {
 			return true;

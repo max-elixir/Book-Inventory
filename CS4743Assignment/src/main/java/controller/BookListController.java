@@ -103,8 +103,8 @@ public class BookListController implements Controller{
 		items.addAll(books);
 	}
 
+	@Override
 	public boolean hasChanged() {
-		// TODO Auto-generated method stub
 		return false;
 	}
 }
