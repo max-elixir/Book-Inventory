@@ -16,6 +16,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.control.Alert;
 import javafx.scene.control.ButtonType;
+import javafx.scene.control.Dialog;
 import javafx.scene.control.Alert.AlertType;
 import javafx.scene.layout.BorderPane;
 
@@ -24,8 +25,10 @@ public class BookController {
 	private static Logger logger = LogManager.getLogger();
 	private static BookTableGateway bookGate;
 	private static Controller currentController;
+	private static String session = "";
 	
-	public BookController() {	
+	public BookController() {
+		
 	}
 
 	public static boolean changeView(ViewType viewType, Object object) {
@@ -66,11 +69,11 @@ public class BookController {
 		FXMLLoader loader = null;
 		if(viewType == ViewType.BOOK_LIST) {
 			List<Book> dbBooks = bookGate.getBooks();
-			
 			loader = new FXMLLoader(BookController.class.getResource("BookListView.fxml"));
 			currentController = new BookListController(dbBooks);
 			loader.setController(currentController);
 			logger.info("Changing to List View");
+			
 		} else if (viewType == ViewType.BOOK_DETAIL) {
 			if(object == null) {
 				Book newBookObject = new Book();
@@ -96,11 +99,21 @@ public class BookController {
 			currentController = new BookDetailController((Book) object, publishers);
 			loader.setController(currentController);
 			logger.info("Changing to Detail View");
+			
 		} else if (viewType == ViewType.AUDIT_TRAIL) {
 			loader = new FXMLLoader(BookController.class.getResource("AuditTrailView.fxml"));
 			currentController = new AuditTrailController((Book) object);
 			loader.setController(currentController);
 			logger.info("Changing to Audit Trail View");
+			
+		} else if (viewType == ViewType.BOOK_REPORT) {
+			loader = null;
+			currentController = null;
+			if (session != null) {
+				
+			} else {
+				
+			}
 		}
 		
 		Parent view = null;
@@ -142,8 +155,25 @@ public class BookController {
 			((BookDetailController) currentController).save();
 		}
 	}
+	
+	/*public void login() {
+		Dialog login = new Dialog();
+		//login.getDialogPane().getButtonTypes().clear();
+		login.setTitle("Login");
+		login.setHeaderText("Please enter your login credentials");
+		login.showAndWait();
+	}*/
 
 	public static void close() {
 		bookGate.close();
+	}
+
+	public static void setSession(String bearer) {
+		if (bearer == null) {
+			BookDetailController.showMessage("Invalid credentials", "Invalid credentials were passed in, please try again");
+		} else {
+			BookDetailController.showMessage("Welcome to the Book Inventory", "Success.\nIf you're an admin, your report will be available for 60 seconds");
+			session = bearer;
+		}
 	}
 }

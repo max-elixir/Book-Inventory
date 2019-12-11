@@ -9,6 +9,7 @@ import javafx.event.EventHandler;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Dialog;
 import javafx.scene.image.Image;
 import javafx.scene.layout.BorderPane;
 import javafx.stage.Stage;
@@ -44,14 +45,15 @@ public class BookInventory extends Application{
 		stage.setScene(scene);
 		stage.setTitle("Book Inventory");
 		stage.getIcons().add(new Image(BookInventory.class.getResourceAsStream("../thebaby.jpg")));
+		
 		/* Remove ability to close program when there are unsaved edits on current view. */
 		stage.setOnCloseRequest(new EventHandler<WindowEvent>() { 
-	          public void handle(WindowEvent we) {
-	        	  if (!BookController.changeView(null, null)) {
-	        		  logger.info("User aborted call to stop");
-	        		  we.consume();
-	        	  } else {
-	        		  try {
+			public void handle(WindowEvent we) {
+				if (!BookController.changeView(null, null)) {
+					logger.info("User aborted call to stop");
+	        		we.consume();
+	        	} else {
+	        		try {
 						stop();
 					} catch (Exception e) {
 						e.printStackTrace();

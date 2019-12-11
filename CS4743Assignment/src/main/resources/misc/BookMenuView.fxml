@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Menu?>
 <?import javafx.scene.control.MenuBar?>
 <?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.effect.DropShadow?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.BorderPane?>
@@ -19,6 +22,10 @@
                   <MenuItem fx:id="menuBookAdd" mnemonicParsing="false" onAction="#handleMenuAction" text="Add Book" />
               <MenuItem fx:id="menuQuit" mnemonicParsing="false" onAction="#handleMenuAction" text="Quit" />
             </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Reports">
+          	<MenuItem fx:id="menuBookDetailReport" mnemonicParsing="false" onAction="#handleMenuAction" text="Book Detail">
+          	</MenuItem>
           </Menu>
           <Menu mnemonicParsing="false" text="Help">
             <items>
@@ -40,6 +47,9 @@
                   <DropShadow />
                </effect>
             </Text>
+            <TextField fx:id="username" layoutX="126.0" layoutY="281.0" promptText="username" />
+            <PasswordField fx:id="password" layoutX="124.0" layoutY="336.0" promptText="password" />
+            <Button fx:id="login" layoutX="174.0" layoutY="388.0" mnemonicParsing="false" onAction="#handleMenuAction" text="Login" />
          </children>
       </AnchorPane>
    </center>

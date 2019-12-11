@@ -4942,3 +4942,491 @@
 14:35:05.064 INFO  misc.BookTableGateway : Unlocking book The Hatchling manually in database
 14:35:05.078 INFO  misc.BookInventory : Calling stop
 14:35:05.079 INFO  misc.BookTableGateway : Closing the gate
+10:11:52.080 INFO  misc.BookInventory : Starting Book Inventory...
+10:11:52.091 INFO  misc.BookInventory : Calling init
+10:11:52.462 INFO  controller.BookController : Gateway initiated
+10:11:52.492 INFO  misc.BookInventory : Calling start
+10:12:00.678 INFO  controller.MenuController : Clicked on menu item Book List
+10:12:00.680 INFO  misc.BookTableGateway : Getting books from database
+10:12:00.726 INFO  controller.BookController : Changing to List View
+10:12:00.755 INFO  controller.BookController : View change successful
+10:12:07.474 INFO  controller.MenuController : Clicked on menu item Add Book
+10:12:07.501 INFO  misc.PublisherTableGateway : Getting publishers from database
+10:12:07.509 INFO  controller.BookController : Changing to Detail View
+10:12:07.545 INFO  controller.BookController : View change successful
+10:12:18.727 INFO  controller.BookDetailController : Attempting to save.
+10:12:18.728 INFO  misc.BookTableGateway : Inserting new book kjefbh into database
+10:12:21.469 INFO  controller.BookDetailController : Creation saved for "kjefbh"
+10:12:25.562 INFO  controller.MenuController : Clicked on menu item Book List
+10:12:25.562 INFO  misc.BookTableGateway : Unlocking book kjefbh manually in database
+10:12:25.573 INFO  misc.BookTableGateway : Getting books from database
+10:12:25.579 INFO  controller.BookController : Changing to List View
+10:12:25.584 INFO  controller.BookController : View change successful
+10:12:49.420 INFO  misc.BookInventory : Calling stop
+10:12:49.421 INFO  misc.BookTableGateway : Closing the gate
+09:47:40.709 INFO  misc.BookInventory : Starting Book Inventory...
+09:47:40.713 INFO  misc.BookInventory : Calling init
+09:47:41.235 INFO  controller.BookController : Gateway initiated
+09:47:41.257 INFO  misc.BookInventory : Calling start
+09:47:50.996 INFO  misc.BookInventory : Calling stop
+09:47:50.996 INFO  misc.BookTableGateway : Closing the gate
+20:09:21.520 INFO  misc.BookInventory : Starting Book Inventory...
+20:09:21.527 INFO  misc.BookInventory : Calling init
+20:09:22.115 INFO  controller.BookController : Gateway initiated
+20:09:22.129 INFO  misc.BookInventory : Calling start
+20:09:24.256 INFO  controller.MenuController : Clicked on menu item Book List
+20:09:24.257 INFO  misc.BookTableGateway : Getting books from database
+20:09:24.318 INFO  controller.BookController : Changing to List View
+20:09:24.337 INFO  controller.BookController : View change successful
+20:09:25.511 INFO  controller.MenuController : Clicked on menu item Add Book
+20:09:27.418 INFO  controller.MenuController : Clicked on menu item Add Book
+20:09:29.848 INFO  misc.BookInventory : Calling stop
+20:09:29.848 INFO  misc.BookTableGateway : Closing the gate
+20:11:49.192 INFO  misc.BookInventory : Starting Book Inventory...
+20:11:49.199 INFO  misc.BookInventory : Calling init
+20:11:49.805 INFO  controller.BookController : Gateway initiated
+20:11:49.850 INFO  misc.BookInventory : Calling start
+20:11:52.093 INFO  misc.BookInventory : Calling stop
+20:11:52.093 INFO  misc.BookTableGateway : Closing the gate
+20:12:22.500 INFO  misc.BookInventory : Starting Book Inventory...
+20:12:22.511 INFO  misc.BookInventory : Calling init
+20:12:23.233 INFO  controller.BookController : Gateway initiated
+20:12:23.277 INFO  misc.BookInventory : Calling start
+20:12:25.104 INFO  controller.MenuController : Clicked on menu item Book List
+20:12:25.105 INFO  misc.BookTableGateway : Getting books from database
+20:12:25.189 INFO  controller.BookController : Changing to List View
+20:12:25.233 INFO  controller.BookController : View change successful
+20:12:26.419 INFO  controller.MenuController : Clicked on menu item Book Report
+20:12:28.217 INFO  controller.MenuController : Clicked on menu item Book Report
+20:12:29.604 INFO  controller.MenuController : Clicked on menu item Book List
+20:12:29.605 INFO  misc.BookTableGateway : Getting books from database
+20:12:29.670 INFO  controller.BookController : Changing to List View
+20:12:29.678 INFO  controller.BookController : View change successful
+20:12:33.069 INFO  controller.MenuController : Clicked on menu item Add Book
+20:12:33.348 INFO  misc.PublisherTableGateway : Getting publishers from database
+20:12:33.385 INFO  controller.BookController : Changing to Detail View
+20:12:33.458 INFO  controller.BookController : View change successful
+20:12:35.586 INFO  controller.MenuController : Clicked on menu item Book List
+20:12:36.954 INFO  misc.BookTableGateway : Getting books from database
+20:12:36.992 INFO  controller.BookController : Changing to List View
+20:12:37.001 INFO  controller.BookController : View change successful
+20:12:38.833 INFO  misc.BookInventory : Calling stop
+20:12:38.833 INFO  misc.BookTableGateway : Closing the gate
+20:19:42.404 INFO  misc.BookInventory : Starting Book Inventory...
+20:19:42.411 INFO  misc.BookInventory : Calling init
+20:19:42.997 INFO  controller.BookController : Gateway initiated
+20:19:43.041 INFO  misc.BookInventory : Calling start
+20:19:46.426 INFO  controller.MenuController : Clicked on menu item Book List
+20:19:46.427 INFO  misc.BookTableGateway : Getting books from database
+20:19:46.524 INFO  controller.BookController : Changing to List View
+20:19:46.570 INFO  controller.BookController : View change successful
+20:19:48.853 INFO  misc.BookInventory : Calling stop
+20:19:48.854 INFO  misc.BookTableGateway : Closing the gate
+23:48:28.285 INFO  misc.BookInventory : Starting Book Inventory...
+23:48:28.290 INFO  misc.BookInventory : Calling init
+23:48:28.748 INFO  controller.BookController : Gateway initiated
+23:48:28.769 INFO  misc.BookInventory : Calling start
+23:48:31.363 INFO  controller.MenuController : Clicked on menu item Book List
+23:48:31.364 INFO  misc.BookTableGateway : Getting books from database
+23:48:31.417 INFO  controller.BookController : Changing to List View
+23:48:31.429 INFO  controller.BookController : View change successful
+23:48:32.965 INFO  controller.MenuController : Clicked on menu item Book Report
+23:48:34.733 INFO  controller.MenuController : Clicked on menu item Book Report
+23:48:39.186 INFO  controller.MenuController : Clicked on menu item Book List
+23:48:39.186 INFO  misc.BookTableGateway : Getting books from database
+23:48:39.227 INFO  controller.BookController : Changing to List View
+23:48:39.230 INFO  controller.BookController : View change successful
+23:48:42.208 INFO  controller.MenuController : Clicked on menu item About
+23:48:45.701 INFO  controller.MenuController : Clicked on menu item About
+23:48:55.724 INFO  controller.BookListController$1 : Double clicked on book "Java 9 for Programmers"
+23:48:55.724 INFO  misc.BookTableGateway : Attempting to lock Java 9 for Programmers for updating.
+23:48:56.279 INFO  misc.PublisherTableGateway : Getting publishers from database
+23:48:56.318 INFO  controller.BookController : Changing to Detail View
+23:48:56.346 INFO  controller.BookController : View change successful
+23:49:00.126 INFO  controller.MenuController : Clicked on menu item Book List
+23:49:00.126 INFO  misc.BookTableGateway : Unlocking book Java 9 for Programmers manually in database
+23:49:00.307 INFO  misc.BookTableGateway : Getting books from database
+23:49:00.360 INFO  controller.BookController : Changing to List View
+23:49:00.363 INFO  controller.BookController : View change successful
+23:49:03.835 INFO  misc.BookInventory : Calling stop
+23:49:03.835 INFO  misc.BookTableGateway : Closing the gate
+10:49:40.055 INFO  misc.BookInventory : Starting Book Inventory...
+10:49:40.062 INFO  misc.BookInventory : Calling init
+10:49:40.578 INFO  controller.BookController : Gateway initiated
+10:49:40.600 INFO  misc.BookInventory : Calling start
+10:49:40.800 INFO  misc.BookInventory : Calling stop
+10:49:40.801 INFO  misc.BookTableGateway : Closing the gate
+10:51:08.731 INFO  misc.BookInventory : Starting Book Inventory...
+10:51:08.738 INFO  misc.BookInventory : Calling init
+10:51:09.215 INFO  controller.BookController : Gateway initiated
+10:51:09.232 INFO  misc.BookInventory : Calling start
+10:51:09.432 INFO  misc.BookInventory : Calling stop
+10:51:09.432 INFO  misc.BookTableGateway : Closing the gate
+10:51:32.408 INFO  misc.BookInventory : Starting Book Inventory...
+10:51:32.415 INFO  misc.BookInventory : Calling init
+10:51:32.887 INFO  controller.BookController : Gateway initiated
+10:51:32.903 INFO  misc.BookInventory : Calling start
+10:51:49.285 INFO  misc.BookInventory : Calling stop
+10:51:49.285 INFO  misc.BookTableGateway : Closing the gate
+10:56:14.030 INFO  misc.BookInventory : Starting Book Inventory...
+10:56:14.036 INFO  misc.BookInventory : Calling init
+10:56:14.541 INFO  controller.BookController : Gateway initiated
+10:56:14.559 INFO  misc.BookInventory : Calling start
+10:56:19.592 INFO  controller.MenuController : Clicked on menu item Login
+10:56:19.593 INFO  controller.MenuController : username is bob
+10:56:19.593 INFO  controller.MenuController : real password is 1234
+10:56:22.072 INFO  controller.MenuController : Clicked on menu item Login
+10:56:22.073 INFO  controller.MenuController : username is bob
+10:56:22.073 INFO  controller.MenuController : real password is 1234
+10:56:22.592 INFO  controller.MenuController : Clicked on menu item Login
+10:56:22.592 INFO  controller.MenuController : username is bob
+10:56:22.593 INFO  controller.MenuController : real password is 1234
+10:58:23.942 INFO  misc.BookInventory : Calling stop
+10:58:23.943 INFO  misc.BookTableGateway : Closing the gate
+11:01:06.135 INFO  misc.BookInventory : Starting Book Inventory...
+11:01:06.139 INFO  misc.BookInventory : Calling init
+11:01:06.609 INFO  controller.BookController : Gateway initiated
+11:01:06.623 INFO  misc.BookInventory : Calling start
+11:01:10.812 INFO  controller.MenuController : Clicked on menu item Login
+11:01:10.813 INFO  controller.MenuController : username is bob
+11:01:10.816 INFO  controller.MenuController : Hashed password is 03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4
+11:01:12.138 INFO  controller.MenuController : Clicked on menu item Login
+11:01:12.138 INFO  controller.MenuController : username is bob
+11:01:12.138 INFO  controller.MenuController : Hashed password is 03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4
+11:01:14.294 INFO  controller.MenuController : Clicked on menu item Login
+11:01:14.294 INFO  controller.MenuController : username is bob
+11:01:14.294 INFO  controller.MenuController : Hashed password is 03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4
+11:01:14.658 INFO  controller.MenuController : Clicked on menu item Login
+11:01:14.658 INFO  controller.MenuController : username is bob
+11:01:14.659 INFO  controller.MenuController : Hashed password is 03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4
+11:01:15.046 INFO  controller.MenuController : Clicked on menu item Login
+11:01:15.046 INFO  controller.MenuController : username is bob
+11:01:15.047 INFO  controller.MenuController : Hashed password is 03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4
+11:01:15.412 INFO  controller.MenuController : Clicked on menu item Login
+11:01:15.412 INFO  controller.MenuController : username is bob
+11:01:15.412 INFO  controller.MenuController : Hashed password is 03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4
+11:01:15.604 INFO  controller.MenuController : Clicked on menu item Login
+11:01:15.604 INFO  controller.MenuController : username is bob
+11:01:15.604 INFO  controller.MenuController : Hashed password is 03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4
+11:01:15.783 INFO  controller.MenuController : Clicked on menu item Login
+11:01:15.783 INFO  controller.MenuController : username is bob
+11:01:15.783 INFO  controller.MenuController : Hashed password is 03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4
+11:01:15.946 INFO  controller.MenuController : Clicked on menu item Login
+11:01:15.946 INFO  controller.MenuController : username is bob
+11:01:15.946 INFO  controller.MenuController : Hashed password is 03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4
+11:01:16.109 INFO  controller.MenuController : Clicked on menu item Login
+11:01:16.110 INFO  controller.MenuController : username is bob
+11:01:16.110 INFO  controller.MenuController : Hashed password is 03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4
+11:01:16.273 INFO  controller.MenuController : Clicked on menu item Login
+11:01:16.273 INFO  controller.MenuController : username is bob
+11:01:16.273 INFO  controller.MenuController : Hashed password is 03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4
+11:01:16.442 INFO  controller.MenuController : Clicked on menu item Login
+11:01:16.442 INFO  controller.MenuController : username is bob
+11:01:16.442 INFO  controller.MenuController : Hashed password is 03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4
+11:01:16.606 INFO  controller.MenuController : Clicked on menu item Login
+11:01:16.607 INFO  controller.MenuController : username is bob
+11:01:16.607 INFO  controller.MenuController : Hashed password is 03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4
+11:01:16.775 INFO  controller.MenuController : Clicked on menu item Login
+11:01:16.776 INFO  controller.MenuController : username is bob
+11:01:16.776 INFO  controller.MenuController : Hashed password is 03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4
+11:01:16.938 INFO  controller.MenuController : Clicked on menu item Login
+11:01:16.938 INFO  controller.MenuController : username is bob
+11:01:16.938 INFO  controller.MenuController : Hashed password is 03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4
+11:01:17.109 INFO  controller.MenuController : Clicked on menu item Login
+11:01:17.109 INFO  controller.MenuController : username is bob
+11:01:17.110 INFO  controller.MenuController : Hashed password is 03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4
+11:01:17.279 INFO  controller.MenuController : Clicked on menu item Login
+11:01:17.280 INFO  controller.MenuController : username is bob
+11:01:17.280 INFO  controller.MenuController : Hashed password is 03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4
+11:01:17.449 INFO  controller.MenuController : Clicked on menu item Login
+11:01:17.450 INFO  controller.MenuController : username is bob
+11:01:17.450 INFO  controller.MenuController : Hashed password is 03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4
+11:01:17.623 INFO  controller.MenuController : Clicked on menu item Login
+11:01:17.623 INFO  controller.MenuController : username is bob
+11:01:17.624 INFO  controller.MenuController : Hashed password is 03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4
+11:01:17.792 INFO  controller.MenuController : Clicked on menu item Login
+11:01:17.793 INFO  controller.MenuController : username is bob
+11:01:17.793 INFO  controller.MenuController : Hashed password is 03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4
+11:01:17.955 INFO  controller.MenuController : Clicked on menu item Login
+11:01:17.956 INFO  controller.MenuController : username is bob
+11:01:17.956 INFO  controller.MenuController : Hashed password is 03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4
+11:01:18.126 INFO  controller.MenuController : Clicked on menu item Login
+11:01:18.126 INFO  controller.MenuController : username is bob
+11:01:18.126 INFO  controller.MenuController : Hashed password is 03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4
+11:01:18.304 INFO  controller.MenuController : Clicked on menu item Login
+11:01:18.304 INFO  controller.MenuController : username is bob
+11:01:18.305 INFO  controller.MenuController : Hashed password is 03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4
+11:01:18.458 INFO  controller.MenuController : Clicked on menu item Login
+11:01:18.458 INFO  controller.MenuController : username is bob
+11:01:18.459 INFO  controller.MenuController : Hashed password is 03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4
+11:01:18.636 INFO  controller.MenuController : Clicked on menu item Login
+11:01:18.636 INFO  controller.MenuController : username is bob
+11:01:18.636 INFO  controller.MenuController : Hashed password is 03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4
+11:01:23.484 INFO  misc.BookInventory : Calling stop
+11:01:23.484 INFO  misc.BookTableGateway : Closing the gate
+11:12:43.403 INFO  misc.BookInventory : Starting Book Inventory...
+11:12:43.408 INFO  misc.BookInventory : Calling init
+11:12:43.842 INFO  controller.BookController : Gateway initiated
+11:12:43.856 INFO  misc.BookInventory : Calling start
+11:12:50.551 INFO  controller.MenuController : Clicked on menu item Login
+11:12:50.551 INFO  controller.MenuController : username is bob
+11:12:50.552 INFO  controller.MenuController : Hashed password is 03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4
+11:12:51.156 INFO  controller.MenuController : Clicked on menu item Login
+11:12:51.156 INFO  controller.MenuController : username is bob
+11:12:51.157 INFO  controller.MenuController : Hashed password is 03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4
+11:12:52.085 INFO  controller.MenuController : Clicked on menu item Login
+11:12:52.086 INFO  controller.MenuController : username is bob
+11:12:52.086 INFO  controller.MenuController : Hashed password is 03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4
+11:12:53.263 INFO  misc.BookInventory : Calling stop
+11:12:53.263 INFO  misc.BookTableGateway : Closing the gate
+11:14:37.895 INFO  misc.BookInventory : Starting Book Inventory...
+11:14:37.899 INFO  misc.BookInventory : Calling init
+11:14:39.147 INFO  controller.BookController : Gateway initiated
+11:14:39.157 INFO  misc.BookInventory : Calling start
+11:14:43.581 INFO  controller.MenuController : Clicked on menu item Login
+11:14:49.319 INFO  controller.MenuController : Clicked on menu item Login
+11:14:57.707 INFO  controller.MenuController : Clicked on menu item Login
+11:15:02.731 INFO  misc.BookInventory : Calling stop
+11:15:02.731 INFO  misc.BookTableGateway : Closing the gate
+11:15:33.772 INFO  misc.BookInventory : Starting Book Inventory...
+11:15:33.779 INFO  misc.BookInventory : Calling init
+11:15:34.241 INFO  controller.BookController : Gateway initiated
+11:15:34.259 INFO  misc.BookInventory : Calling start
+11:15:38.490 INFO  controller.MenuController : Clicked on menu item Login
+11:15:45.637 INFO  controller.MenuController : Clicked on menu item Login
+11:15:56.740 INFO  misc.BookInventory : Calling stop
+11:15:56.740 INFO  misc.BookTableGateway : Closing the gate
+11:18:28.510 INFO  misc.BookInventory : Starting Book Inventory...
+11:18:28.517 INFO  misc.BookInventory : Calling init
+11:18:29.003 INFO  controller.BookController : Gateway initiated
+11:18:29.022 INFO  misc.BookInventory : Calling start
+11:18:36.697 INFO  controller.MenuController : Clicked on menu item Login
+11:18:47.527 INFO  controller.MenuController : Clicked on menu item Login
+11:19:18.897 INFO  misc.BookInventory : Calling stop
+11:19:18.898 INFO  misc.BookTableGateway : Closing the gate
+11:19:31.580 INFO  misc.BookInventory : Starting Book Inventory...
+11:19:31.586 INFO  misc.BookInventory : Calling init
+11:19:32.107 INFO  controller.BookController : Gateway initiated
+11:19:32.124 INFO  misc.BookInventory : Calling start
+11:19:37.364 INFO  controller.MenuController : Clicked on menu item Login
+11:19:51.367 INFO  controller.MenuController : Clicked on menu item Login
+11:19:59.873 INFO  controller.MenuController : Clicked on menu item Login
+11:20:26.597 INFO  misc.BookInventory : Calling stop
+11:20:26.598 INFO  misc.BookTableGateway : Closing the gate
+11:20:42.439 INFO  misc.BookInventory : Starting Book Inventory...
+11:20:42.444 INFO  misc.BookInventory : Calling init
+11:20:42.896 INFO  controller.BookController : Gateway initiated
+11:20:42.911 INFO  misc.BookInventory : Calling start
+11:20:47.615 INFO  controller.MenuController : Clicked on menu item Login
+11:22:56.865 INFO  misc.BookInventory : Calling stop
+11:22:56.865 INFO  misc.BookTableGateway : Closing the gate
+11:23:01.243 INFO  misc.BookInventory : Starting Book Inventory...
+11:23:01.249 INFO  misc.BookInventory : Calling init
+11:23:01.675 INFO  controller.BookController : Gateway initiated
+11:23:01.693 INFO  misc.BookInventory : Calling start
+11:23:06.494 INFO  controller.MenuController : Clicked on menu item Login
+11:23:07.392 ERROR misc.VertxGateway : null
+11:23:20.824 INFO  controller.MenuController : Clicked on menu item Login
+11:23:20.950 ERROR misc.VertxGateway : null
+11:23:31.098 INFO  misc.BookInventory : Calling stop
+11:23:31.099 INFO  misc.BookTableGateway : Closing the gate
+11:23:34.822 INFO  misc.BookInventory : Starting Book Inventory...
+11:23:34.828 INFO  misc.BookInventory : Calling init
+11:23:35.286 INFO  controller.BookController : Gateway initiated
+11:23:35.302 INFO  misc.BookInventory : Calling start
+11:23:40.006 INFO  controller.MenuController : Clicked on menu item Login
+11:23:40.937 ERROR misc.VertxGateway : null
+11:24:31.442 INFO  controller.MenuController : Clicked on menu item Login
+11:24:31.571 ERROR misc.VertxGateway : null
+11:24:34.482 INFO  controller.MenuController : Clicked on menu item Login
+11:24:34.607 ERROR misc.VertxGateway : null
+11:24:42.058 INFO  misc.BookInventory : Calling stop
+11:24:42.059 INFO  misc.BookTableGateway : Closing the gate
+11:25:11.691 INFO  misc.BookInventory : Starting Book Inventory...
+11:25:11.698 INFO  misc.BookInventory : Calling init
+11:25:12.125 INFO  controller.BookController : Gateway initiated
+11:25:12.145 INFO  misc.BookInventory : Calling start
+11:25:16.448 INFO  controller.MenuController : Clicked on menu item Login
+11:25:17.590 ERROR misc.VertxGateway : null
+11:25:33.740 INFO  misc.BookInventory : Calling stop
+11:25:33.741 INFO  misc.BookTableGateway : Closing the gate
+11:28:06.710 INFO  misc.BookInventory : Starting Book Inventory...
+11:28:06.716 INFO  misc.BookInventory : Calling init
+11:28:07.201 INFO  controller.BookController : Gateway initiated
+11:28:07.224 INFO  misc.BookInventory : Calling start
+11:28:35.338 INFO  controller.MenuController : Clicked on menu item Login
+11:28:41.081 INFO  controller.MenuController : Clicked on menu item Login
+11:28:41.804 INFO  controller.MenuController : Clicked on menu item Login
+11:28:44.009 INFO  controller.MenuController : Clicked on menu item Book List
+11:28:44.010 INFO  misc.BookTableGateway : Getting books from database
+11:28:44.087 INFO  controller.BookController : Changing to List View
+11:28:44.103 INFO  controller.BookController : View change successful
+11:28:57.411 INFO  misc.BookInventory : Calling stop
+11:28:57.411 INFO  misc.BookTableGateway : Closing the gate
+11:29:00.252 INFO  misc.BookInventory : Starting Book Inventory...
+11:29:00.258 INFO  misc.BookInventory : Calling init
+11:29:00.763 INFO  controller.BookController : Gateway initiated
+11:29:00.778 INFO  misc.BookInventory : Calling start
+11:29:05.235 INFO  controller.MenuController : Clicked on menu item Login
+11:29:13.761 INFO  controller.MenuController : Clicked on menu item Book Report
+11:29:21.603 INFO  misc.BookInventory : Calling stop
+11:29:21.604 INFO  misc.BookTableGateway : Closing the gate
+11:30:26.364 INFO  misc.BookInventory : Starting Book Inventory...
+11:30:26.369 INFO  misc.BookInventory : Calling init
+11:30:26.749 INFO  controller.BookController : Gateway initiated
+11:30:26.763 INFO  misc.BookInventory : Calling start
+11:30:31.342 INFO  controller.MenuController : Clicked on menu item Login
+11:30:39.390 INFO  misc.BookInventory : Calling stop
+11:30:39.390 INFO  misc.BookTableGateway : Closing the gate
+11:30:48.137 INFO  misc.BookInventory : Starting Book Inventory...
+11:30:48.142 INFO  misc.BookInventory : Calling init
+11:30:48.543 INFO  controller.BookController : Gateway initiated
+11:30:48.554 INFO  misc.BookInventory : Calling start
+11:30:53.952 INFO  controller.MenuController : Clicked on menu item Login
+11:30:56.580 INFO  controller.MenuController : Clicked on menu item Login
+11:30:57.394 INFO  controller.MenuController : Clicked on menu item Login
+11:30:58.510 INFO  controller.MenuController : Clicked on menu item Login
+11:31:02.542 INFO  misc.BookInventory : Calling stop
+11:31:02.543 INFO  misc.BookTableGateway : Closing the gate
+11:32:04.005 INFO  misc.BookInventory : Starting Book Inventory...
+11:32:04.012 INFO  misc.BookInventory : Calling init
+11:32:04.466 INFO  controller.BookController : Gateway initiated
+11:32:04.488 INFO  misc.BookInventory : Calling start
+11:32:08.857 INFO  controller.MenuController : Clicked on menu item Login
+11:32:13.797 INFO  controller.MenuController : Clicked on menu item Login
+11:32:19.503 INFO  controller.MenuController : Clicked on menu item Login
+11:32:27.047 INFO  controller.MenuController : Clicked on menu item Login
+11:32:33.322 INFO  misc.BookInventory : Calling stop
+11:32:33.323 INFO  misc.BookTableGateway : Closing the gate
+12:01:59.968 INFO  misc.BookInventory : Starting Book Inventory...
+12:01:59.972 INFO  misc.BookInventory : Calling init
+12:02:01.294 INFO  controller.BookController : Gateway initiated
+12:02:01.307 INFO  misc.BookInventory : Calling start
+12:02:05.497 INFO  controller.MenuController : Clicked on menu item Login
+12:02:32.852 INFO  misc.BookInventory : Calling stop
+12:02:32.852 INFO  misc.BookTableGateway : Closing the gate
+12:02:48.638 INFO  misc.BookInventory : Starting Book Inventory...
+12:02:48.642 INFO  misc.BookInventory : Calling init
+12:02:49.104 INFO  controller.BookController : Gateway initiated
+12:02:49.117 INFO  misc.BookInventory : Calling start
+12:02:56.708 INFO  controller.MenuController : Clicked on menu item Login
+12:04:11.058 INFO  misc.BookInventory : Calling stop
+12:04:11.058 INFO  misc.BookTableGateway : Closing the gate
+12:45:58.745 INFO  misc.BookInventory : Starting Book Inventory...
+12:45:58.751 INFO  misc.BookInventory : Calling init
+12:45:59.495 INFO  controller.BookController : Gateway initiated
+12:45:59.511 INFO  misc.BookInventory : Calling start
+12:46:03.967 INFO  controller.MenuController : Clicked on menu item Login
+12:46:07.736 INFO  controller.MenuController : Clicked on menu item Login
+12:46:09.784 INFO  controller.MenuController : Clicked on menu item Login
+12:46:18.912 INFO  controller.MenuController : Clicked on menu item Login
+12:46:25.387 INFO  controller.MenuController : Clicked on menu item Login
+12:46:29.304 INFO  controller.MenuController : Clicked on menu item Login
+12:47:17.751 INFO  controller.MenuController : Clicked on menu item Login
+12:47:29.990 INFO  controller.MenuController : Clicked on menu item Login
+12:47:34.262 INFO  misc.BookInventory : Calling stop
+12:47:34.262 INFO  misc.BookTableGateway : Closing the gate
+12:53:03.382 INFO  misc.BookInventory : Starting Book Inventory...
+12:53:03.388 INFO  misc.BookInventory : Calling init
+12:53:04.163 INFO  controller.BookController : Gateway initiated
+12:53:04.179 INFO  misc.BookInventory : Calling start
+12:53:10.248 INFO  controller.MenuController : Clicked on menu item Login
+12:53:10.249 INFO  controller.MenuController : Hashed password is 03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4
+12:53:18.816 INFO  controller.MenuController : Clicked on menu item Login
+12:53:18.816 INFO  controller.MenuController : Hashed password is 03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4
+12:53:51.707 INFO  misc.BookInventory : Calling stop
+12:53:51.707 INFO  misc.BookTableGateway : Closing the gate
+12:53:55.648 INFO  misc.BookInventory : Starting Book Inventory...
+12:53:55.655 INFO  misc.BookInventory : Calling init
+12:53:56.839 INFO  controller.BookController : Gateway initiated
+12:53:56.858 INFO  misc.BookInventory : Calling start
+12:54:01.212 INFO  controller.MenuController : Clicked on menu item Login
+12:54:01.213 INFO  controller.MenuController : Hashed password is f8638b979b2f4f793ddb6dbd197e0ee25a7a6ea32b0ae22f5e3c5d119d839e75
+12:54:16.718 INFO  misc.BookInventory : Calling stop
+12:54:16.719 INFO  misc.BookTableGateway : Closing the gate
+12:55:24.245 INFO  misc.BookInventory : Starting Book Inventory...
+12:55:24.250 INFO  misc.BookInventory : Calling init
+12:55:24.821 INFO  controller.BookController : Gateway initiated
+12:55:24.832 INFO  misc.BookInventory : Calling start
+12:55:31.038 INFO  controller.MenuController : Clicked on menu item Login
+12:55:37.620 INFO  controller.MenuController : Clicked on menu item Login
+12:55:51.212 INFO  controller.MenuController : Clicked on menu item Login
+12:56:45.742 INFO  misc.BookInventory : Calling stop
+12:56:45.743 INFO  misc.BookTableGateway : Closing the gate
+13:38:17.923 INFO  misc.BookInventory : Starting Book Inventory...
+13:38:17.929 INFO  misc.BookInventory : Calling init
+13:38:18.449 INFO  controller.BookController : Gateway initiated
+13:38:18.464 INFO  misc.BookInventory : Calling start
+13:38:25.585 INFO  controller.MenuController : Clicked on menu item Login
+13:38:34.140 INFO  controller.MenuController : Clicked on menu item Login
+13:38:38.001 INFO  controller.MenuController : Clicked on menu item Login
+13:38:39.063 INFO  controller.MenuController : Clicked on menu item Login
+13:38:40.691 INFO  misc.BookInventory : Calling stop
+13:38:40.691 INFO  misc.BookTableGateway : Closing the gate
+13:39:31.312 INFO  misc.BookInventory : Starting Book Inventory...
+13:39:31.319 INFO  misc.BookInventory : Calling init
+13:39:31.809 INFO  controller.BookController : Gateway initiated
+13:39:31.828 INFO  misc.BookInventory : Calling start
+13:39:35.829 INFO  controller.MenuController : Clicked on menu item Login
+13:39:36.880 INFO  misc.VertxGateway : [Ljava.lang.String;@bebfe21
+13:39:56.973 INFO  misc.BookInventory : Calling stop
+13:39:56.973 INFO  misc.BookTableGateway : Closing the gate
+13:40:08.368 INFO  misc.BookInventory : Starting Book Inventory...
+13:40:08.375 INFO  misc.BookInventory : Calling init
+13:40:08.824 INFO  controller.BookController : Gateway initiated
+13:40:08.844 INFO  misc.BookInventory : Calling start
+13:40:13.095 INFO  controller.MenuController : Clicked on menu item Login
+13:40:14.167 INFO  misc.VertxGateway : [Ljava.lang.String;@6edb3495
+13:40:29.840 INFO  controller.MenuController : Clicked on menu item Login
+13:40:40.179 INFO  controller.MenuController : Clicked on menu item Login
+13:40:40.748 INFO  misc.VertxGateway : [Ljava.lang.String;@33fedd66
+13:40:50.727 INFO  misc.BookInventory : Calling stop
+13:40:50.728 INFO  misc.BookTableGateway : Closing the gate
+13:41:11.348 INFO  misc.BookInventory : Starting Book Inventory...
+13:41:11.352 INFO  misc.BookInventory : Calling init
+13:41:11.787 INFO  controller.BookController : Gateway initiated
+13:41:11.802 INFO  misc.BookInventory : Calling start
+13:41:16.457 INFO  controller.MenuController : Clicked on menu item Login
+13:41:17.118 INFO  misc.VertxGateway : "session token":"Bearer 2134022a87b358fe3f2c92fb218840a2faa5c8c1686f4222760c1c9dbd8b88ac" 
+13:41:34.699 INFO  misc.BookInventory : Calling stop
+13:41:34.700 INFO  misc.BookTableGateway : Closing the gate
+13:42:53.812 INFO  misc.BookInventory : Starting Book Inventory...
+13:42:53.817 INFO  misc.BookInventory : Calling init
+13:42:54.316 INFO  controller.BookController : Gateway initiated
+13:42:54.334 INFO  misc.BookInventory : Calling start
+13:42:58.486 INFO  controller.MenuController : Clicked on menu item Login
+13:43:03.848 INFO  misc.BookInventory : Calling stop
+13:43:03.848 INFO  misc.BookTableGateway : Closing the gate
+13:43:15.420 INFO  misc.BookInventory : Starting Book Inventory...
+13:43:15.427 INFO  misc.BookInventory : Calling init
+13:43:15.913 INFO  controller.BookController : Gateway initiated
+13:43:15.933 INFO  misc.BookInventory : Calling start
+13:43:20.316 INFO  controller.MenuController : Clicked on menu item Login
+13:43:21.222 INFO  misc.VertxGateway : "Bearer d8e38f7daba8a74a9d03bf4b21c5f083973674e4aacdce93499a9d1f4a161996" 
+13:43:34.195 INFO  controller.MenuController : Clicked on menu item Login
+13:43:34.335 INFO  misc.VertxGateway : "Bearer 80c7d8223629d42b5e24bcfd60ab87f2554282ccbacf354ef788ada1e72a3e2c" 
+13:43:44.982 INFO  controller.MenuController : Clicked on menu item Book Report
+13:43:46.944 INFO  controller.MenuController : Clicked on menu item Book Report
+13:43:49.489 INFO  misc.BookInventory : Calling stop
+13:43:49.490 INFO  misc.BookTableGateway : Closing the gate
+14:03:11.973 INFO  misc.BookInventory : Starting Book Inventory...
+14:03:11.979 INFO  misc.BookInventory : Calling init
+14:03:12.457 INFO  controller.BookController : Gateway initiated
+14:03:12.473 INFO  misc.BookInventory : Calling start
+14:03:18.553 INFO  controller.MenuController : Clicked on menu item Login
+14:03:18.554 INFO  controller.MenuController : Hashed password is f8638b979b2f4f793ddb6dbd197e0ee25a7a6ea32b0ae22f5e3c5d119d839e75
+14:03:36.083 INFO  controller.MenuController : Clicked on menu item Login
+14:03:36.083 INFO  controller.MenuController : Hashed password is f8638b979b2f4f793ddb6dbd197e0ee25a7a6ea32b0ae22f5e3c5d119d839e75
+14:04:31.155 INFO  misc.BookInventory : Calling stop
+14:04:31.155 INFO  misc.BookTableGateway : Closing the gate
+14:04:41.920 INFO  misc.BookInventory : Starting Book Inventory...
+14:04:41.927 INFO  misc.BookInventory : Calling init
+14:04:42.557 INFO  controller.BookController : Gateway initiated
+14:04:42.573 INFO  misc.BookInventory : Calling start
+14:04:46.476 INFO  controller.MenuController : Clicked on menu item Login
+14:04:56.074 INFO  controller.MenuController : Clicked on menu item Login
+14:05:01.809 INFO  controller.MenuController : Clicked on menu item Login
+14:05:09.423 INFO  controller.MenuController : Clicked on menu item Login
+14:06:03.252 INFO  controller.MenuController : Clicked on menu item Book Report
+14:06:05.483 INFO  misc.BookInventory : Calling stop
+14:06:05.483 INFO  misc.BookTableGateway : Closing the gate
