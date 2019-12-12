@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="500.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8.0.221" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Text layoutX="86.0" layoutY="262.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Save as:" />
+      <TextField fx:id="filename" layoutX="163.0" layoutY="244.0" />
+      <TextField fx:id="filepath" layoutX="163.0" layoutY="281.0" prefHeight="26.0" />
+      <Text layoutX="93.0" layoutY="299.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Where:" />
+      <Button fx:id="cd" layoutX="104.0" layoutY="325.0" mnemonicParsing="false" onAction="#handleButtonDirectory" text="Choose directory" />
+      <Button fx:id="Save" layoutX="260.0" layoutY="325.0" mnemonicParsing="false" onAction="#handleButtonSave" text="Save" />
+      <TextArea editable="false" layoutX="72.0" layoutY="20.0" prefHeight="200.0" prefWidth="257.0" text="Please enter the file name and file path desired to save the book report. &#10;&#10;You may also select &quot;Choose Directory&quot; to assist in setting the filename and file path. &#10;&#10;File will not be saved unless &quot;Save&quot; is pressed on this screen and a path is chosen." wrapText="true" />
+   </children>
+</AnchorPane>

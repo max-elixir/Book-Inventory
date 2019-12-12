@@ -3,8 +3,10 @@ package controller;
 import model.*;
 import misc.BookTableGateway;
 import misc.PublisherTableGateway;
+import misc.VertxGateway;
 
 import java.io.IOException;
+import java.net.URISyntaxException;
 import java.util.List;
 import java.util.Optional;
 
@@ -16,7 +18,6 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.control.Alert;
 import javafx.scene.control.ButtonType;
-import javafx.scene.control.Dialog;
 import javafx.scene.control.Alert.AlertType;
 import javafx.scene.layout.BorderPane;
 
@@ -107,12 +108,28 @@ public class BookController {
 			logger.info("Changing to Audit Trail View");
 			
 		} else if (viewType == ViewType.BOOK_REPORT) {
-			loader = null;
-			currentController = null;
+			logger.info("Attempting to connect to session");
+			String report;
 			if (session != null) {
+				try {
+					report = VertxGateway.vertxReport(session);
+					if (report == null) {
+						BookDetailController.showMessage("Unauthorized Access", "WARNING: UNAUTHORIZED ACCESS.\n NOTHING WILL HAPPEN, BUT YOU CAN NOT VIEW THIS PAGE :)");
+						return false;
+					}
+				} catch (URISyntaxException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+					return false;
+				}
+				
+				loader = new FXMLLoader(BookController.class.getResource("BookReportView.fxml"));
+				currentController = new BookReportController(report);
+				loader.setController(currentController);
+				logger.info("Changing to Book report view");
 				
 			} else {
-				
+				logger.error("No session to connect to.");
 			}
 		}
 		

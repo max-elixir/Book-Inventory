@@ -28,10 +28,9 @@ public class MenuController {
 		Object source = action.getSource();
 		if(source == login) {
 			logger.info("Clicked on menu item Login");
-			//logger.info("username is " + username.getText());
-			//logger.info("Hashed password is " + CryptoStuff.sha256(password.getText()));
 			String bearer = VertxGateway.vertxLogin(username.getText(), CryptoStuff.sha256(password.getText()));
 			BookController.setSession(bearer);
+			return;
 		}
 		if(source == menuQuit) {
 			logger.info("Clicked on menu item Quit");

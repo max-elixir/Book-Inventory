@@ -13,11 +13,8 @@ import org.apache.http.client.utils.URIBuilder;
 import org.apache.http.impl.client.CloseableHttpClient;
 import org.apache.http.impl.client.HttpClients;
 import org.apache.http.util.EntityUtils;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
 
 public class VertxGateway {
-	private static Logger logger = LogManager.getLogger();
 	
 	public static String vertxLogin(String username, String password) throws URISyntaxException, ParseException, IOException {
 		CloseableHttpClient httpclient = HttpClients.createDefault();
@@ -59,11 +56,21 @@ public class VertxGateway {
 			String[] split = session.split(",");
 			String[] split2 = split[1].split(":");
 			//logger.info( split2[1].replace('}', '\0'));
-			return split2[1].replace('}', '\0');
+			return split2[1].replaceAll("}", "");
 		}
 	} 
 	
-	public static void vertxReport(String bearer) throws URISyntaxException {
+	public static String vertxReport(String bearer) throws URISyntaxException {
+		/*HttpPost httpPost = new HttpPost("http://localhost/reports/bookdetail");
+		List <NameValuePair> nvps = new ArrayList <NameValuePair>();
+		nvps.add(new BasicNameValuePair("Authorization", bearer));
+		try {
+			httpPost.setEntity(new UrlEncodedFormEntity(nvps));
+		} catch (UnsupportedEncodingException e2) {
+			// TODO Auto-generated catch block
+			e2.printStackTrace();
+		}*/
+		
 		CloseableHttpClient httpclient = HttpClients.createDefault();
 		URI uri = new URIBuilder().setScheme("http")
 				.setHost("localhost")
@@ -71,29 +78,48 @@ public class VertxGateway {
 				.setPort(8888)
 				.build();
 		
-		HttpUriRequest request = RequestBuilder.get()
+		bearer = bearer.replaceAll("\"", "");
+		HttpUriRequest request = RequestBuilder.post()
 				.setUri(uri)
 				.addHeader("Authorization", bearer)
-				//.addHeader("Authorization", "Bearer " + "xxx")
 				.build();
 		
 		CloseableHttpResponse response = null;
+		String report =null;
+		
 		try {
 			response = httpclient.execute(request);
-			
-			System.out.println("Status code is " + response.getStatusLine().getStatusCode());
-			
-			System.out.println(EntityUtils.toString(response.getEntity()));
-			
+			if (response.getStatusLine().getStatusCode() == 200) {
+				report = EntityUtils.toString( response.getEntity());
+				/*InputStream is = response.getEntity().getContent();
+				report = new File("./tmp.xls");
+				FileOutputStream tmpRead = new FileOutputStream(report);
+				
+				byte[] buffer = new byte[5600];
+	            int inByte;
+	            while((inByte = is.read(buffer)) > 0)
+	                tmpRead.write(buffer,0,inByte);
+	            is.close();
+	           tmpRead.close();*/
+	           EntityUtils.consume(response.getEntity());
+				//EntityUtils.toString(response.getEntity());
+				//FileOutputStream reportFile = new FileOutputStream(report);
+				//response.getEntity().writeTo(reportFile);
+				//IOUtils.copy(tmp, tmpRead);
+				 //response.getEntity().writeTo();;
+			} 
 		} catch (IOException e1) {
 			e1.printStackTrace();
-		} finally {
-			try {
-				response.close();
-				httpclient.close();
-			} catch (IOException e) {
-				e.printStackTrace();
-			}
+		} 
+		
+		try {
+			response.close();
+			httpclient.close();
+		} catch (IOException e) {
+			e.printStackTrace();
+		} catch (NullPointerException e) {
+			e.printStackTrace();
 		}
+		return report;
 	}
 }
